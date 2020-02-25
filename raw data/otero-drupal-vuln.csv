@@ -1,0 +1,33 @@
+File,Message,Line,Severity
+drupal/core/modules/system/tests/modules/csrf_race_test/src/Controller/TestController.php,"Remove this call to ""sleep"".",63,MINOR
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",161,MINOR
+drupal/core/modules/quickedit/tests/src/FunctionalJavascript/QuickEditLoadingTest.php,"Remove this call to ""sleep"".",315,MINOR
+drupal/core/lib/Drupal/Core/Command/ServerCommand.php,"Remove this call to ""sleep"".",258,MINOR
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",114,MINOR
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",121,MINOR
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",215,MINOR
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",222,MINOR
+drupal/core/modules/migrate/tests/src/Kernel/process/FileCopyTest.php,"Remove this call to ""sleep"".",97,MINOR
+drupal/core/modules/content_translation/tests/src/Functional/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",549,MINOR
+drupal/core/modules/content_translation/tests/src/Functional/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",612,MINOR
+drupal/core/modules/datetime_range/tests/src/Kernel/DateRangeItemTest.php,"Remove this call to ""sleep"".",99,MINOR
+drupal/core/modules/content_translation/src/Tests/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",619,MINOR
+drupal/core/modules/node/tests/src/Functional/NodeFormSaveChangedTimeTest.php,"Remove this call to ""sleep"".",70,MINOR
+drupal/core/modules/content_translation/src/Tests/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",556,MINOR
+drupal/core/modules/system/tests/modules/entity_test/src/Entity/EntityTestMulChanged.php,"Remove this call to ""sleep"".",74,MINOR
+drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php,"Remove this call to ""sleep"".",309,MINOR
+drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php,"Remove this call to ""sleep"".",329,MINOR
+drupal/core/modules/user/tests/src/Unit/UserAuthTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",55,BLOCKER
+drupal/core/tests/Drupal/Tests/Component/PhpStorage/MTimeProtectedFileStorageBase.php,"Remove this call to ""sleep"".",106,MINOR
+drupal/core/modules/system/tests/src/Functional/System/ShutdownFunctionsTest.php,"Remove this call to ""sleep"".",48,MINOR
+drupal/core/lib/Drupal/Core/Database/Driver/sqlite/Connection.php,Add password protection to this database.,116,BLOCKER
+drupal/core/modules/locale/tests/src/Functional/LocaleUpdateCronTest.php,"Remove this call to ""sleep"".",107,MINOR
+drupal/core/modules/system/tests/src/Functional/FileTransfer/FileTransferTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",18,BLOCKER
+drupal/core/modules/system/tests/src/Functional/System/CronRunTest.php,"Remove this call to ""sleep"".",76,MINOR
+drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php,"Remove this call to ""sleep"".",243,MINOR
+drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php,"Remove this call to ""sleep"".",250,MINOR
+drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php,"Remove this call to ""sleep"".",257,MINOR
+drupal/core/modules/statistics/tests/src/Functional/StatisticsAdminTest.php,"Remove this call to ""sleep"".",166,MINOR
+drupal/core/modules/aggregator/tests/src/Functional/UpdateFeedItemTest.php,"Remove this call to ""sleep"".",61,MINOR
+drupal/core/modules/system/tests/src/Functional/Lock/LockFunctionalTest.php,"Remove this call to ""sleep"".",49,MINOR
+drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php,"Remove this call to ""sleep"".",259,MINOR

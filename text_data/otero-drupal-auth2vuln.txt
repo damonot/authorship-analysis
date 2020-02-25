@@ -1,0 +1,32 @@
+Alex_Pott 	 /drupal/core/modules/system/tests/modules/csrf_race_test/src/Controller/TestController.php 	 vuln 	 63 	 Remove this call to "sleep".
+effulgentsia 	 /drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php 	 vuln 	 161 	 Remove this call to "sleep".
+Lee_Rowlands 	 /drupal/core/modules/quickedit/tests/src/FunctionalJavascript/QuickEditLoadingTest.php 	 vuln 	 315 	 Remove this call to "sleep".
+Lee_Rowlands 	 /drupal/core/lib/Drupal/Core/Command/ServerCommand.php 	 vuln 	 258 	 Remove this call to "sleep".
+Lee_Rowlands 	 /drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php 	 vuln 	 114 	 Remove this call to "sleep".
+Lee_Rowlands 	 /drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php 	 vuln 	 121 	 Remove this call to "sleep".
+Lee_Rowlands 	 /drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php 	 vuln 	 215 	 Remove this call to "sleep".
+Lee_Rowlands 	 /drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php 	 vuln 	 222 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/modules/migrate/tests/src/Kernel/process/FileCopyTest.php 	 vuln 	 97 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/content_translation/tests/src/Functional/ContentTranslationUITestBase.php 	 vuln 	 549 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/content_translation/tests/src/Functional/ContentTranslationUITestBase.php 	 vuln 	 612 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/datetime_range/tests/src/Kernel/DateRangeItemTest.php 	 vuln 	 99 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/content_translation/src/Tests/ContentTranslationUITestBase.php 	 vuln 	 619 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/node/tests/src/Functional/NodeFormSaveChangedTimeTest.php 	 vuln 	 70 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/modules/content_translation/src/Tests/ContentTranslationUITestBase.php 	 vuln 	 556 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/modules/system/tests/modules/entity_test/src/Entity/EntityTestMulChanged.php 	 vuln 	 74 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php 	 vuln 	 309 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php 	 vuln 	 329 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/modules/user/tests/src/Unit/UserAuthTest.php 	 vuln 	 55 	 'password' detected in this variable name, review this potentially hardcoded credential.
+Nathaniel_Catchpole 	 /drupal/core/tests/Drupal/Tests/Component/PhpStorage/MTimeProtectedFileStorageBase.php 	 vuln 	 106 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/system/tests/src/Functional/System/ShutdownFunctionsTest.php 	 vuln 	 48 	 Remove this call to "sleep".
+Alex_Pott 	 /drupal/core/lib/Drupal/Core/Database/Driver/sqlite/Connection.php 	 vuln 	 116 	 Add password protection to this database.
+webchick 	 /drupal/core/modules/locale/tests/src/Functional/LocaleUpdateCronTest.php 	 vuln 	 107 	 Remove this call to "sleep".
+Dries_Buytaert 	 /drupal/core/modules/system/tests/src/Functional/FileTransfer/FileTransferTest.php 	 vuln 	 18 	 'password' detected in this variable name, review this potentially hardcoded credential.
+catch 	 /drupal/core/modules/system/tests/src/Functional/System/CronRunTest.php 	 vuln 	 76 	 Remove this call to "sleep".
+Angie_Byron 	 /drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php 	 vuln 	 243 	 Remove this call to "sleep".
+Angie_Byron 	 /drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php 	 vuln 	 250 	 Remove this call to "sleep".
+Angie_Byron 	 /drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php 	 vuln 	 257 	 Remove this call to "sleep".
+catch 	 /drupal/core/modules/statistics/tests/src/Functional/StatisticsAdminTest.php 	 vuln 	 166 	 Remove this call to "sleep".
+catch 	 /drupal/core/modules/aggregator/tests/src/Functional/UpdateFeedItemTest.php 	 vuln 	 61 	 Remove this call to "sleep".
+Dries_Buytaert 	 /drupal/core/modules/system/tests/src/Functional/Lock/LockFunctionalTest.php 	 vuln 	 49 	 Remove this call to "sleep".
+Nathaniel_Catchpole 	 /drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php 	 vuln 	 259 	 Remove this call to "sleep".

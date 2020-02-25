@@ -1,0 +1,27 @@
+File,Message,Line,Severity
+phpmyadmin/libraries/classes/Controllers/UserPasswordController.php,"'password' detected in this variable name, review this potentially hardcoded credential.",72,BLOCKER
+phpmyadmin/libraries/classes/Server/Privileges.php,"'password' detected in this variable name, review this potentially hardcoded credential.",3830,BLOCKER
+phpmyadmin/libraries/classes/Server/Privileges.php,"'password' detected in this variable name, review this potentially hardcoded credential.",3832,BLOCKER
+phpmyadmin/test/classes/Server/PrivilegesTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",984,BLOCKER
+phpmyadmin/test/classes/Server/PrivilegesTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",1400,BLOCKER
+phpmyadmin/libraries/classes/Server/Privileges.php,"'password' detected in this variable name, review this potentially hardcoded credential.",3272,BLOCKER
+phpmyadmin/js/vendor/u2f-api-polyfill.js,Make sure this cross-domain message is being sent to the intended domain.,545,CRITICAL
+phpmyadmin/libraries/classes/Plugins/Auth/AuthenticationCookie.php,"'password' detected in this variable name, review this potentially hardcoded credential.",244,BLOCKER
+phpmyadmin/libraries/classes/Plugins/Auth/AuthenticationHttp.php,"'password' detected in this variable name, review this potentially hardcoded credential.",149,BLOCKER
+phpmyadmin/libraries/classes/Plugins/AuthenticationPlugin.php,"'password' detected in this variable name, review this potentially hardcoded credential.",42,BLOCKER
+phpmyadmin/libraries/classes/Plugins/AuthenticationPlugin.php,"'password' detected in this variable name, review this potentially hardcoded credential.",134,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",689,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",740,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",321,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",351,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",384,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationSignonTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",255,BLOCKER
+phpmyadmin/libraries/classes/Replication.php,"'password' detected in this variable name, review this potentially hardcoded credential.",100,BLOCKER
+phpmyadmin/test/selenium/Database/EventsTest.php,"Remove this call to ""sleep"".",145,MINOR
+phpmyadmin/test/selenium/Database/EventsTest.php,"Remove this call to ""sleep"".",185,MINOR
+phpmyadmin/libraries/classes/Server/Privileges.php,"'password' detected in this variable name, review this potentially hardcoded credential.",3011,BLOCKER
+phpmyadmin/libraries/classes/Server/Privileges.php,"'password' detected in this variable name, review this potentially hardcoded credential.",3017,BLOCKER
+phpmyadmin/libraries/classes/Server/Privileges.php,"'password' detected in this variable name, review this potentially hardcoded credential.",3650,BLOCKER
+phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",1115,BLOCKER
+phpmyadmin/libraries/classes/Config/Validator.php,"'password' detected in this variable name, review this potentially hardcoded credential.",293,BLOCKER
+phpmyadmin/test/selenium/CreateRemoveUserTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",47,BLOCKER
