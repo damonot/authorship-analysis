@@ -21,19 +21,21 @@ def runner(repo):
     response = input('Degree Centrality? [y]/n\n')
     if(response == 'y'):
         for xl in excelList:    
-            #gen_degreeCentrality(xl, repo)
+            gen_degreeCentrality(xl, repo)
             print('\n')
 
 
     bugvulnfile = 'otero-'+repo+'-auth2flawedFiles.txt' # raw complete file
     folder = os.getcwd() + '\\text_data\\'
     path = folder + bugvulnfile
-    #print(path)
     
+
+    #TODO fix BFIAF so it includes error types
+    #TODO fix BFIAF so "type errors" are grouped together
     # bf*iaf bug uniqueness distribution for each author
-    #response = input('Bug-Frequency * Inverse Author Frequency? [y]/n\n')
-    #if(response == 'y'):
-    bf_iaf(path, repo)
+    response = input('Bug-Frequency * Inverse Author Frequency? [y]/n\n')
+    if(response == 'y'):
+        bf_iaf(path, repo)
     
         
 #bug-frequency2inverseauthorfrequency
@@ -98,7 +100,6 @@ def bf_iaf(txt, repo):
     for auth in authors:
         bfiafs.append((auth, {}))
     
-    authbfiaf = {}
     for bug in authsPerBug:
         iafeqn = (1 + nAuth)/(1+authsPerBug[bug])
         iaf = math.log(iafeqn,2)
