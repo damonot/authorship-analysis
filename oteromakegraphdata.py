@@ -160,29 +160,29 @@ def runner(repoAddress):
         
 
         # Vulnerablity Analysis    
-        vulnCSV = 'otero-'+folderName+'-vuln.csv' # formerly authVulnInput
-        authorVulnFilesOutput='otero-'+folderName+'-auth2vuln.txt' # file output by bash
+        vulnCSV = 'xl_data/otero-'+folderName+'-vuln.csv' # formerly authVulnInput
+        authorVulnFilesOutput='text_data/otero-'+folderName+'-auth2vuln.txt' # file output by bash
         response = input('Perform Auth2Vuln Analysis? [y]/n\n')
         if(response == 'y'):
             analyze_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
             
         
         # Bug Analysis       
-        bugCSV ='otero-'+folderName+'-bug.csv' # formerly authorBugInput
-        authorBuggyFilesOutput='otero-'+folderName+'-auth2bug.txt' # file output by bash
+        bugCSV ='xl_data/otero-'+folderName+'-bug.csv' # formerly authorBugInput
+        authorBuggyFilesOutput='text_data/otero-'+folderName+'-auth2bug.txt' # file output by bash
         response = input('Perform Auth2Bug Analysis? [y]/n\n')
         if(response == 'y'):
             analyze_auth(bugCSV, authorBuggyFilesOutput, cwd, repoBashPath, "bug")
        
         # Merge vulnFiles with buggyFiles
         fileList = [authorVulnFilesOutput, authorBuggyFilesOutput]  
-        auth2flawedFiles = 'otero-'+folderName+'-auth2flawedFiles.txt'
+        auth2flawedFiles = 'text_data/otero-'+folderName+'-auth2flawedFiles.txt'
         merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
         
         #auth2Flaw Analysis
         response = input('Connect Authors To Flaws & Generate XLSX? [y]/n\n...')
         columnTypes = ['person', 'flag']
-        XLSXoutput = 'oterolynks-'+folderName+'-auth2flaws.xlsx'
+        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-auth2flaws.xlsx'
         if(response == 'y'):
             makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
         
@@ -191,28 +191,28 @@ def runner(repoAddress):
         print('\nStarting Author-Flawed File Analysis...', end = '')
         columnTypes = ['person', 'document'] # left column type, right column type
         response = input("Generate Author2FlawedFiles Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'oterolynks-'+folderName+'-auth2flawedfiles.xlsx'
+        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-auth2flawedfiles.xlsx'
         if(response == "y"):
             makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
         
         # Auth-Auth Analysis
         print('\nStarting Coworker Analysis...', end = '')
-        coworkersOutput = 'otero-'+folderName+'-coworkers.txt'
+        coworkersOutput = 'text_data/otero-'+folderName+'-coworkers.txt'
         connect_coworkers(auth2flawedFiles, coworkersOutput)        
         columnTypes = ['person', 'person'] # left column type, right column type
         response = input("Generate Author-Author Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'oterolynks-'+folderName+'-coworkers.xlsx'
+        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-coworkers.xlsx'
         if(response == "y"):
             makelynks.genXLSX(coworkersOutput, columnTypes, XLSXoutput)
         
         
         # File-File Analysis
         print('\nStarting File-Connectivity Analysis...', end = '')
-        flawedFilesOutput = 'otero-'+folderName+'-flawedFiles.txt' 
+        flawedFilesOutput = 'text_data/otero-'+folderName+'-flawedFiles.txt' 
         connect_flawedFiles(auth2flawedFiles, flawedFilesOutput) # auth2files input -> file2file output
         columnTypes = ['document', 'document'] # left column type, right column type
         response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'oterolynks-'+folderName+'-flawedFiles.xlsx'
+        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-flawedFiles.xlsx'
         if(response == "y"):
             makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
             

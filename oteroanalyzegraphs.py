@@ -146,7 +146,7 @@ def df2excel(df, xlName, sheetName):
         print(xlName+' DNE')
         writer = pd.ExcelWriter(xlName, engine='xlsxwriter')
         writer.save()
-    else: print() # do nothing #print(xlName+ ' already exists')
+    else: print() # do nothing, xlName already exists
         
     with pd.ExcelWriter(xlName, engine='openpyxl') as writer:
         writer.book = load_workbook(xlName)
