@@ -161,7 +161,7 @@ def runner(repoAddress):
         
 
         # Vulnerablity Analysis    
-        vulnCSV = 'xl_data/otero-'+folderName+'-vuln.csv' # formerly authVulnInput
+        vulnCSV = 'xl_data\otero-'+folderName+'-vuln.csv' # formerly authVulnInput
         authorVulnFilesOutput='text_data/otero-'+folderName+'-auth2vuln.txt' # file output by bash
         response = input('Perform Auth2Vuln Analysis? [y]/n\n')
         if(response == 'y'):
@@ -169,7 +169,7 @@ def runner(repoAddress):
             
         
         # Bug Analysis       
-        bugCSV ='xl_data/otero-'+folderName+'-bug.csv' # formerly authorBugInput
+        bugCSV ='xl_data\otero-'+folderName+'-bug.csv' # formerly authorBugInput
         authorBuggyFilesOutput='text_data/otero-'+folderName+'-auth2bug.txt' # file output by bash
         response = input('Perform Auth2Bug Analysis? [y]/n\n')
         if(response == 'y'):
@@ -183,7 +183,7 @@ def runner(repoAddress):
         #auth2Flaw Analysis
         response = input('Connect Authors To Flaws & Generate XLSX? [y]/n\n...')
         columnTypes = ['person', 'flag']
-        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-auth2flaws.xlsx'
+        XLSXoutput = 'xl_data\oterolynks-'+folderName+'-auth2flaws.xlsx'
         if(response == 'y'):
             makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
         
@@ -192,7 +192,7 @@ def runner(repoAddress):
         print('\nStarting Author-Flawed File Analysis...', end = '')
         columnTypes = ['person', 'document'] # left column type, right column type
         response = input("Generate Author2FlawedFiles Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-auth2flawedfiles.xlsx'
+        XLSXoutput = 'xl_data\oterolynks-'+folderName+'-auth2flawedfiles.xlsx'
         if(response == "y"):
             makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
         
@@ -202,7 +202,7 @@ def runner(repoAddress):
         connect_coworkers(auth2flawedFiles, coworkersOutput)        
         columnTypes = ['person', 'person'] # left column type, right column type
         response = input("Generate Author-Author Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-coworkers.xlsx'
+        XLSXoutput = 'xl_data\oterolynks-'+folderName+'-coworkers.xlsx'
         if(response == "y"):
             makelynks.genXLSX(coworkersOutput, columnTypes, XLSXoutput)
         
@@ -213,7 +213,7 @@ def runner(repoAddress):
         connect_flawedFiles(auth2flawedFiles, flawedFilesOutput) # auth2files input -> file2file output
         columnTypes = ['document', 'document'] # left column type, right column type
         response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data/oterolynks-'+folderName+'-flawedFiles.xlsx'
+        XLSXoutput = 'xl_data\oterolynks-'+folderName+'-flawedFiles.xlsx'
         if(response == "y"):
             makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
             
