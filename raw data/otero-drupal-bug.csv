@@ -1,117 +1,117 @@
-File,Message,Line,Severity
-drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""PathSubscriber"" or use it",112,MAJOR
-drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""PathProcessorAlias"" or use it",129,MAJOR
-drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""CoreAliasManager"" or use it",146,MAJOR
-drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""CoreAliasWhitelist"" or use it",163,MAJOR
-drupal/core/themes/claro/js/tabledrag.js,"TypeError can be thrown as ""_ret"" might be null or undefined here.",594,MAJOR
-drupal/core/modules/media/tests/fixtures/oembed/video_vimeo-no-title.html,Add a <title> tag to this page.,3,MAJOR
-drupal/core/modules/field/src/Plugin/migrate/process/d7/FieldInstanceOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,31,MAJOR
-drupal/core/modules/field/src/Plugin/migrate/process/d7/FieldOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,33,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Controller/AjaxRendererTest.php,"Either remove this useless object instantiation of class ""AjaxRenderer"" or use it",98,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Controller/DialogRendererTest.php,"Either remove this useless object instantiation of class ""DialogRenderer"" or use it",28,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Config/FileStorageFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",34,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Cache/BackendChainImplementationUnitTest.php,"Either remove this useless object instantiation of class ""BackendChain"" or use it",310,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Entity/FieldableEntityDefinitionUpdateTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",795,MAJOR
-drupal/core/modules/jsonapi/src/Controller/EntityResource.php,"The return value of ""array_reduce"" must be used.",335,MAJOR
-drupal/core/modules/jsonapi/tests/src/Unit/Query/EntityConditionGroupTest.php,"Either remove this useless object instantiation of class ""EntityConditionGroup"" or use it",36,MAJOR
-drupal/core/tests/Drupal/Tests/Component/Plugin/ConfigurablePluginInterfaceTest.php,"Either remove this useless object instantiation of class ""ConfigurablePluginInterfaceTestClass"" or use it",23,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Entity/FieldableEntityDefinitionUpdateTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",117,MAJOR
-drupal/core/modules/views/tests/src/Kernel/ViewElementTest.php,"The return value of ""serialize"" must be used.",86,MAJOR
-drupal/core/modules/layout_builder/tests/src/Unit/SectionStorageManagerTest.php,"Either remove this useless object instantiation of class ""SectionStorageManager"" or use it",102,MAJOR
-drupal/core/modules/media/tests/fixtures/oembed/video_youtube.html,Add a <title> tag to this page.,3,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Extension/ThemeEngineExtensionListTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",20,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Extension/ThemeExtensionListTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",20,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Config/StorageComparerTest.php,"Either remove this useless object instantiation of class ""StorageComparer"" or use it",247,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php,"Either remove this useless object instantiation of class ""Email"" or use it",24,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php,"Either remove this useless object instantiation of class ""EntityReference"" or use it",33,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php,"Either remove this useless object instantiation of class ""NumberField"" or use it",42,MAJOR
-drupal/core/lib/Drupal/Core/PathProcessor/PathProcessorFront.php,"The return value of ""array_replace"" must be used.",52,MAJOR
-drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldInstanceOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,31,MAJOR
-drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,33,MAJOR
-drupal/core/modules/ckeditor/js/ckeditor.es6.js,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed.",203,MAJOR
-drupal/core/modules/views_ui/js/views-admin.es6.js,"TypeError can be thrown as ""$currentEmptyRow"" might be null or undefined here.",1098,MAJOR
-drupal/core/modules/system/tests/src/Functional/System/PageTitleTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",127,MAJOR
-drupal/core/modules/media/tests/fixtures/oembed/photo_flickr.html,Add a <title> tag to this page.,3,MAJOR
-drupal/core/modules/media/tests/fixtures/oembed/video_collegehumor.html,Add a <title> tag to this page.,3,MAJOR
-drupal/core/modules/media/tests/fixtures/oembed/video_vimeo.html,Add a <title> tag to this page.,3,MAJOR
-drupal/core/modules/system/tests/modules/hold_test/src/EventSubscriber/HoldTestSubscriber.php,Remove this use of the output from usleep; usleep doesn't return anything.,40,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Config/Entity/ConfigEntityTypeTest.php,"Either remove this useless object instantiation of class ""ConfigEntityType"" or use it",104,MAJOR
-drupal/core/tests/Drupal/Tests/Core/DrupalKernel/DiscoverServiceProvidersTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",22,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Controller/FormControllerTest.php,"Either remove this useless object instantiation of class ""HtmlFormController"" or use it",30,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Menu/LocalActionManagerTest.php,"Either remove this useless object instantiation of class ""LocalTaskManager"" or use it",405,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Menu/LocalTaskManagerTest.php,"Either remove this useless object instantiation of class ""LocalTaskManager"" or use it",270,MAJOR
-drupal/core/tests/Drupal/KernelTests/Component/Render/FormattableMarkupKernelTest.php,"Either remove this useless object instantiation of class ""FormattableMarkup"" or use it",118,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Config/Entity/ConfigEntityUpdaterTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",39,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Config/Entity/ConfigEntityUpdaterTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",92,MAJOR
-drupal/core/modules/book/tests/src/Kernel/Plugin/migrate/source/BookTest.php,"Either remove this useless object instantiation of class ""D6Book"" or use it",91,MAJOR
-drupal/core/misc/tabledrag.js,"TypeError can be thrown as ""_ret"" might be null or undefined here.",582,MAJOR
-drupal/core/modules/ckeditor/js/ckeditor.js,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed.",107,MAJOR
-drupal/core/lib/Drupal/Core/Test/FunctionalTestSetupTrait.php,"Either remove this useless object instantiation of class ""Settings"" or use it",672,MAJOR
-drupal/core/modules/views/tests/src/Kernel/ViewExecutableTest.php,"The return value of ""unserialize"" must be used.",520,MAJOR
-drupal/core/assets/vendor/jquery-joyride/jquery.joyride-2.1.js,"Do not use ""undefined"" to declare a parameter - use another name.",11,MAJOR
-drupal/core/tests/Drupal/Tests/Core/EntityReferenceSelection/EntityReferenceSelectionUnitTest.php,"Either remove this useless object instantiation of class ""TestSelectionWithInvalidDefaultConfiguration"" or use it",27,MAJOR
-drupal/core/tests/Drupal/Tests/Core/EntityReferenceSelection/EntityReferenceSelectionUnitTest.php,"Either remove this useless object instantiation of class ""TestSelection"" or use it",43,MAJOR
-drupal/core/tests/Drupal/Tests/Core/EntityReferenceSelection/EntityReferenceSelectionUnitTest.php,"Either remove this useless object instantiation of class ""TestSelection"" or use it",197,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Form/FormCacheTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",110,MAJOR
-drupal/core/misc/ajax.es6.js,Correct this loop's end condition as to not be invariant.,1559,BLOCKER
-drupal/core/modules/quickedit/js/views/EntityToolbarView.es6.js,"TypeError can be thrown as ""topMostField"" might be null or undefined here.",284,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Entity/ContentEntityCloneTest.php,"The return value of ""serialize"" must be used.",245,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Entity/ContentEntityCloneTest.php,"The return value of ""serialize"" must be used.",246,MAJOR
-drupal/core/lib/Drupal/Core/Test/TestRunnerKernel.php,"Either remove this useless object instantiation of class ""Settings"" or use it",52,MAJOR
-drupal/core/modules/node/src/NodeListBuilder.php,Review the data-flow - use of uninitialized value.,101,MAJOR
-drupal/core/modules/simpletest/src/TestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",1182,MAJOR
-drupal/core/modules/views/tests/src/Kernel/ModuleTest.php,Remove this unreachable code.,86,MAJOR
-drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",653,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Access/CsrfTokenGeneratorTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",206,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Session/PermissionsHashGeneratorTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",78,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Test/TestDatabaseTest.php,"Either remove this useless object instantiation of class ""TestDatabase"" or use it",23,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Serialization/YamlTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",23,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Serialization/YamlTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",36,MAJOR
-drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",308,MAJOR
-drupal/core/modules/file/tests/src/Functional/FileFieldAnonymousSubmissionTest.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,142,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Annotation/PluralTranslationTest.php,"Either remove this useless object instantiation of class ""PluralTranslation"" or use it",55,MAJOR
-drupal/core/modules/system/tests/src/Functional/System/SitesDirectoryHardeningTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",56,MAJOR
-drupal/core/modules/system/tests/src/Functional/System/SitesDirectoryHardeningTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",74,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Theme/TwigMarkupInterfaceTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",72,MAJOR
-drupal/core/tests/Drupal/Tests/Core/StringTranslation/TranslatableMarkupTest.php,"Either remove this useless object instantiation of class ""TranslatableMarkup"" or use it",91,MAJOR
-drupal/core/tests/Drupal/Tests/Core/StringTranslation/TranslatableMarkupTest.php,"Either remove this useless object instantiation of class ""TranslatableMarkup"" or use it",101,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/StringTranslation/TranslationStringTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",66,MAJOR
-drupal/core/tests/Drupal/FunctionalTests/Update/UpdatePathTestBaseTest.php,"The return value of ""unserialize"" must be used.",55,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Update/UpdateRegistryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",30,MAJOR
-drupal/core/tests/Drupal/Tests/Core/DependencyInjection/ContainerBuilderTest.php,"The return value of ""serialize"" must be used.",121,MAJOR
-drupal/core/modules/system/tests/src/Kernel/PhpStorage/PhpStorageFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",29,MAJOR
-drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",281,MAJOR
-drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",386,MAJOR
-drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",923,MAJOR
-drupal/core/lib/Drupal/Core/Extension/module.api.php,Review the data-flow - use of uninitialized value.,631,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Http/ClientFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",42,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Http/ClientFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",45,MAJOR
-drupal/core/tests/Drupal/Tests/Core/DependencyInjection/ContainerTest.php,"The return value of ""serialize"" must be used.",21,MAJOR
-drupal/core/assets/vendor/jquery/jquery.js,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?",7540,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_mapping_url.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_mapping_url_old.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_url.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_url_old.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR
-drupal/core/tests/Drupal/Tests/Core/DrupalKernel/DiscoverServiceProvidersTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",47,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Site/SettingsTest.php,"The return value of ""serialize"" must be used.",115,MAJOR
-drupal/core/tests/Drupal/KernelTests/Core/Theme/TwigEnvironmentTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",53,MAJOR
-drupal/core/lib/Drupal/Core/Menu/MenuTreeStorage.php,Review the data-flow - use of uninitialized value.,1005,MAJOR
-drupal/core/lib/Drupal/Core/Site/Settings.php,"Either remove this useless object instantiation of class ""Settings"" or use it",142,MAJOR
-drupal/core/modules/simpletest/src/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",248,MAJOR
-drupal/core/modules/quickedit/js/views/EntityToolbarView.js,"TypeError can be thrown as ""topMostField"" might be null or undefined here.",157,MAJOR
-drupal/core/tests/Drupal/Tests/Core/Access/CsrfTokenGeneratorTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",58,MAJOR
-drupal/core/modules/system/tests/src/Kernel/PhpStorage/PhpStorageFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",103,MAJOR
-drupal/core/includes/install.inc,"Either remove this useless object instantiation of class ""Settings"" or use it",349,MAJOR
-drupal/core/modules/views/tests/src/Unit/ViewsDataTest.php,"Identical sub-expressions on both sides of operator ""<=""",166,MAJOR
-drupal/core/lib/Drupal/Core/Form/form.api.php,Review the data-flow - use of uninitialized value.,78,MAJOR
-drupal/core/lib/Drupal/Core/Form/form.api.php,Review the data-flow - use of uninitialized value.,79,MAJOR
-drupal/core/modules/quickedit/js/models/BaseModel.js,"TypeError can be thrown as ""key"" might be null or undefined here.",18,MAJOR
-drupal/core/modules/system/tests/modules/error_test/src/Controller/ErrorTestController.php,Review the data-flow - use of uninitialized value.,47,MAJOR
-drupal/core/modules/file/tests/src/Kernel/SaveTest.php,"Identical sub-expressions on both sides of operator "">=""",48,MAJOR
-drupal/core/modules/simpletest/src/TestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",1275,MAJOR
-drupal/core/modules/simpletest/src/TestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",1366,MAJOR
-drupal/core/modules/views/src/Plugin/views/argument_validator/None.php,Review the data-flow - use of uninitialized value.,26,MAJOR
-drupal/core/modules/views/src/Plugin/views/relationship/EntityReverse.php,Review the data-flow - use of uninitialized value.,66,MAJOR
-drupal/core/modules/views/src/Plugin/views/filter/Combine.php,"Identical sub-expressions on both sides of operator ""&&""",74,MAJOR
-drupal/core/misc/ajax.js,Correct this loop's end condition as to not be invariant.,637,BLOCKER
-drupal/core/modules/simpletest/src/Tests/SimpleTestTest.php,"The return value of ""array_key_exists"" must be used.",225,MAJOR
+File,Message,Line,Severity,Rule
+drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""PathSubscriber"" or use it",112,MAJOR,php:S1848
+drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""PathProcessorAlias"" or use it",129,MAJOR,php:S1848
+drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""CoreAliasManager"" or use it",146,MAJOR,php:S1848
+drupal/core/modules/path_alias/tests/src/Unit/DeprecatedClassesTest.php,"Either remove this useless object instantiation of class ""CoreAliasWhitelist"" or use it",163,MAJOR,php:S1848
+drupal/core/themes/claro/js/tabledrag.js,"TypeError can be thrown as ""_ret"" might be null or undefined here.",594,MAJOR,javascript:S2259
+drupal/core/modules/media/tests/fixtures/oembed/video_vimeo-no-title.html,Add a <title> tag to this page.,3,MAJOR,Web:PageWithoutTitleCheck
+drupal/core/modules/field/src/Plugin/migrate/process/d7/FieldInstanceOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,31,MAJOR,php:S3923
+drupal/core/modules/field/src/Plugin/migrate/process/d7/FieldOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,33,MAJOR,php:S3923
+drupal/core/tests/Drupal/Tests/Core/Controller/AjaxRendererTest.php,"Either remove this useless object instantiation of class ""AjaxRenderer"" or use it",98,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Controller/DialogRendererTest.php,"Either remove this useless object instantiation of class ""DialogRenderer"" or use it",28,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Config/FileStorageFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",34,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Cache/BackendChainImplementationUnitTest.php,"Either remove this useless object instantiation of class ""BackendChain"" or use it",310,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Entity/FieldableEntityDefinitionUpdateTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",795,MAJOR,php:S1848
+drupal/core/modules/jsonapi/src/Controller/EntityResource.php,"The return value of ""array_reduce"" must be used.",335,MAJOR,php:S2201
+drupal/core/modules/jsonapi/tests/src/Unit/Query/EntityConditionGroupTest.php,"Either remove this useless object instantiation of class ""EntityConditionGroup"" or use it",36,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Component/Plugin/ConfigurablePluginInterfaceTest.php,"Either remove this useless object instantiation of class ""ConfigurablePluginInterfaceTestClass"" or use it",23,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Entity/FieldableEntityDefinitionUpdateTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",117,MAJOR,php:S1848
+drupal/core/modules/views/tests/src/Kernel/ViewElementTest.php,"The return value of ""serialize"" must be used.",86,MAJOR,php:S2201
+drupal/core/modules/layout_builder/tests/src/Unit/SectionStorageManagerTest.php,"Either remove this useless object instantiation of class ""SectionStorageManager"" or use it",102,MAJOR,php:S1848
+drupal/core/modules/media/tests/fixtures/oembed/video_youtube.html,Add a <title> tag to this page.,3,MAJOR,Web:PageWithoutTitleCheck
+drupal/core/tests/Drupal/KernelTests/Core/Extension/ThemeEngineExtensionListTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",20,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Extension/ThemeExtensionListTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",20,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Config/StorageComparerTest.php,"Either remove this useless object instantiation of class ""StorageComparer"" or use it",247,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php,"Either remove this useless object instantiation of class ""Email"" or use it",24,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php,"Either remove this useless object instantiation of class ""EntityReference"" or use it",33,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php,"Either remove this useless object instantiation of class ""NumberField"" or use it",42,MAJOR,php:S1848
+drupal/core/lib/Drupal/Core/PathProcessor/PathProcessorFront.php,"The return value of ""array_replace"" must be used.",52,MAJOR,php:S2201
+drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldInstanceOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,31,MAJOR,php:S3923
+drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldOptionTranslation.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,33,MAJOR,php:S3923
+drupal/core/modules/ckeditor/js/ckeditor.es6.js,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed.",203,MAJOR,javascript:S2583
+drupal/core/modules/views_ui/js/views-admin.es6.js,"TypeError can be thrown as ""$currentEmptyRow"" might be null or undefined here.",1098,MAJOR,javascript:S2259
+drupal/core/modules/system/tests/src/Functional/System/PageTitleTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",127,MAJOR,php:S1848
+drupal/core/modules/media/tests/fixtures/oembed/photo_flickr.html,Add a <title> tag to this page.,3,MAJOR,Web:PageWithoutTitleCheck
+drupal/core/modules/media/tests/fixtures/oembed/video_collegehumor.html,Add a <title> tag to this page.,3,MAJOR,Web:PageWithoutTitleCheck
+drupal/core/modules/media/tests/fixtures/oembed/video_vimeo.html,Add a <title> tag to this page.,3,MAJOR,Web:PageWithoutTitleCheck
+drupal/core/modules/system/tests/modules/hold_test/src/EventSubscriber/HoldTestSubscriber.php,Remove this use of the output from usleep; usleep doesn't return anything.,40,MAJOR,php:S3699
+drupal/core/tests/Drupal/Tests/Core/Config/Entity/ConfigEntityTypeTest.php,"Either remove this useless object instantiation of class ""ConfigEntityType"" or use it",104,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/DrupalKernel/DiscoverServiceProvidersTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",22,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Controller/FormControllerTest.php,"Either remove this useless object instantiation of class ""HtmlFormController"" or use it",30,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Menu/LocalActionManagerTest.php,"Either remove this useless object instantiation of class ""LocalTaskManager"" or use it",405,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Menu/LocalTaskManagerTest.php,"Either remove this useless object instantiation of class ""LocalTaskManager"" or use it",270,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Component/Render/FormattableMarkupKernelTest.php,"Either remove this useless object instantiation of class ""FormattableMarkup"" or use it",118,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Config/Entity/ConfigEntityUpdaterTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",39,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Config/Entity/ConfigEntityUpdaterTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",92,MAJOR,php:S1848
+drupal/core/modules/book/tests/src/Kernel/Plugin/migrate/source/BookTest.php,"Either remove this useless object instantiation of class ""D6Book"" or use it",91,MAJOR,php:S1848
+drupal/core/misc/tabledrag.js,"TypeError can be thrown as ""_ret"" might be null or undefined here.",582,MAJOR,javascript:S2259
+drupal/core/modules/ckeditor/js/ckeditor.js,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed.",107,MAJOR,javascript:S2583
+drupal/core/lib/Drupal/Core/Test/FunctionalTestSetupTrait.php,"Either remove this useless object instantiation of class ""Settings"" or use it",672,MAJOR,php:S1848
+drupal/core/modules/views/tests/src/Kernel/ViewExecutableTest.php,"The return value of ""unserialize"" must be used.",520,MAJOR,php:S2201
+drupal/core/assets/vendor/jquery-joyride/jquery.joyride-2.1.js,"Do not use ""undefined"" to declare a parameter - use another name.",11,MAJOR,javascript:S2137
+drupal/core/tests/Drupal/Tests/Core/EntityReferenceSelection/EntityReferenceSelectionUnitTest.php,"Either remove this useless object instantiation of class ""TestSelectionWithInvalidDefaultConfiguration"" or use it",27,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/EntityReferenceSelection/EntityReferenceSelectionUnitTest.php,"Either remove this useless object instantiation of class ""TestSelection"" or use it",43,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/EntityReferenceSelection/EntityReferenceSelectionUnitTest.php,"Either remove this useless object instantiation of class ""TestSelection"" or use it",197,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Form/FormCacheTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",110,MAJOR,php:S1848
+drupal/core/misc/ajax.es6.js,Correct this loop's end condition as to not be invariant.,1559,BLOCKER,javascript:S2189
+drupal/core/modules/quickedit/js/views/EntityToolbarView.es6.js,"TypeError can be thrown as ""topMostField"" might be null or undefined here.",284,MAJOR,javascript:S2259
+drupal/core/tests/Drupal/KernelTests/Core/Entity/ContentEntityCloneTest.php,"The return value of ""serialize"" must be used.",245,MAJOR,php:S2201
+drupal/core/tests/Drupal/KernelTests/Core/Entity/ContentEntityCloneTest.php,"The return value of ""serialize"" must be used.",246,MAJOR,php:S2201
+drupal/core/lib/Drupal/Core/Test/TestRunnerKernel.php,"Either remove this useless object instantiation of class ""Settings"" or use it",52,MAJOR,php:S1848
+drupal/core/modules/node/src/NodeListBuilder.php,Review the data-flow - use of uninitialized value.,101,MAJOR,php:S836
+drupal/core/modules/simpletest/src/TestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",1182,MAJOR,php:S1848
+drupal/core/modules/views/tests/src/Kernel/ModuleTest.php,Remove this unreachable code.,86,MAJOR,php:S1763
+drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",653,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Access/CsrfTokenGeneratorTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",206,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Session/PermissionsHashGeneratorTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",78,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Test/TestDatabaseTest.php,"Either remove this useless object instantiation of class ""TestDatabase"" or use it",23,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Serialization/YamlTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",23,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Serialization/YamlTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",36,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",308,MAJOR,php:S1848
+drupal/core/modules/file/tests/src/Functional/FileFieldAnonymousSubmissionTest.php,Remove this conditional structure or edit its code blocks so that they're not all the same.,142,MAJOR,php:S3923
+drupal/core/tests/Drupal/Tests/Core/Annotation/PluralTranslationTest.php,"Either remove this useless object instantiation of class ""PluralTranslation"" or use it",55,MAJOR,php:S1848
+drupal/core/modules/system/tests/src/Functional/System/SitesDirectoryHardeningTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",56,MAJOR,php:S1848
+drupal/core/modules/system/tests/src/Functional/System/SitesDirectoryHardeningTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",74,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/Theme/TwigMarkupInterfaceTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",72,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/StringTranslation/TranslatableMarkupTest.php,"Either remove this useless object instantiation of class ""TranslatableMarkup"" or use it",91,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/StringTranslation/TranslatableMarkupTest.php,"Either remove this useless object instantiation of class ""TranslatableMarkup"" or use it",101,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/Core/StringTranslation/TranslationStringTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",66,MAJOR,php:S1848
+drupal/core/tests/Drupal/FunctionalTests/Update/UpdatePathTestBaseTest.php,"The return value of ""unserialize"" must be used.",55,MAJOR,php:S2201
+drupal/core/tests/Drupal/Tests/Core/Update/UpdateRegistryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",30,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/DependencyInjection/ContainerBuilderTest.php,"The return value of ""serialize"" must be used.",121,MAJOR,php:S2201
+drupal/core/modules/system/tests/src/Kernel/PhpStorage/PhpStorageFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",29,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",281,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",386,MAJOR,php:S1848
+drupal/core/tests/Drupal/KernelTests/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",923,MAJOR,php:S1848
+drupal/core/lib/Drupal/Core/Extension/module.api.php,Review the data-flow - use of uninitialized value.,631,MAJOR,php:S836
+drupal/core/tests/Drupal/Tests/Core/Http/ClientFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",42,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Http/ClientFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",45,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/DependencyInjection/ContainerTest.php,"The return value of ""serialize"" must be used.",21,MAJOR,php:S2201
+drupal/core/assets/vendor/jquery/jquery.js,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?",7540,MAJOR,javascript:S3403
+drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_mapping_url.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR,javascript:S905
+drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_mapping_url_old.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR,javascript:S905
+drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_url.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR,javascript:S905
+drupal/core/tests/Drupal/Tests/Core/Asset/js_test_files/source_url_old.min.js.optimized.js,Refactor or remove this statement.,1,MAJOR,javascript:S905
+drupal/core/tests/Drupal/Tests/Core/DrupalKernel/DiscoverServiceProvidersTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",47,MAJOR,php:S1848
+drupal/core/tests/Drupal/Tests/Core/Site/SettingsTest.php,"The return value of ""serialize"" must be used.",115,MAJOR,php:S2201
+drupal/core/tests/Drupal/KernelTests/Core/Theme/TwigEnvironmentTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",53,MAJOR,php:S1848
+drupal/core/lib/Drupal/Core/Menu/MenuTreeStorage.php,Review the data-flow - use of uninitialized value.,1005,MAJOR,php:S836
+drupal/core/lib/Drupal/Core/Site/Settings.php,"Either remove this useless object instantiation of class ""Settings"" or use it",142,MAJOR,php:S1848
+drupal/core/modules/simpletest/src/KernelTestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",248,MAJOR,php:S1848
+drupal/core/modules/quickedit/js/views/EntityToolbarView.js,"TypeError can be thrown as ""topMostField"" might be null or undefined here.",157,MAJOR,javascript:S2259
+drupal/core/tests/Drupal/Tests/Core/Access/CsrfTokenGeneratorTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",58,MAJOR,php:S1848
+drupal/core/modules/system/tests/src/Kernel/PhpStorage/PhpStorageFactoryTest.php,"Either remove this useless object instantiation of class ""Settings"" or use it",103,MAJOR,php:S1848
+drupal/core/includes/install.inc,"Either remove this useless object instantiation of class ""Settings"" or use it",349,MAJOR,php:S1848
+drupal/core/modules/views/tests/src/Unit/ViewsDataTest.php,"Identical sub-expressions on both sides of operator ""<=""",166,MAJOR,php:S1764
+drupal/core/lib/Drupal/Core/Form/form.api.php,Review the data-flow - use of uninitialized value.,78,MAJOR,php:S836
+drupal/core/lib/Drupal/Core/Form/form.api.php,Review the data-flow - use of uninitialized value.,79,MAJOR,php:S836
+drupal/core/modules/quickedit/js/models/BaseModel.js,"TypeError can be thrown as ""key"" might be null or undefined here.",18,MAJOR,javascript:S2259
+drupal/core/modules/system/tests/modules/error_test/src/Controller/ErrorTestController.php,Review the data-flow - use of uninitialized value.,47,MAJOR,php:S836
+drupal/core/modules/file/tests/src/Kernel/SaveTest.php,"Identical sub-expressions on both sides of operator "">=""",48,MAJOR,php:S1764
+drupal/core/modules/simpletest/src/TestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",1275,MAJOR,php:S1848
+drupal/core/modules/simpletest/src/TestBase.php,"Either remove this useless object instantiation of class ""Settings"" or use it",1366,MAJOR,php:S1848
+drupal/core/modules/views/src/Plugin/views/argument_validator/None.php,Review the data-flow - use of uninitialized value.,26,MAJOR,php:S836
+drupal/core/modules/views/src/Plugin/views/relationship/EntityReverse.php,Review the data-flow - use of uninitialized value.,66,MAJOR,php:S836
+drupal/core/modules/views/src/Plugin/views/filter/Combine.php,"Identical sub-expressions on both sides of operator ""&&""",74,MAJOR,php:S1764
+drupal/core/misc/ajax.js,Correct this loop's end condition as to not be invariant.,637,BLOCKER,javascript:S2189
+drupal/core/modules/simpletest/src/Tests/SimpleTestTest.php,"The return value of ""array_key_exists"" must be used.",225,MAJOR,php:S2201
