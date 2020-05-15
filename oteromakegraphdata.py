@@ -50,8 +50,9 @@ def get_auths_from_csv(CSV, cwd, repoBashPath, errorType, outputFile):
             fileBashPath = cwdBash + '/' + row[0] # bashformatted path to file
             badLine = row[2] # line of file with flaw
             description = row[1] # description of flaw
+            errorRule = row[4] # TODO subsititute rule with desc
             # calls AuthorFinder.sh to find author of vulnerable code snippits
-            subprocess.run([script, repoBashPath, fileBashPath, badLine, errorType, description, outputFile], shell=True)
+            subprocess.run([script, repoBashPath, fileBashPath, badLine, errorType, errorRule, outputFile], shell=True)
 
 # connects authors that have contributed to the same file
 def connect_coworkers(inputFiles, outputFile):
