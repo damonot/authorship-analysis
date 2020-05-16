@@ -161,23 +161,23 @@ def runner(repoAddress):
         
 
         # Vulnerablity Analysis    
-        vulnCSV = 'xl_data\otero-'+folderName+'-vuln.csv' # formerly authVulnInput
-        authorVulnFilesOutput='text_data/otero-'+folderName+'-auth2vuln.txt' # file output by bash
+        vulnCSV = 'raw_data\otero-'+folderName+'-vuln.csv' # formerly authVulnInput
+        authorVulnFilesOutput='text_data\otero-'+folderName+'-auth2vuln.txt' # file output by bash
         response = input('Perform Auth2Vuln Analysis? [y]/n\n')
         if(response == 'y'):
             analyze_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
             
         
         # Bug Analysis       
-        bugCSV ='xl_data\otero-'+folderName+'-bug.csv' # formerly authorBugInput
-        authorBuggyFilesOutput='text_data/otero-'+folderName+'-auth2bug.txt' # file output by bash
+        bugCSV ='raw_data\otero-'+folderName+'-bug.csv' # formerly authorBugInput
+        authorBuggyFilesOutput='text_data\otero-'+folderName+'-auth2bug.txt' # file output by bash
         response = input('Perform Auth2Bug Analysis? [y]/n\n')
         if(response == 'y'):
             analyze_auth(bugCSV, authorBuggyFilesOutput, cwd, repoBashPath, "bug")
        
         # Merge vulnFiles with buggyFiles
         fileList = [authorVulnFilesOutput, authorBuggyFilesOutput]  
-        auth2flawedFiles = 'text_data/otero-'+folderName+'-auth2flawedFiles.txt'
+        auth2flawedFiles = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
         merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
         
         #auth2Flaw Analysis
@@ -198,7 +198,7 @@ def runner(repoAddress):
         
         # Auth-Auth Analysis
         print('\nStarting Coworker Analysis...', end = '')
-        coworkersOutput = 'text_data/otero-'+folderName+'-coworkers.txt'
+        coworkersOutput = 'text_data\otero-'+folderName+'-coworkers.txt'
         connect_coworkers(auth2flawedFiles, coworkersOutput)        
         columnTypes = ['person', 'person'] # left column type, right column type
         response = input("Generate Author-Author Lynsoft XLSX for "+folderName+"? [y]/n\n")
@@ -209,7 +209,7 @@ def runner(repoAddress):
         
         # File-File Analysis
         print('\nStarting File-Connectivity Analysis...', end = '')
-        flawedFilesOutput = 'text_data/otero-'+folderName+'-flawedFiles.txt' 
+        flawedFilesOutput = 'text_data\otero-'+folderName+'-flawedFiles.txt' 
         connect_flawedFiles(auth2flawedFiles, flawedFilesOutput) # auth2files input -> file2file output
         columnTypes = ['document', 'document'] # left column type, right column type
         response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
