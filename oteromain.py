@@ -11,8 +11,6 @@ import oteroreplace as repc
 def main():
     print('start')    
 
-    repc.runner()
-    quit()
 
     repos = [ 'https://github.com/phpmyadmin/phpmyadmin',
              'https://github.com/drupal/drupal',

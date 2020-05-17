@@ -27,11 +27,8 @@ def runner(repo):
 
     bugvulnfile = 'otero-'+repo+'-auth2flawedFiles.txt' # raw complete file
     folder = os.getcwd() + '\\text_data\\'
-    path = folder + bugvulnfile
-    
+    path = folder + bugvulnfile    
 
-    #TODO fix BFIAF so it includes error types
-    #TODO fix BFIAF so "type errors" are grouped together
     # bf*iaf bug uniqueness distribution for each author
     response = input('Bug-Frequency * Inverse Author Frequency? [y]/n\n')
     if(response == 'y'):
