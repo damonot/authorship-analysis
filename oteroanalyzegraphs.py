@@ -12,9 +12,9 @@ from openpyxl import load_workbook
 
 def runner(repo):
     cwd = os.getcwd()
-    auth2flawsXL = cwd + '\\oterolynks-'+repo+'-auth2flaws.xlsx'
-    auth2filesXL = cwd + '\\oterolynks-'+repo+'-auth2flawedFiles.xlsx'
-    coworkersXL = cwd + '\\oterolynks-'+repo+'-coworkers.xlsx'
+    auth2flawsXL = cwd + '\lynks\oterolynks-'+repo+'-auth2flaws.xlsx'
+    auth2filesXL = cwd + '\lynks\oterolynks-'+repo+'-auth2flawedFiles.xlsx'
+    coworkersXL = cwd + '\lynks\oterolynks-'+repo+'-coworkers.xlsx'
     
     excelList = [auth2flawsXL, auth2filesXL, coworkersXL]
     
@@ -24,17 +24,55 @@ def runner(repo):
             gen_degreeCentrality(xl, repo)
             print('\n')
 
-
-    bugvulnfile = 'otero-'+repo+'-auth2flawedFiles.txt' # raw complete file
-    folder = os.getcwd() + '\\text_data\\'
-    path = folder + bugvulnfile    
+    bugvulnfolder = os.getcwd() + "\\text_data\\"
+    bugvulnfile = 'otero-'+repo+'-auth2flawedFiles.txt'
+    path = bugvulnfolder + bugvulnfile    
 
     # bf*iaf bug uniqueness distribution for each author
     response = input('Bug-Frequency * Inverse Author Frequency? [y]/n\n')
     if(response == 'y'):
-        bf_iaf(path, repo)
-    
-        
+        bfiaf = bf_iaf(path, repo)
+        bfiaf2excel(bfiaf, repo)
+
+
+def bfiaf2excel(bfiaf, repo):
+    '''structure is...
+    list: tups
+        tup: author, dict
+            dict: bug, freq '''
+    '''
+    Bugs    | Auth1 | Auth 2 | Authi |
+    java:003| 1.4   | 9.2    | 0     |
+    '''        
+    #print(bfiaf)
+    folder = "xl_data\\"
+    xlname = folder + "otero-bfiaf.xlsx"
+    book = xlsxwriter.Workbook(xlname)
+    sheet = book.add_worksheet(repo)
+
+    # generate column headers
+    sheet.write(0,0, "Bug_Rule")
+    col = 1; row = 0
+    for tups in bfiaf:
+        #print(tups[0])
+        sheet.write(row, col, tups[0])
+        col+=1
+
+    # generate row headers
+    rules = []
+    for tups in bfiaf:
+        for rule in tups[1]:
+            cleanRule = (rule.replace('\n', ''))
+            if(cleanRule not in rules):
+                rules.append(cleanRule)
+    print(rules)
+    col = 0; row = 1;
+    for rule in rules:
+        sheet.write(row,col, rule)
+        row+=1
+
+    book.close()
+
 #bug-frequency2inverseauthorfrequency
 def bf_iaf(txt, repo):
 
@@ -43,8 +81,8 @@ def bf_iaf(txt, repo):
     bugLines = []
     with open(txt, encoding='utf-8') as t:
         for line in t:
-            fields = line.split(' \t ') # 0auth | 1file | 2flawtype | 3line | 4info |
-            if(fields[2] == 'bug'): # is a bug?
+            fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
+            if(fields[2] == ' bug  '): # is a bug? weird formatting, work with it
                 bugLines.append(fields) # copy necessary lines into list
                 bug = fields[4]
                 auth = fields[0]
