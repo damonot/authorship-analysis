@@ -181,7 +181,7 @@ def runner(repoAddress):
         merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
         
         #auth2Flaw Analysis
-        response = input('Connect Authors To Flaws & Generate XLSX? [y]/n\n...')
+        response = input('Connect Authors To Flaws & Generate Lynksoft XLSX? [y]/n\n...')
         columnTypes = ['person', 'flag']
         XLSXoutput = 'xl_data\oterolynks-'+folderName+'-auth2flaws.xlsx'
         if(response == 'y'):
