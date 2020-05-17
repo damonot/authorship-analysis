@@ -1,361 +1,361 @@
-Shamim_Rezaie 	 /moodle/lib/babel-polyfill/polyfill.js 	 bug 	 3497 	 The return value of "from" must be used.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 264 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 340 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 512 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 1060 	 TypeError can be thrown as "c" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 1130 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 1275 	 TypeError can be thrown as "args" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 1877 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 1889 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 1970 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2003 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2058 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2114 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2137 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2241 	 TypeError can be thrown as "c" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2305 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2372 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2434 	 TypeError can be thrown as "window" might be null or undefined here.
-Shamim_Rezaie 	 /moodle/lib/amd/src/adapter.js 	 bug 	 2557 	 TypeError can be thrown as "window" might be null or undefined here.
-Bas_Brands 	 /moodle/lib/editor/atto/plugins/h5p/yui/build/moodle-atto_h5p-button/moodle-atto_h5p-button-debug.js 	 bug 	 534 	 TypeError can be thrown as "h5pfile" might be null or undefined here.
-Bas_Brands 	 /moodle/lib/editor/atto/plugins/h5p/yui/build/moodle-atto_h5p-button/moodle-atto_h5p-button.js 	 bug 	 534 	 TypeError can be thrown as "h5pfile" might be null or undefined here.
-Bas_Brands 	 /moodle/lib/editor/atto/plugins/h5p/yui/src/button/js/button.js 	 bug 	 532 	 TypeError can be thrown as "h5pfile" might be null or undefined here.
-Andrew_Nicols 	 /moodle/grade/grading/form/lib.php 	 bug 	 556 	 Review the data-flow - use of uninitialized value.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 6 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 12 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 13 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 14 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 18 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 67 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 75 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 75 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 75 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 75 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 79 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 79 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 79 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 79 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 99 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 99 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 101 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 101 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 101 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 106 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/doc/spec_en.html 	 bug 	 106 	 Replace this <i> tag by <em>.
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-content-upgrade-process.js 	 bug 	 118 	 Was "+=" meant instead?
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-version.js 	 bug 	 14 	 Was "+=" meant instead?
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-version.js 	 bug 	 15 	 Was "+=" meant instead?
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-version.js 	 bug 	 20 	 Was "+=" meant instead?
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-version.js 	 bug 	 21 	 Was "+=" meant instead?
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-version.js 	 bug 	 24 	 Was "+=" meant instead?
-Amaia_Anabitarte 	 /moodle/lib/h5p/js/h5p-version.js 	 bug 	 25 	 Was "+=" meant instead?
-Tim_Hunt 	 /moodle/mod/quiz/tests/behat/behat_mod_quiz.php 	 bug 	 54 	 Remove this conditional structure or edit its code blocks so that they're not all the same.
-Damyon_Wiese 	 /moodle/calendar/lib.php 	 bug 	 2224 	 Remove this unreachable code.
-Matt_Porritt 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 7399 	 Fix this expression; length of "value" is always greater or equal to zero.
-Matt_Porritt 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 7506 	 TypeError can be thrown as "object" might be null or undefined here.
-Tom_Dickman 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 5004 	 TypeError can be thrown as this operand might have primitive type.
-Tom_Dickman 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 5236 	 TypeError can be thrown as this operand might have primitive type.
-Tom_Dickman 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 21718 	 TypeError can be thrown as "descriptor" might be null or undefined here.
-Matt_Porritt 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 35884 	 TypeError can be thrown as "lastMatchedSample" might be null or undefined here.
-Matt_Porritt 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 38122 	 Remove this "throw" statement from this "finally" block.
-Tom_Dickman 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 51629 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
-Tom_Dickman 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 51665 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
-David_Monllaó 	 /moodle/analytics/classes/calculation_info.php 	 bug 	 147 	 Review the data-flow - use of uninitialized value.
-Ryan_Wyllie 	 /moodle/lib/babel-polyfill/polyfill.js 	 bug 	 585 	 TypeError can be thrown as "result" might be null or undefined here.
-Ryan_Wyllie 	 /moodle/lib/babel-polyfill/polyfill.js 	 bug 	 3063 	 Do not use "Infinity" to declare a variable - use another name.
-Ryan_Wyllie 	 /moodle/lib/babel-polyfill/polyfill.js 	 bug 	 3772 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Ryan_Wyllie 	 /moodle/lib/babel-polyfill/polyfill.js 	 bug 	 3772 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Ryan_Wyllie 	 /moodle/lib/babel-polyfill/polyfill.js 	 bug 	 6485 	 Do not use "undefined" to declare a variable - use another name.
-Ryan_Wyllie 	 /moodle/message/amd/src/message_drawer_view_conversation_patcher.js 	 bug 	 193 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Ryan_Wyllie 	 /moodle/message/amd/src/message_drawer_view_conversation_patcher.js 	 bug 	 194 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/enrol/database/tests/sync_test.php 	 bug 	 104 	 Review the data-flow - use of uninitialized value.
-Damyon_Wiese 	 /moodle/badges/classes/badge.php 	 bug 	 254 	 Remove this unreachable code.
-Damyon_Wiese 	 /moodle/badges/classes/badge.php 	 bug 	 311 	 Remove this unreachable code.
-Marina_Glancy 	 /moodle/lib/form/course.php 	 bug 	 108 	 Review the data-flow - use of uninitialized value.
-Andrew_Nicols 	 /moodle/mod/forum/classes/local/exporters/group.php 	 bug 	 91 	 Review the data-flow - use of uninitialized value.
-Andrew_Nicols 	 /moodle/mod/forum/classes/local/exporters/group.php 	 bug 	 93 	 Review the data-flow - use of uninitialized value.
-Andrew_Nicols 	 /moodle/mod/forum/deprecatedlib.php 	 bug 	 1638 	 Review the data-flow - use of uninitialized value.
-Brendan_Heywood 	 /moodle/lib/setuplib.php 	 bug 	 1845 	 Remove or correct this useless self-assignment
-Mark_Nelson 	 /moodle/message/amd/src/message_drawer_router.js 	 bug 	 158 	 TypeError can be thrown as "firstFocusable" might be null or undefined here.
-sam_marshall 	 /moodle/lib/tests/behat/app_behat_runtime.js 	 bug 	 623 	 This expression might have a value which cannot be called; it might not be a function.
-Damyon_Wiese 	 /moodle/mod/assign/locallib.php 	 bug 	 9276 	 Review the data-flow - use of uninitialized value.
-Ryan_Wyllie 	 /moodle/message/amd/src/message_drawer_view_conversation.js 	 bug 	 346 	 TypeError can be thrown as "otherUser" might be null or undefined here.
-Ryan_Wyllie 	 /moodle/message/amd/src/message_drawer_view_conversation.js 	 bug 	 1949 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Andrew_Nicols 	 /moodle/lib/accesslib.php 	 bug 	 6316 	 Remove this unreachable code.
-Damyon_Wiese 	 /moodle/backup/util/ui/classes/privacy/provider.php 	 bug 	 323 	 Review the data-flow - use of uninitialized value.
-Mihail_Geshoski 	 /moodle/notes/tests/privacy_test.php 	 bug 	 407 	 Review the data-flow - use of uninitialized value.
-Mihail_Geshoski 	 /moodle/notes/tests/privacy_test.php 	 bug 	 409 	 Review the data-flow - use of uninitialized value.
-Mihail_Geshoski 	 /moodle/notes/tests/privacy_test.php 	 bug 	 425 	 Review the data-flow - use of uninitialized value.
-Mihail_Geshoski 	 /moodle/notes/tests/privacy_test.php 	 bug 	 484 	 Review the data-flow - use of uninitialized value.
-Mihail_Geshoski 	 /moodle/notes/tests/privacy_test.php 	 bug 	 486 	 Review the data-flow - use of uninitialized value.
-Mihail_Geshoski 	 /moodle/notes/tests/privacy_test.php 	 bug 	 489 	 Review the data-flow - use of uninitialized value.
-Andrew_Nicols 	 /moodle/admin/tool/dataprivacy/classes/expiry_info.php 	 bug 	 199 	 The return value of "array_merge" must be used.
-Andrew_Nicols 	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php 	 bug 	 444 	 Either remove this useless object instantiation of class "expired_context" or use it
-Andrew_Nicols 	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php 	 bug 	 484 	 Either remove this useless object instantiation of class "expired_context" or use it
-Andrew_Nicols 	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php 	 bug 	 1358 	 Either remove this useless object instantiation of class "expired_context" or use it
-Andrew_Nicols 	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php 	 bug 	 1517 	 Either remove this useless object instantiation of class "expired_context" or use it
-Andrew_Nicols 	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php 	 bug 	 1569 	 Either remove this useless object instantiation of class "expired_context" or use it
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js 	 bug 	 498 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js 	 bug 	 3048 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js 	 bug 	 4171 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js 	 bug 	 4726 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js 	 bug 	 498 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js 	 bug 	 3048 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js 	 bug 	 4171 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js 	 bug 	 4726 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-codemirror/moodle-atto_html-codemirror-debug.js 	 bug 	 6161 	 TypeError can be thrown as "lines" might be null or undefined here.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-codemirror/moodle-atto_html-codemirror.js 	 bug 	 6161 	 TypeError can be thrown as "lines" might be null or undefined here.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-css.js 	 bug 	 203 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-html.js 	 bug 	 278 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-html.js 	 bug 	 833 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify.js 	 bug 	 480 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Nicols 	 /moodle/lib/editor/atto/plugins/html/yui/src/codemirror/js/codemirror.js 	 bug 	 6157 	 TypeError can be thrown as "lines" might be null or undefined here.
-Frédéric_Massart 	 /moodle/competency/tests/privacy_test.php 	 bug 	 2598 	 Review the data-flow - use of uninitialized value.
-Frédéric_Massart 	 /moodle/badges/tests/privacy_test.php 	 bug 	 784 	 Remove or correct this useless self-assignment
-Marina_Glancy 	 /moodle/admin/tool/policy/classes/output/acceptances.php 	 bug 	 89 	 Remove or correct this useless self-assignment
-Marina_Glancy 	 /moodle/admin/tool/policy/classes/output/acceptances.php 	 bug 	 90 	 Remove or correct this useless self-assignment
-Andrew_Nicols 	 /moodle/calendar/lib.php 	 bug 	 2735 	 Remove or correct this useless self-assignment
-Andrew_Nicols 	 /moodle/calendar/lib.php 	 bug 	 2737 	 Remove or correct this useless self-assignment
-Damyon_Wiese 	 /moodle/lib/requirejs/moodle-config.js 	 bug 	 20 	 Rename or remove duplicate property name '*'.
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php 	 bug 	 42 	 Either remove this useless object instantiation of class "DateTime" or use it
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php 	 bug 	 51 	 Either remove this useless object instantiation of class "DateTime" or use it
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php 	 bug 	 64 	 Either remove this useless object instantiation of class "DateTime" or use it
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php 	 bug 	 76 	 Either remove this useless object instantiation of class "DateTime" or use it
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php 	 bug 	 89 	 Either remove this useless object instantiation of class "DateTime" or use it
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Imap/Client/Socket/Pop3.php 	 bug 	 506 	 Remove this unreachable code.
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Mail/Mbox/Parse.php 	 bug 	 84 	 The return value of "ltrim" must be used.
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Mail/Rfc822/Group.php 	 bug 	 118 	 Review the data-flow - use of uninitialized value.
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Mime/Headers/ContentParam.php 	 bug 	 336 	 The return value of "substr" must be used.
-Juan_Leyva 	 /moodle/mod/workshop/locallib.php 	 bug 	 4628 	 Review the data-flow - use of uninitialized value.
-Simey_Lameze 	 /moodle/lib/amd/src/chartjs-lazy.js 	 bug 	 3807 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Simey_Lameze 	 /moodle/lib/amd/src/chartjs-lazy.js 	 bug 	 3807 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
-Simey_Lameze 	 /moodle/lib/amd/src/chartjs-lazy.js 	 bug 	 13001 	 Remove or correct this useless self-assignment.
-Ankit_Agarwal 	 /moodle/lib/markdown/Markdown.php 	 bug 	 797 	 Add an "alt" attribute to this image.
-Ankit_Agarwal 	 /moodle/lib/markdown/MarkdownExtra.php 	 bug 	 906 	 Add an "alt" attribute to this image.
-David_Mudrák 	 /moodle/lib/flickrclient.php 	 bug 	 155 	 Remove this unreachable code.
-Juan_Leyva 	 /moodle/mod/workshop/locallib.php 	 bug 	 2971 	 Identical sub-expressions on both sides of operator "or"
-Juan_Leyva 	 /moodle/mod/workshop/locallib.php 	 bug 	 2971 	 Identical sub-expressions on both sides of operator "!="
-David_Monllao 	 /moodle/lib/mlbackend/php/classes/processor.php 	 bug 	 261 	 Review the data-flow - use of uninitialized value.
-Cameron_Ball 	 /moodle/calendar/tests/event_mapper_test.php 	 bug 	 410 	 Review the data-flow - use of uninitialized value.
-Marina_Glancy 	 /moodle/lib/classes/user.php 	 bug 	 1107 	 Remove this unreachable code.
-gthomas2 	 /moodle/lib/tests/behat/behat_navigation.php 	 bug 	 519 	 Review the data-flow - use of uninitialized value.
-Andrew_Nicols 	 /moodle/lib/filestorage/tests/file_system_filedir_test.php 	 bug 	 159 	 Either remove this useless object instantiation of class "file_system_filedir" or use it
-Andrew_Nicols 	 /moodle/lib/filestorage/tests/file_system_filedir_test.php 	 bug 	 183 	 Either remove this useless object instantiation of class "file_system_filedir" or use it
-Andrew_Nicols 	 /moodle/lib/filestorage/tests/file_system_filedir_test.php 	 bug 	 196 	 Either remove this useless object instantiation of class "file_system_filedir" or use it
-Tom_Dickman 	 /moodle/media/player/videojs/amd/src/video-lazy.js 	 bug 	 10253 	 Remove or correct this useless self-assignment.
-Juan_Leyva 	 /moodle/course/lib.php 	 bug 	 4601 	 Remove or correct this useless self-assignment
-Juan_Leyva 	 /moodle/course/lib.php 	 bug 	 4614 	 Remove or correct this useless self-assignment
-Ilya_Tregubov 	 /moodle/mod/assign/override_form.php 	 bug 	 190 	 Review the data-flow - use of uninitialized value.
-Ilya_Tregubov 	 /moodle/mod/assign/override_form.php 	 bug 	 190 	 Review the data-flow - use of uninitialized value.
-Jun_Pataleta 	 /moodle/enrol/lti/tests/tool_provider_test.php 	 bug 	 78 	 Either remove this useless object instantiation of class "tool_provider" or use it
-John_Okely 	 /moodle/lib/ltiprovider/src/ToolProvider/Service/ToolSettings.php 	 bug 	 123 	 This branch duplicates the one on line 121.
-John_Okely 	 /moodle/lib/ltiprovider/src/ToolProvider/ToolProxy.php 	 bug 	 187 	 Review the data-flow - use of uninitialized value.
-Dan_Poltawski 	 /moodle/lib/jquery/ui-1.12.1/jquery-ui.js 	 bug 	 1340 	 Do not use "undefined" to declare a parameter - use another name.
-Dan_Poltawski 	 /moodle/lib/jquery/ui-1.12.1/jquery-ui.js 	 bug 	 11802 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Dan_Poltawski 	 /moodle/lib/jquery/ui-1.12.1/jquery-ui.js 	 bug 	 11924 	 TypeError can be thrown as "outerDimensions" might be null or undefined here.
-Damyon_Wiese 	 /moodle/theme/boost/amd/src/tether.js 	 bug 	 416 	 Remove this "throw" statement from this "finally" block.
-Damyon_Wiese 	 /moodle/theme/boost/amd/src/tether.js 	 bug 	 426 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/theme/boost/amd/src/tether.js 	 bug 	 1286 	 Remove this "throw" statement from this "finally" block.
-Damyon_Wiese 	 /moodle/theme/boost/amd/src/tether.js 	 bug 	 1748 	 Remove this "throw" statement from this "finally" block.
-Mark_Nielsen 	 /moodle/mod/lti/tests/fixtures/tool_provider.php 	 bug 	 26 	 Insert a <!DOCTYPE> declaration to before this <html> tag.
-Marina_Glancy 	 /moodle/mod/feedback/backup/moodle2/restore_feedback_stepslib.php 	 bug 	 89 	 Remove or correct this useless self-assignment
-Marina_Glancy 	 /moodle/mod/feedback/backup/moodle2/restore_feedback_stepslib.php 	 bug 	 108 	 Remove or correct this useless self-assignment
-Frederic_Massart 	 /moodle/competency/tests/external_test.php 	 bug 	 1110 	 The return value of "array" must be used.
-Frederic_Massart 	 /moodle/competency/tests/external_test.php 	 bug 	 1141 	 The return value of "array" must be used.
-Damyon_Wiese 	 /moodle/admin/tool/lp/amd/src/menubar.js 	 bug 	 299 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/admin/tool/lp/amd/src/tree.js 	 bug 	 492 	 Remove this code after the "return" statement.
-Marina_Glancy 	 /moodle/tag/classes/tag.php 	 bug 	 1615 	 The return value of "array_unique" must be used.
-Marina_Glancy 	 /moodle/tag/classes/tag.php 	 bug 	 1688 	 The return value of "array_unique" must be used.
-Damyon_Wiese 	 /moodle/files/converter/unoconv/tests/fixtures/unoconv-source.html 	 bug 	 2 	 Add a <title> tag to this page.
-Brendan_Anderson 	 /moodle/blocks/rss_client/classes/output/renderer.php 	 bug 	 96 	 Remove this unreachable code.
-Frederic_Massart 	 /moodle/mod/glossary/classes/external.php 	 bug 	 233 	 Review the data-flow - use of uninitialized value.
-Marina_Glancy 	 /moodle/lib/adodb/adodb-active-record.inc.php 	 bug 	 194 	 Review the data-flow - use of uninitialized value.
-David_Mudrák 	 /moodle/lib/classes/update/code_manager.php 	 bug 	 443 	 Remove or correct this useless self-assignment
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js 	 bug 	 3832 	 This expression might have a value which cannot be called; it might not be a function.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js 	 bug 	 4637 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js 	 bug 	 5276 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js 	 bug 	 3832 	 This expression might have a value which cannot be called; it might not be a function.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js 	 bug 	 4637 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js 	 bug 	 5276 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js 	 bug 	 247 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js 	 bug 	 886 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js 	 bug 	 3832 	 This expression might have a value which cannot be called; it might not be a function.
-Dan_Poltawski 	 /moodle/lib/amd/src/permissionmanager.js 	 bug 	 195 	 TypeError can be thrown as "existingrolelinks" might be null or undefined here.
-poltawski 	 /moodle/blocks/tag_youtube/block_tag_youtube.php 	 bug 	 220 	 Remove this unreachable code.
-Jean-Michel_Vedrine 	 /moodle/mod/lesson/override_form.php 	 bug 	 174 	 Review the data-flow - use of uninitialized value.
-Jean-Michel_Vedrine 	 /moodle/mod/lesson/override_form.php 	 bug 	 174 	 Review the data-flow - use of uninitialized value.
-Tim_Hunt 	 /moodle/mod/quiz/locallib.php 	 bug 	 196 	 Review the data-flow - use of uninitialized value.
-Rossiani_Wijaya 	 /moodle/mod/lesson/format.php 	 bug 	 636 	 Remove this unreachable code.
-Tim_Hunt 	 /moodle/question/format.php 	 bug 	 812 	 Remove this unreachable code.
-Tim_Hunt 	 /moodle/question/format.php 	 bug 	 1100 	 Remove this unreachable code.
-Frederic_Massart 	 /moodle/lib/google/curlio.php 	 bug 	 153 	 Review the data-flow - use of uninitialized value.
-Colin_Chambers 	 /moodle/mod/quiz/classes/structure.php 	 bug 	 657 	 Remove or correct this useless self-assignment
-Frederic_Massart 	 /moodle/lib/adodb/drivers/adodb-mssqlnative.inc.php 	 bug 	 801 	 Was "!=" meant instead?
-Frederic_Massart 	 /moodle/lib/adodb/drivers/adodb-mssqlnative.inc.php 	 bug 	 812 	 Was "!=" meant instead?
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_static.php 	 bug 	 1297 	 Remove this conditional structure or edit its code blocks so that they're not all the same.
-Andrew_Nicols 	 /moodle/lib/horde/framework/Horde/Stream/Wrapper/Combine.php 	 bug 	 285 	 Remove or correct this useless self-assignment
-Marina_Glancy 	 /moodle/lib/horde/framework/Horde/Util.php 	 bug 	 462 	 Review the data-flow - use of uninitialized value.
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 49 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 55 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 61 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 67 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 73 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 79 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 85 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 91 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 97 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 103 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 110 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 117 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 124 	 Either remove this useless object instantiation of class "tree" or use it
-sam_marshall 	 /moodle/availability/tests/tree_test.php 	 bug 	 131 	 Either remove this useless object instantiation of class "tree" or use it
-nobelium 	 /moodle/mod/scorm/datamodels/sequencinglib.php 	 bug 	 635 	 Review the data-flow - use of uninitialized value.
-Andrew_Nicols 	 /moodle/grade/report/grader/lib.php 	 bug 	 1175 	 Review the data-flow - use of uninitialized value.
-Andrew_Davis 	 /moodle/mod/chat/gui_sockets/index.php 	 bug 	 84 	 Remove this deprecated "frame" element.
-Andrew_Davis 	 /moodle/mod/chat/gui_sockets/index.php 	 bug 	 84 	 Add a "title" attribute to this <frame> tag.
-Andrew_Davis 	 /moodle/mod/chat/gui_sockets/index.php 	 bug 	 87 	 Remove this deprecated "frame" element.
-Andrew_Davis 	 /moodle/mod/chat/gui_sockets/index.php 	 bug 	 87 	 Add a "title" attribute to this <frame> tag.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/align-plugin/align-plugin-debug.js 	 bug 	 18 	 Do not use "undefined" to declare a variable - use another name.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/align-plugin/align-plugin.js 	 bug 	 18 	 Do not use "undefined" to declare a variable - use another name.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/axis-numeric-base/axis-numeric-base-debug.js 	 bug 	 539 	 The return value of "ceil" must be used.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/axis-numeric-base/axis-numeric-base.js 	 bug 	 539 	 The return value of "ceil" must be used.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/axis-time-base/axis-time-base-debug.js 	 bug 	 235 	 Remove or correct this useless self-assignment.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/axis-time-base/axis-time-base.js 	 bug 	 235 	 Remove or correct this useless self-assignment.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js 	 bug 	 709 	 Add parentheses to perform "instanceof" operator before logical NOT operator.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js 	 bug 	 709 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js 	 bug 	 3200 	 TypeError can be thrown as "seriesAxesCollection" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js 	 bug 	 3909 	 TypeError can be thrown as "axis" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js 	 bug 	 709 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js 	 bug 	 709 	 Add parentheses to perform "instanceof" operator before logical NOT operator.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js 	 bug 	 3200 	 TypeError can be thrown as "seriesAxesCollection" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js 	 bug 	 3909 	 TypeError can be thrown as "axis" might be null or undefined here.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend-debug.js 	 bug 	 127 	 TypeError can be thrown as "item" might be null or undefined here.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend-debug.js 	 bug 	 583 	 TypeError can be thrown as "axis" might be null or undefined here.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend.js 	 bug 	 127 	 TypeError can be thrown as "item" might be null or undefined here.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend.js 	 bug 	 583 	 TypeError can be thrown as "axis" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator-debug.js 	 bug 	 855 	 Fix this expression; length of "_pg" is always greater or equal to zero.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator-debug.js 	 bug 	 861 	 Fix this expression; length of "this._paged" is always greater or equal to zero.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator.js 	 bug 	 855 	 Fix this expression; length of "_pg" is always greater or equal to zero.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator.js 	 bug 	 861 	 Fix this expression; length of "this._paged" is always greater or equal to zero.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/dom-base/dom-base-debug.js 	 bug 	 376 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/dom-base/dom-base.js 	 bug 	 372 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/editor-base/editor-base-debug.js 	 bug 	 376 	 Move this array "reverse" operation to a separate statement.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/editor-base/editor-base.js 	 bug 	 374 	 Move this array "reverse" operation to a separate statement.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/event-base-ie/event-base-ie-debug.js 	 bug 	 112 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/event-base-ie/event-base-ie.js 	 bug 	 112 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/event-mouseenter/event-mouseenter-debug.js 	 bug 	 102 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/event-mouseenter/event-mouseenter.js 	 bug 	 102 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler-debug.js 	 bug 	 197 	 TypeError can be thrown as "action" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler-debug.js 	 bug 	 207 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler.js 	 bug 	 197 	 TypeError can be thrown as "action" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler.js 	 bug 	 207 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/imageloader/imageloader-debug.js 	 bug 	 393 	 The return value of "test" must be used.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/imageloader/imageloader.js 	 bug 	 384 	 The return value of "test" must be used.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/matrix/matrix-debug.js 	 bug 	 648 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/matrix/matrix-debug.js 	 bug 	 653 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/matrix/matrix.js 	 bug 	 648 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/matrix/matrix.js 	 bug 	 653 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/querystring-stringify/querystring-stringify-debug.js 	 bug 	 66 	 Was "+=" meant instead?
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/querystring-stringify/querystring-stringify.js 	 bug 	 66 	 Was "+=" meant instead?
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/recordset-base/recordset-base-debug.js 	 bug 	 40 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/recordset-base/recordset-base.js 	 bug 	 40 	 Remove this unreachable code.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-bar/series-bar-debug.js 	 bug 	 111 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-bar/series-bar.js 	 bug 	 111 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-column/series-column-debug.js 	 bug 	 111 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-column/series-column.js 	 bug 	 111 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked-debug.js 	 bug 	 94 	 TypeError can be thrown as "prevXCoords" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked-debug.js 	 bug 	 175 	 TypeError can be thrown as "prevYCoords" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked.js 	 bug 	 94 	 TypeError can be thrown as "prevXCoords" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked.js 	 bug 	 175 	 TypeError can be thrown as "prevYCoords" might be null or undefined here.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet-debug.js 	 bug 	 192 	 TypeError can be thrown as this operand might have primitive type.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet-debug.js 	 bug 	 198 	 TypeError can be thrown as this operand might have primitive type.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet.js 	 bug 	 192 	 TypeError can be thrown as this operand might have primitive type.
-Sam_Hemelryk 	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet.js 	 bug 	 198 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/transition/transition-debug.js 	 bug 	 212 	 TypeError can be thrown as "config" might be null or undefined here.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/transition/transition-debug.js 	 bug 	 596 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Petr_Škoda 	 /moodle/lib/yuilib/3.17.2/transition/transition.js 	 bug 	 212 	 TypeError can be thrown as "config" might be null or undefined here.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/transition/transition.js 	 bug 	 595 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base-debug.js 	 bug 	 2725 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base-debug.js 	 bug 	 2764 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base.js 	 bug 	 2478 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base.js 	 bug 	 2517 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core-debug.js 	 bug 	 2725 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core-debug.js 	 bug 	 2764 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core.js 	 bug 	 2478 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core.js 	 bug 	 2517 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs-debug.js 	 bug 	 2725 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs-debug.js 	 bug 	 2764 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs.js 	 bug 	 2478 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs.js 	 bug 	 2517 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui/yui-debug.js 	 bug 	 2725 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui/yui-debug.js 	 bug 	 2764 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui/yui.js 	 bug 	 2478 	 TypeError can be thrown as this operand might have primitive type.
-Petr_Skoda 	 /moodle/lib/yuilib/3.17.2/yui/yui.js 	 bug 	 2517 	 TypeError can be thrown as this operand might have primitive type.
-James_McQuillan 	 /moodle/lib/adminlib.php 	 bug 	 5689 	 Remove or correct this useless self-assignment
-sam_marshall 	 /moodle/availability/condition/profile/classes/condition.php 	 bug 	 439 	 Remove this unreachable code.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js 	 bug 	 474 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js 	 bug 	 485 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js 	 bug 	 474 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js 	 bug 	 485 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js 	 bug 	 474 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js 	 bug 	 485 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Rossiani_Wijaya 	 /moodle/lib/editor/atto/plugins/backcolor/yui/src/button/meta/editor.js 	 bug 	 1 	 Refactor or remove this statement.
-Rossiani_Wijaya 	 /moodle/lib/editor/atto/plugins/fontcolor/yui/src/button/meta/editor.js 	 bug 	 1 	 Refactor or remove this statement.
-Petr_Škoda 	 /moodle/lib/jquery/jquery-3.4.1.js 	 bug 	 7540 	 Remove this "!==" check; it will always be true. Did you mean to use "!="?
-Mihail_Geshoski 	 /moodle/lib/htmlpurifier/HTMLPurifier/Lexer/PH5P.php 	 bug 	 3956 	 This branch duplicates the one on line 3926.
-Jean-Michel_Vedrine 	 /moodle/question/type/randomsamatch/db/upgradelib.php 	 bug 	 218 	 Remove this unreachable code.
-Yuliya_Bozhko 	 /moodle/badges/criteria/award_criteria_course.php 	 bug 	 237 	 Review the data-flow - use of uninitialized value.
-Mark_Nelson 	 /moodle/admin/tool/uploaduser/index.php 	 bug 	 1232 	 Remove or correct this useless self-assignment
-Sam_Chaffee 	 /moodle/lib/grade/tests/grade_item_test.php 	 bug 	 557 	 Review the data-flow - use of uninitialized value.
-Sam_Chaffee 	 /moodle/lib/grade/tests/grade_item_test.php 	 bug 	 584 	 Review the data-flow - use of uninitialized value.
-Damyon_Wiese 	 /moodle/mod/assign/feedback/editpdf/classes/page_editor.php 	 bug 	 102 	 Review the data-flow - use of uninitialized value.
-Petr_Škoda 	 /moodle/lib/tcpdf/include/tcpdf_colors.php 	 bug 	 452 	 Review the data-flow - use of uninitialized value.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 83 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 87 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 91 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 95 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 99 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 103 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 107 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 111 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 115 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 119 	 Remove this unreachable code.
-Petr_Skoda 	 /moodle/lib/tcpdf/include/tcpdf_filters.php 	 bug 	 123 	 Remove this unreachable code.
-Petr_Škoda 	 /moodle/lib/typo3/class.t3lib_utility_debug.php 	 bug 	 312 	 Review the data-flow - use of uninitialized value.
-Petr_Škoda 	 /moodle/lib/markdown/Markdown.php 	 bug 	 38 	 Review the data-flow - use of uninitialized value.
-Mayank_Gupa 	 /moodle/mod/scorm/module.js 	 bug 	 465 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Andrew_Davis 	 /moodle/mod/chat/gui_ajax/module.js 	 bug 	 46 	 Rename or remove duplicate property name 'resize'.
-Petr_Skoda 	 /moodle/lib/editor/tinymce/plugins/spellchecker/classes/GoogleSpell.php 	 bug 	 132 	 Remove this unreachable code.
-Petr_Škoda 	 /moodle/enrol/paypal/enrol.html 	 bug 	 5 	 Replace this <b> tag by <strong>.
-Petr_Škoda 	 /moodle/lib/simplepie/library/SimplePie/Misc.php 	 bug 	 1450 	 This case duplicates the one on line 1318.
-Petr_Škoda 	 /moodle/lib/simplepie/library/SimplePie/Misc.php 	 bug 	 1455 	 This case duplicates the one on line 1325.
-Yuliya_Bozhko 	 /moodle/lib/badgeslib.php 	 bug 	 674 	 Remove this unreachable code.
-stronk7 	 /moodle/lib/adodb/drivers/adodb-mssqlnative.inc.php 	 bug 	 506 	 Remove this unreachable code.
-Andreas_Grabs 	 /moodle/mod/feedback/yui/dragdrop/dragdrop.js 	 bug 	 226 	 Remove this code after the "return" statement.
-David_Monllao 	 /moodle/lib/testing/lib.php 	 bug 	 84 	 Identical sub-expressions on both sides of operator "!="
-Marina_Glancy 	 /moodle/grade/grading/form/lib.php 	 bug 	 397 	 Remove this "if" statement.
-Petr_Škoda 	 /moodle/enrol/flatfile/lib.php 	 bug 	 619 	 Remove or refactor this statement.
-Petr_Škoda 	 /moodle/lib/excellib.class.php 	 bug 	 428 	 Review the data-flow - use of uninitialized value.
-Petr_Škoda 	 /moodle/lib/excellib.class.php 	 bug 	 432 	 Review the data-flow - use of uninitialized value.
-Mayank_Gupa 	 /moodle/mod/scorm/datamodels/scorm_13lib.php 	 bug 	 953 	 This case duplicates the one on line 940.
-David_Monllao 	 /moodle/mod/chat/gui_sockets/index.php 	 bug 	 82 	 Remove this deprecated "frameset" element.
-Petr_Škoda 	 /moodle/lib/editor/tinymce/plugins/moodleemoticon/dialog.php 	 bug 	 43 	 Add a <title> tag to this page.
-Frederic_Massart 	 /moodle/repository/s3/S3.php 	 bug 	 2050 	 Remove or correct this useless self-assignment
-Tim_Hunt 	 /moodle/question/behaviour/adaptive/renderer.php 	 bug 	 112 	 Remove this unreachable code.
-Damyon_Wiese 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js 	 bug 	 15504 	 Rename or remove duplicate property name 'mceToggleFormat'.
-Frederic_Massart 	 /moodle/mod/quiz/comment.php 	 bug 	 125 	 Add a <legend> tag to this fieldset.
-Marina_Glancy 	 /moodle/repository/filepicker.js 	 bug 	 258 	 TypeError can be thrown as "mytreeel" might be null or undefined here.
-Dongsheng_Cai 	 /moodle/lib/filestorage/stored_file.php 	 bug 	 79 	 Identical sub-expressions on both sides of operator "!="
-Marina_Glancy 	 /moodle/repository/filepicker.js 	 bug 	 1609 	 TypeError can be thrown as "container" might be null or undefined here.
-Davo_Smith 	 /moodle/course/dndupload.js 	 bug 	 226 	 Remove this code after the "return" statement.
-Damyon_Wiese 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js 	 bug 	 13681 	 TypeError can be thrown as "o" might be null or undefined here.
-Damyon_Wiese 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js 	 bug 	 14190 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
-Damyon_Wiese 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js 	 bug 	 19037 	 TypeError can be thrown as "containerBlock" might be null or undefined here.
-Damyon_Wiese 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js 	 bug 	 19083 	 TypeError can be thrown as "parentBlock" might be null or undefined here.
-Petr_Skoda 	 /moodle/mod/workshop/form/accumulative/tests/lib_test.php 	 bug 	 115 	 Identical sub-expressions on both sides of operator "/"
-Petr_Skoda 	 /moodle/lib/editor/tinymce/plugins/spellchecker/classes/EnchantSpell.php 	 bug 	 35 	 Remove this unreachable code.
-Petr_Škoda 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/advlink/js/advlink.js 	 bug 	 430 	 TypeError can be thrown as "elm" might be null or undefined here.
-Petr_Škoda 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/autosave/editor_plugin_src.js 	 bug 	 51 	 Do not use "undefined" to declare a variable - use another name.
-Petr_Škoda 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/preview/example.html 	 bug 	 1 	 Insert a <!DOCTYPE> declaration to before this <html> tag.
-Petr_Škoda 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/table/js/table.js 	 bug 	 331 	 Remove or correct this useless self-assignment.
-Petr_Skoda 	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/themes/advanced/js/color_picker.js 	 bug 	 39 	 Rename or remove duplicate property name '
+Shamim_Rezaie  	 /moodle/lib/babel-polyfill/polyfill.js  	 bug  	 3497  	javascript:S2201
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 264  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 340  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 512  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 1060  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 1130  	javascript:S2583
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 1275  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 1877  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 1889  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 1970  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2003  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2058  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2114  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2137  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2241  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2305  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2372  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2434  	javascript:S2259
+Shamim_Rezaie  	 /moodle/lib/amd/src/adapter.js  	 bug  	 2557  	javascript:S2259
+Bas_Brands  	 /moodle/lib/editor/atto/plugins/h5p/yui/build/moodle-atto_h5p-button/moodle-atto_h5p-button-debug.js  	 bug  	 534  	javascript:S2259
+Bas_Brands  	 /moodle/lib/editor/atto/plugins/h5p/yui/build/moodle-atto_h5p-button/moodle-atto_h5p-button.js  	 bug  	 534  	javascript:S2259
+Bas_Brands  	 /moodle/lib/editor/atto/plugins/h5p/yui/src/button/js/button.js  	 bug  	 532  	javascript:S2259
+Andrew_Nicols  	 /moodle/grade/grading/form/lib.php  	 bug  	 556  	php:S836
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 6  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 12  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 13  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 14  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 18  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 67  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 75  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 75  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 75  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 75  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 79  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 79  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 79  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 79  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 99  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 99  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 101  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 101  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 101  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 106  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/doc/spec_en.html  	 bug  	 106  	Web:BoldAndItalicTagsCheck
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-content-upgrade-process.js  	 bug  	 118  	javascript:S2757
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-version.js  	 bug  	 14  	javascript:S2757
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-version.js  	 bug  	 15  	javascript:S2757
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-version.js  	 bug  	 20  	javascript:S2757
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-version.js  	 bug  	 21  	javascript:S2757
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-version.js  	 bug  	 24  	javascript:S2757
+Amaia_Anabitarte  	 /moodle/lib/h5p/js/h5p-version.js  	 bug  	 25  	javascript:S2757
+Tim_Hunt  	 /moodle/mod/quiz/tests/behat/behat_mod_quiz.php  	 bug  	 54  	php:S3923
+Damyon_Wiese  	 /moodle/calendar/lib.php  	 bug  	 2224  	php:S1763
+Matt_Porritt  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 7399  	javascript:S3981
+Matt_Porritt  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 7506  	javascript:S2259
+Tom_Dickman  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 5004  	javascript:S3785
+Tom_Dickman  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 5236  	javascript:S3785
+Tom_Dickman  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 21718  	javascript:S2259
+Matt_Porritt  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 35884  	javascript:S2259
+Matt_Porritt  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 38122  	javascript:S1143
+Tom_Dickman  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 51629  	javascript:S3403
+Tom_Dickman  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 51665  	javascript:S3403
+David_Monllaó  	 /moodle/analytics/classes/calculation_info.php  	 bug  	 147  	php:S836
+Ryan_Wyllie  	 /moodle/lib/babel-polyfill/polyfill.js  	 bug  	 585  	javascript:S2259
+Ryan_Wyllie  	 /moodle/lib/babel-polyfill/polyfill.js  	 bug  	 3063  	javascript:S2137
+Ryan_Wyllie  	 /moodle/lib/babel-polyfill/polyfill.js  	 bug  	 3772  	javascript:S2583
+Ryan_Wyllie  	 /moodle/lib/babel-polyfill/polyfill.js  	 bug  	 3772  	javascript:S3403
+Ryan_Wyllie  	 /moodle/lib/babel-polyfill/polyfill.js  	 bug  	 6485  	javascript:S2137
+Ryan_Wyllie  	 /moodle/message/amd/src/message_drawer_view_conversation_patcher.js  	 bug  	 193  	javascript:S2583
+Ryan_Wyllie  	 /moodle/message/amd/src/message_drawer_view_conversation_patcher.js  	 bug  	 194  	javascript:S2583
+Andrew_Nicols  	 /moodle/enrol/database/tests/sync_test.php  	 bug  	 104  	php:S836
+Damyon_Wiese  	 /moodle/badges/classes/badge.php  	 bug  	 254  	php:S1763
+Damyon_Wiese  	 /moodle/badges/classes/badge.php  	 bug  	 311  	php:S1763
+Marina_Glancy  	 /moodle/lib/form/course.php  	 bug  	 108  	php:S836
+Andrew_Nicols  	 /moodle/mod/forum/classes/local/exporters/group.php  	 bug  	 91  	php:S836
+Andrew_Nicols  	 /moodle/mod/forum/classes/local/exporters/group.php  	 bug  	 93  	php:S836
+Andrew_Nicols  	 /moodle/mod/forum/deprecatedlib.php  	 bug  	 1638  	php:S836
+Brendan_Heywood  	 /moodle/lib/setuplib.php  	 bug  	 1845  	php:S1656
+Mark_Nelson  	 /moodle/message/amd/src/message_drawer_router.js  	 bug  	 158  	php:S1764
+sam_marshall  	 /moodle/lib/tests/behat/app_behat_runtime.js  	 bug  	 623  	javascript:S2259
+Damyon_Wiese  	 /moodle/mod/assign/locallib.php  	 bug  	 9276  	javascript:S2873
+Ryan_Wyllie  	 /moodle/message/amd/src/message_drawer_view_conversation.js  	 bug  	 346  	php:S836
+Ryan_Wyllie  	 /moodle/message/amd/src/message_drawer_view_conversation.js  	 bug  	 1949  	javascript:S2259
+Andrew_Nicols  	 /moodle/lib/accesslib.php  	 bug  	 6316  	javascript:S3403
+Damyon_Wiese  	 /moodle/backup/util/ui/classes/privacy/provider.php  	 bug  	 323  	php:S1763
+Mihail_Geshoski  	 /moodle/notes/tests/privacy_test.php  	 bug  	 407  	php:S836
+Mihail_Geshoski  	 /moodle/notes/tests/privacy_test.php  	 bug  	 409  	php:S836
+Mihail_Geshoski  	 /moodle/notes/tests/privacy_test.php  	 bug  	 425  	php:S836
+Mihail_Geshoski  	 /moodle/notes/tests/privacy_test.php  	 bug  	 484  	php:S836
+Mihail_Geshoski  	 /moodle/notes/tests/privacy_test.php  	 bug  	 486  	php:S836
+Mihail_Geshoski  	 /moodle/notes/tests/privacy_test.php  	 bug  	 489  	php:S836
+Andrew_Nicols  	 /moodle/admin/tool/dataprivacy/classes/expiry_info.php  	 bug  	 199  	php:S836
+Andrew_Nicols  	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php  	 bug  	 444  	php:S2201
+Andrew_Nicols  	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php  	 bug  	 484  	php:S1848
+Andrew_Nicols  	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php  	 bug  	 1358  	php:S1848
+Andrew_Nicols  	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php  	 bug  	 1517  	php:S1848
+Andrew_Nicols  	 /moodle/admin/tool/dataprivacy/tests/expired_contexts_test.php  	 bug  	 1569  	php:S1848
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js  	 bug  	 498  	php:S1848
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js  	 bug  	 3048  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js  	 bug  	 4171  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js  	 bug  	 4726  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js  	 bug  	 498  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js  	 bug  	 3048  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js  	 bug  	 4171  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js  	 bug  	 4726  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-codemirror/moodle-atto_html-codemirror-debug.js  	 bug  	 6161  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/build/moodle-atto_html-codemirror/moodle-atto_html-codemirror.js  	 bug  	 6161  	javascript:S2259
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-css.js  	 bug  	 203  	javascript:S2259
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-html.js  	 bug  	 278  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-html.js  	 bug  	 833  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/src/beautify/js/beautify.js  	 bug  	 480  	javascript:S2583
+Andrew_Nicols  	 /moodle/lib/editor/atto/plugins/html/yui/src/codemirror/js/codemirror.js  	 bug  	 6157  	javascript:S2583
+Frédéric_Massart  	 /moodle/competency/tests/privacy_test.php  	 bug  	 2598  	javascript:S2259
+Frédéric_Massart  	 /moodle/badges/tests/privacy_test.php  	 bug  	 784  	php:S836
+Marina_Glancy  	 /moodle/admin/tool/policy/classes/output/acceptances.php  	 bug  	 89  	php:S1656
+Marina_Glancy  	 /moodle/admin/tool/policy/classes/output/acceptances.php  	 bug  	 90  	php:S1656
+Andrew_Nicols  	 /moodle/calendar/lib.php  	 bug  	 2735  	php:S1656
+Andrew_Nicols  	 /moodle/calendar/lib.php  	 bug  	 2737  	php:S1656
+Damyon_Wiese  	 /moodle/lib/requirejs/moodle-config.js  	 bug  	 20  	php:S1656
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php  	 bug  	 42  	javascript:DuplicatePropertyName
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php  	 bug  	 51  	php:S1848
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php  	 bug  	 64  	php:S1848
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php  	 bug  	 76  	php:S1848
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Imap/Client/DateTime.php  	 bug  	 89  	php:S1848
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Imap/Client/Socket/Pop3.php  	 bug  	 506  	php:S1848
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Mail/Mbox/Parse.php  	 bug  	 84  	php:S1763
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Mail/Rfc822/Group.php  	 bug  	 118  	php:S2201
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Mime/Headers/ContentParam.php  	 bug  	 336  	php:S836
+Juan_Leyva  	 /moodle/mod/workshop/locallib.php  	 bug  	 4628  	php:S2201
+Simey_Lameze  	 /moodle/lib/amd/src/chartjs-lazy.js  	 bug  	 3807  	php:S836
+Simey_Lameze  	 /moodle/lib/amd/src/chartjs-lazy.js  	 bug  	 3807  	javascript:S2583
+Simey_Lameze  	 /moodle/lib/amd/src/chartjs-lazy.js  	 bug  	 13001  	javascript:S3403
+Ankit_Agarwal  	 /moodle/lib/markdown/Markdown.php  	 bug  	 797  	javascript:S1656
+Ankit_Agarwal  	 /moodle/lib/markdown/MarkdownExtra.php  	 bug  	 906  	Web:ImgWithoutAltCheck
+David_Mudrák  	 /moodle/lib/flickrclient.php  	 bug  	 155  	Web:ImgWithoutAltCheck
+Juan_Leyva  	 /moodle/mod/workshop/locallib.php  	 bug  	 2971  	php:S1763
+Juan_Leyva  	 /moodle/mod/workshop/locallib.php  	 bug  	 2971  	php:S1764
+David_Monllao  	 /moodle/lib/mlbackend/php/classes/processor.php  	 bug  	 261  	php:S1764
+Cameron_Ball  	 /moodle/calendar/tests/event_mapper_test.php  	 bug  	 410  	php:S836
+Marina_Glancy  	 /moodle/lib/classes/user.php  	 bug  	 1107  	php:S836
+gthomas2  	 /moodle/lib/tests/behat/behat_navigation.php  	 bug  	 519  	php:S1763
+Andrew_Nicols  	 /moodle/lib/filestorage/tests/file_system_filedir_test.php  	 bug  	 159  	php:S836
+Andrew_Nicols  	 /moodle/lib/filestorage/tests/file_system_filedir_test.php  	 bug  	 183  	php:S1848
+Andrew_Nicols  	 /moodle/lib/filestorage/tests/file_system_filedir_test.php  	 bug  	 196  	php:S1848
+Tom_Dickman  	 /moodle/media/player/videojs/amd/src/video-lazy.js  	 bug  	 10253  	php:S1848
+Juan_Leyva  	 /moodle/course/lib.php  	 bug  	 4601  	javascript:S1656
+Juan_Leyva  	 /moodle/course/lib.php  	 bug  	 4614  	php:S1656
+Ilya_Tregubov  	 /moodle/mod/assign/override_form.php  	 bug  	 190  	php:S1656
+Ilya_Tregubov  	 /moodle/mod/assign/override_form.php  	 bug  	 190  	php:S836
+Jun_Pataleta  	 /moodle/enrol/lti/tests/tool_provider_test.php  	 bug  	 78  	php:S836
+John_Okely  	 /moodle/lib/ltiprovider/src/ToolProvider/Service/ToolSettings.php  	 bug  	 123  	php:S1848
+John_Okely  	 /moodle/lib/ltiprovider/src/ToolProvider/ToolProxy.php  	 bug  	 187  	php:S1862
+Dan_Poltawski  	 /moodle/lib/jquery/ui-1.12.1/jquery-ui.js  	 bug  	 1340  	php:S836
+Dan_Poltawski  	 /moodle/lib/jquery/ui-1.12.1/jquery-ui.js  	 bug  	 11802  	javascript:S2137
+Dan_Poltawski  	 /moodle/lib/jquery/ui-1.12.1/jquery-ui.js  	 bug  	 11924  	javascript:S2583
+Damyon_Wiese  	 /moodle/theme/boost/amd/src/tether.js  	 bug  	 416  	javascript:S2259
+Damyon_Wiese  	 /moodle/theme/boost/amd/src/tether.js  	 bug  	 426  	javascript:S1143
+Damyon_Wiese  	 /moodle/theme/boost/amd/src/tether.js  	 bug  	 1286  	javascript:S2583
+Damyon_Wiese  	 /moodle/theme/boost/amd/src/tether.js  	 bug  	 1748  	javascript:S1143
+Mark_Nielsen  	 /moodle/mod/lti/tests/fixtures/tool_provider.php  	 bug  	 26  	javascript:S1143
+Marina_Glancy  	 /moodle/mod/feedback/backup/moodle2/restore_feedback_stepslib.php  	 bug  	 89  	Web:DoctypePresenceCheck
+Marina_Glancy  	 /moodle/mod/feedback/backup/moodle2/restore_feedback_stepslib.php  	 bug  	 108  	php:S1656
+Frederic_Massart  	 /moodle/competency/tests/external_test.php  	 bug  	 1110  	php:S1656
+Frederic_Massart  	 /moodle/competency/tests/external_test.php  	 bug  	 1141  	php:S2201
+Damyon_Wiese  	 /moodle/admin/tool/lp/amd/src/menubar.js  	 bug  	 299  	php:S2201
+Damyon_Wiese  	 /moodle/admin/tool/lp/amd/src/tree.js  	 bug  	 492  	javascript:S2583
+Marina_Glancy  	 /moodle/tag/classes/tag.php  	 bug  	 1615  	javascript:UnreachableCode
+Marina_Glancy  	 /moodle/tag/classes/tag.php  	 bug  	 1688  	php:S2201
+Damyon_Wiese  	 /moodle/files/converter/unoconv/tests/fixtures/unoconv-source.html  	 bug  	 2  	php:S2201
+Brendan_Anderson  	 /moodle/blocks/rss_client/classes/output/renderer.php  	 bug  	 96  	Web:PageWithoutTitleCheck
+Frederic_Massart  	 /moodle/mod/glossary/classes/external.php  	 bug  	 233  	php:S1763
+Marina_Glancy  	 /moodle/lib/adodb/adodb-active-record.inc.php  	 bug  	 194  	php:S836
+David_Mudrák  	 /moodle/lib/classes/update/code_manager.php  	 bug  	 443  	php:S836
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js  	 bug  	 3832  	php:S1656
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js  	 bug  	 4637  	javascript:S2873
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js  	 bug  	 5276  	javascript:S3403
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js  	 bug  	 3832  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js  	 bug  	 4637  	javascript:S2873
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js  	 bug  	 5276  	javascript:S3403
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js  	 bug  	 247  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js  	 bug  	 886  	javascript:S3403
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js  	 bug  	 3832  	javascript:S2583
+Dan_Poltawski  	 /moodle/lib/amd/src/permissionmanager.js  	 bug  	 195  	javascript:S2873
+poltawski  	 /moodle/blocks/tag_youtube/block_tag_youtube.php  	 bug  	 220  	javascript:S2259
+Jean-Michel_Vedrine  	 /moodle/mod/lesson/override_form.php  	 bug  	 174  	php:S1763
+Jean-Michel_Vedrine  	 /moodle/mod/lesson/override_form.php  	 bug  	 174  	php:S836
+Tim_Hunt  	 /moodle/mod/quiz/locallib.php  	 bug  	 196  	php:S836
+Rossiani_Wijaya  	 /moodle/mod/lesson/format.php  	 bug  	 636  	php:S836
+Tim_Hunt  	 /moodle/question/format.php  	 bug  	 812  	php:S1763
+Tim_Hunt  	 /moodle/question/format.php  	 bug  	 1100  	php:S1763
+Frederic_Massart  	 /moodle/lib/google/curlio.php  	 bug  	 153  	php:S1763
+Colin_Chambers  	 /moodle/mod/quiz/classes/structure.php  	 bug  	 657  	php:S836
+Frederic_Massart  	 /moodle/lib/adodb/drivers/adodb-mssqlnative.inc.php  	 bug  	 801  	php:S1656
+Frederic_Massart  	 /moodle/lib/adodb/drivers/adodb-mssqlnative.inc.php  	 bug  	 812  	php:S2757
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_static.php  	 bug  	 1297  	php:S2757
+Andrew_Nicols  	 /moodle/lib/horde/framework/Horde/Stream/Wrapper/Combine.php  	 bug  	 285  	php:S3923
+Marina_Glancy  	 /moodle/lib/horde/framework/Horde/Util.php  	 bug  	 462  	php:S1656
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 49  	php:S836
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 55  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 61  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 67  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 73  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 79  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 85  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 91  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 97  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 103  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 110  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 117  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 124  	php:S1848
+sam_marshall  	 /moodle/availability/tests/tree_test.php  	 bug  	 131  	php:S1848
+nobelium  	 /moodle/mod/scorm/datamodels/sequencinglib.php  	 bug  	 635  	php:S1848
+Andrew_Nicols  	 /moodle/grade/report/grader/lib.php  	 bug  	 1175  	php:S836
+Andrew_Davis  	 /moodle/mod/chat/gui_sockets/index.php  	 bug  	 84  	php:S836
+Andrew_Davis  	 /moodle/mod/chat/gui_sockets/index.php  	 bug  	 84  	Web:UnsupportedTagsInHtml5Check
+Andrew_Davis  	 /moodle/mod/chat/gui_sockets/index.php  	 bug  	 87  	Web:FrameWithoutTitleCheck
+Andrew_Davis  	 /moodle/mod/chat/gui_sockets/index.php  	 bug  	 87  	Web:UnsupportedTagsInHtml5Check
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/align-plugin/align-plugin-debug.js  	 bug  	 18  	Web:FrameWithoutTitleCheck
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/align-plugin/align-plugin.js  	 bug  	 18  	javascript:S2137
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/axis-numeric-base/axis-numeric-base-debug.js  	 bug  	 539  	javascript:S2137
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/axis-numeric-base/axis-numeric-base.js  	 bug  	 539  	javascript:S2201
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/axis-time-base/axis-time-base-debug.js  	 bug  	 235  	javascript:S2201
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/axis-time-base/axis-time-base.js  	 bug  	 235  	javascript:S1656
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js  	 bug  	 709  	javascript:S1656
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js  	 bug  	 709  	javascript:S3812
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js  	 bug  	 3200  	javascript:S2583
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base-debug.js  	 bug  	 3909  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js  	 bug  	 709  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js  	 bug  	 709  	javascript:S2583
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js  	 bug  	 3200  	javascript:S3812
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/charts-base/charts-base.js  	 bug  	 3909  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend-debug.js  	 bug  	 127  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend-debug.js  	 bug  	 583  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend.js  	 bug  	 127  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/charts-legend/charts-legend.js  	 bug  	 583  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator-debug.js  	 bug  	 855  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator-debug.js  	 bug  	 861  	javascript:S3981
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator.js  	 bug  	 855  	javascript:S3981
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/datatable-paginator/datatable-paginator.js  	 bug  	 861  	javascript:S3981
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/dom-base/dom-base-debug.js  	 bug  	 376  	javascript:S3981
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/dom-base/dom-base.js  	 bug  	 372  	javascript:S2583
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/editor-base/editor-base-debug.js  	 bug  	 376  	javascript:S2583
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/editor-base/editor-base.js  	 bug  	 374  	javascript:S4043
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/event-base-ie/event-base-ie-debug.js  	 bug  	 112  	javascript:S4043
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/event-base-ie/event-base-ie.js  	 bug  	 112  	javascript:S3403
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/event-mouseenter/event-mouseenter-debug.js  	 bug  	 102  	javascript:S3403
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/event-mouseenter/event-mouseenter.js  	 bug  	 102  	javascript:S2583
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler-debug.js  	 bug  	 197  	javascript:S2583
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler-debug.js  	 bug  	 207  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler.js  	 bug  	 197  	javascript:S2583
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler.js  	 bug  	 207  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/imageloader/imageloader-debug.js  	 bug  	 393  	javascript:S2583
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/imageloader/imageloader.js  	 bug  	 384  	javascript:S2201
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/matrix/matrix-debug.js  	 bug  	 648  	javascript:S2201
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/matrix/matrix-debug.js  	 bug  	 653  	javascript:S3403
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/matrix/matrix.js  	 bug  	 648  	javascript:S3403
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/matrix/matrix.js  	 bug  	 653  	javascript:S3403
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/querystring-stringify/querystring-stringify-debug.js  	 bug  	 66  	javascript:S3403
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/querystring-stringify/querystring-stringify.js  	 bug  	 66  	javascript:S2757
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/recordset-base/recordset-base-debug.js  	 bug  	 40  	javascript:S2757
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/recordset-base/recordset-base.js  	 bug  	 40  	javascript:UnreachableCode
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-bar/series-bar-debug.js  	 bug  	 111  	javascript:UnreachableCode
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-bar/series-bar.js  	 bug  	 111  	javascript:S3403
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-column/series-column-debug.js  	 bug  	 111  	javascript:S3403
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-column/series-column.js  	 bug  	 111  	javascript:S3403
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked-debug.js  	 bug  	 94  	javascript:S3403
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked-debug.js  	 bug  	 175  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked.js  	 bug  	 94  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/series-stacked/series-stacked.js  	 bug  	 175  	javascript:S2259
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet-debug.js  	 bug  	 192  	javascript:S2259
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet-debug.js  	 bug  	 198  	javascript:S3785
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet.js  	 bug  	 192  	javascript:S3785
+Sam_Hemelryk  	 /moodle/lib/yuilib/3.17.2/stylesheet/stylesheet.js  	 bug  	 198  	javascript:S3785
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/transition/transition-debug.js  	 bug  	 212  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/transition/transition-debug.js  	 bug  	 596  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/yuilib/3.17.2/transition/transition.js  	 bug  	 212  	javascript:S2583
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/transition/transition.js  	 bug  	 595  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base-debug.js  	 bug  	 2725  	javascript:S2583
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base-debug.js  	 bug  	 2764  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base.js  	 bug  	 2478  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-base/yui-base.js  	 bug  	 2517  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core-debug.js  	 bug  	 2725  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core-debug.js  	 bug  	 2764  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core.js  	 bug  	 2478  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-core/yui-core.js  	 bug  	 2517  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs-debug.js  	 bug  	 2725  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs-debug.js  	 bug  	 2764  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs.js  	 bug  	 2478  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui-nodejs/yui-nodejs.js  	 bug  	 2517  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui/yui-debug.js  	 bug  	 2725  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui/yui-debug.js  	 bug  	 2764  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui/yui.js  	 bug  	 2478  	javascript:S3785
+Petr_Skoda  	 /moodle/lib/yuilib/3.17.2/yui/yui.js  	 bug  	 2517  	javascript:S3785
+James_McQuillan  	 /moodle/lib/adminlib.php  	 bug  	 5689  	javascript:S3785
+sam_marshall  	 /moodle/availability/condition/profile/classes/condition.php  	 bug  	 439  	php:S1656
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js  	 bug  	 474  	php:S1763
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js  	 bug  	 485  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js  	 bug  	 474  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js  	 bug  	 485  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js  	 bug  	 474  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js  	 bug  	 485  	javascript:S2583
+Rossiani_Wijaya  	 /moodle/lib/editor/atto/plugins/backcolor/yui/src/button/meta/editor.js  	 bug  	 1  	javascript:S2583
+Rossiani_Wijaya  	 /moodle/lib/editor/atto/plugins/fontcolor/yui/src/button/meta/editor.js  	 bug  	 1  	javascript:S905
+Petr_Škoda  	 /moodle/lib/jquery/jquery-3.4.1.js  	 bug  	 7540  	javascript:S905
+Mihail_Geshoski  	 /moodle/lib/htmlpurifier/HTMLPurifier/Lexer/PH5P.php  	 bug  	 3956  	javascript:S3403
+Jean-Michel_Vedrine  	 /moodle/question/type/randomsamatch/db/upgradelib.php  	 bug  	 218  	php:S1862
+Yuliya_Bozhko  	 /moodle/badges/criteria/award_criteria_course.php  	 bug  	 237  	php:S1763
+Mark_Nelson  	 /moodle/admin/tool/uploaduser/index.php  	 bug  	 1232  	php:S836
+Sam_Chaffee  	 /moodle/lib/grade/tests/grade_item_test.php  	 bug  	 557  	php:S1656
+Sam_Chaffee  	 /moodle/lib/grade/tests/grade_item_test.php  	 bug  	 584  	php:S836
+Damyon_Wiese  	 /moodle/mod/assign/feedback/editpdf/classes/page_editor.php  	 bug  	 102  	php:S836
+Petr_Škoda  	 /moodle/lib/tcpdf/include/tcpdf_colors.php  	 bug  	 452  	php:S836
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 83  	php:S836
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 87  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 91  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 95  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 99  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 103  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 107  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 111  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 115  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 119  	php:S1763
+Petr_Skoda  	 /moodle/lib/tcpdf/include/tcpdf_filters.php  	 bug  	 123  	php:S1763
+Petr_Škoda  	 /moodle/lib/typo3/class.t3lib_utility_debug.php  	 bug  	 312  	php:S1763
+Petr_Škoda  	 /moodle/lib/markdown/Markdown.php  	 bug  	 38  	php:S836
+Mayank_Gupa  	 /moodle/mod/scorm/module.js  	 bug  	 465  	php:S836
+Andrew_Davis  	 /moodle/mod/chat/gui_ajax/module.js  	 bug  	 46  	javascript:S2583
+Petr_Skoda  	 /moodle/lib/editor/tinymce/plugins/spellchecker/classes/GoogleSpell.php  	 bug  	 132  	javascript:DuplicatePropertyName
+Petr_Škoda  	 /moodle/enrol/paypal/enrol.html  	 bug  	 5  	php:S1763
+Petr_Škoda  	 /moodle/lib/simplepie/library/SimplePie/Misc.php  	 bug  	 1450  	Web:BoldAndItalicTagsCheck
+Petr_Škoda  	 /moodle/lib/simplepie/library/SimplePie/Misc.php  	 bug  	 1455  	php:S1862
+Yuliya_Bozhko  	 /moodle/lib/badgeslib.php  	 bug  	 674  	php:S1862
+stronk7  	 /moodle/lib/adodb/drivers/adodb-mssqlnative.inc.php  	 bug  	 506  	php:S1763
+Andreas_Grabs  	 /moodle/mod/feedback/yui/dragdrop/dragdrop.js  	 bug  	 226  	php:S1763
+David_Monllao  	 /moodle/lib/testing/lib.php  	 bug  	 84  	javascript:UnreachableCode
+Marina_Glancy  	 /moodle/grade/grading/form/lib.php  	 bug  	 397  	php:S1764
+Petr_Škoda  	 /moodle/enrol/flatfile/lib.php  	 bug  	 619  	php:S1145
+Petr_Škoda  	 /moodle/lib/excellib.class.php  	 bug  	 428  	php:S905
+Petr_Škoda  	 /moodle/lib/excellib.class.php  	 bug  	 432  	php:S836
+Mayank_Gupa  	 /moodle/mod/scorm/datamodels/scorm_13lib.php  	 bug  	 953  	php:S836
+David_Monllao  	 /moodle/mod/chat/gui_sockets/index.php  	 bug  	 82  	php:S1862
+Petr_Škoda  	 /moodle/lib/editor/tinymce/plugins/moodleemoticon/dialog.php  	 bug  	 43  	Web:UnsupportedTagsInHtml5Check
+Frederic_Massart  	 /moodle/repository/s3/S3.php  	 bug  	 2050  	Web:PageWithoutTitleCheck
+Tim_Hunt  	 /moodle/question/behaviour/adaptive/renderer.php  	 bug  	 112  	php:S1656
+Damyon_Wiese  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js  	 bug  	 15504  	php:S1763
+Frederic_Massart  	 /moodle/mod/quiz/comment.php  	 bug  	 125  	javascript:DuplicatePropertyName
+Marina_Glancy  	 /moodle/repository/filepicker.js  	 bug  	 258  	Web:FieldsetWithoutLegendCheck
+Dongsheng_Cai  	 /moodle/lib/filestorage/stored_file.php  	 bug  	 79  	javascript:S2259
+Marina_Glancy  	 /moodle/repository/filepicker.js  	 bug  	 1609  	php:S1764
+Davo_Smith  	 /moodle/course/dndupload.js  	 bug  	 226  	javascript:S2259
+Damyon_Wiese  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js  	 bug  	 13681  	javascript:UnreachableCode
+Damyon_Wiese  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js  	 bug  	 14190  	javascript:S2259
+Damyon_Wiese  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js  	 bug  	 19037  	javascript:S2583
+Damyon_Wiese  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js  	 bug  	 19083  	javascript:S2259
+Petr_Skoda  	 /moodle/mod/workshop/form/accumulative/tests/lib_test.php  	 bug  	 115  	javascript:S2259
+Petr_Skoda  	 /moodle/lib/editor/tinymce/plugins/spellchecker/classes/EnchantSpell.php  	 bug  	 35  	php:S1764
+Petr_Škoda  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/advlink/js/advlink.js  	 bug  	 430  	php:S1763
+Petr_Škoda  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/autosave/editor_plugin_src.js  	 bug  	 51  	javascript:S2259
+Petr_Škoda  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/preview/example.html  	 bug  	 1  	javascript:S2137
+Petr_Škoda  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/plugins/table/js/table.js  	 bug  	 331  	Web:DoctypePresenceCheck
+Petr_Skoda  	 /moodle/lib/editor/tinymce/tiny_mce/3.5.11/themes/advanced/js/color_picker.js  	 bug  	 39  	javascript:S1656
