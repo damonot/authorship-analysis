@@ -22,18 +22,16 @@ def runner():
 
   for i in range(0,9):
      tempRules = rule_grabber(csvs[i])
-    
+     desc_swapper(txts[i], tempRules)
 
-  for txt in txts:
-    tempDesc = desc_grabber(txt)
-
-def desc_grabber(txtLoc):
+def desc_swapper(txtLoc, tempRules):
   descs = []
   with open(txtLoc, "r+", encoding='utf-8') as file:
+    ruleIndex = 0
     for line in file:
         fields = line.split('\t')
-        #print(fields[4])
-        #descs.append(fields[3])
+        fields[4] = tempRules[ruleIndex]
+        ruleIndex+=1
 
 
 def rule_grabber(csvLoc):
