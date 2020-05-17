@@ -43,7 +43,7 @@ def desc_swapper(txtLoc, tempRules):
         
         newLine = ""
         for item in oldLine:
-          newLine+=item+"\t"
+          newLine+=item+" \t" # space before and after \t
         newLine+=rule
         newLines.append(newLine)
         print(newLine)

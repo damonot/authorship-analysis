@@ -1,94 +1,94 @@
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Controllers/ExportController.php 	 bug 	 619 	php:S905
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 2989 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 174 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3846 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/config.js 	 bug 	 826 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 72 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 101 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 126 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 161 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/search.js 	 bug 	 149 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/search.js 	 bug 	 181 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/structure.js 	 bug 	 321 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/structure.js 	 bug 	 374 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3021 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3221 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3239 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 4112 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 4619 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 4640 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 160 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 209 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 263 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 282 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/indexes.js 	 bug 	 675 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/makegrid.js 	 bug 	 1036 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/makegrid.js 	 bug 	 1412 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 536 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 570 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 598 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 716 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 993 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 1039 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 1126 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/databases.js 	 bug 	 89 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/databases.js 	 bug 	 134 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 186 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 224 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 251 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 302 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 336 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 366 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/variables.js 	 bug 	 109 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/chart.js 	 bug 	 382 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 48 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 71 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 121 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 247 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 281 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 316 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/relation.js 	 bug 	 115 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/structure.js 	 bug 	 228 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/zoom_plot_jqplot.js 	 bug 	 388 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Controllers/Server/DatabasesController.php 	 bug 	 122 	php:S836
-William_Desportes 	 /phpmyadmin/test/classes/TableTest.php 	 bug 	 59 	php:S1764
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 189 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/search.js 	 bug 	 241 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/select.js 	 bug 	 179 	javascript:S2259
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/ReplicationGui.php 	 bug 	 320 	php:S2201
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/ReplicationGui.php 	 bug 	 326 	php:S2201
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/vendor/codemirror/lib/codemirror.js 	 bug 	 6191 	javascript:S2259
-Michal_Čihař 	 /phpmyadmin/js/vendor/tracekit.js 	 bug 	 6 	javascript:S2137
-Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WCSCapabilities/v1_0_0.js 	 bug 	 142 	javascript:DuplicatePropertyName
-Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WCSCapabilities/v1_0_0.js 	 bug 	 145 	javascript:DuplicatePropertyName
-Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WMTSCapabilities.js 	 bug 	 212 	javascript:S2259
-Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Renderer/SVG.js 	 bug 	 340 	javascript:S2259
-Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/deprecated.js 	 bug 	 5134 	javascript:S2259
-Madhura_Jayaratne 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.dateAxisRenderer.js 	 bug 	 488 	javascript:S2259
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Control/Graticule.js 	 bug 	 319 	javascript:S2259
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/ArcXML.js 	 bug 	 347 	javascript:S3981
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/GeoJSON.js 	 bug 	 459 	javascript:S2583
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/GeoJSON.js 	 bug 	 459 	javascript:S3812
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/Text.js 	 bug 	 116 	javascript:S2259
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Geometry/LineString.js 	 bug 	 330 	javascript:S2259
-Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Renderer/VML.js 	 bug 	 299 	javascript:S2259
-Atul_Pratap_Singh 	 /phpmyadmin/js/server/status/monitor.js 	 bug 	 2085 	javascript:S2259
-Viduranga_Wijesooriya 	 /phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js 	 bug 	 1875 	javascript:S2583
-Viduranga_Wijesooriya 	 /phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js 	 bug 	 1883 	javascript:S2583
-Marc_Delisle 	 /phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js 	 bug 	 2215 	javascript:S2259
-Rouslan_Placella 	 /phpmyadmin/js/server/status/sorter.js 	 bug 	 18 	javascript:S2259
-Rouslan_Placella 	 /phpmyadmin/js/vendor/jquery/jquery.ba-hashchange-1.3.js 	 bug 	 88 	javascript:S2137
-Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3877 	javascript:S2259
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.barRenderer.js 	 bug 	 477 	javascript:S905
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.cursor.js 	 bug 	 1081 	javascript:S3001
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.cursor.js 	 bug 	 1082 	javascript:S3001
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 87 	javascript:S2137
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 8826 	javascript:S2583
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 8826 	javascript:S3403
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 9512 	javascript:S2583
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 9512 	javascript:S3403
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 391 	javascript:S2259
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 683 	javascript:S2583
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 708 	javascript:S2583
-Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 752 	javascript:S2583
-Tyron_Madlener 	 /phpmyadmin/js/vendor/jquery/jquery.tablesorter.js 	 bug 	 522 	javascript:S2583
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Controllers/ExportController.php 	 bug 	 619 	 Remove or refactor this statement.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 2989 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 174 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3846 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/config.js 	 bug 	 826 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 72 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 101 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 126 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/operations.js 	 bug 	 161 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/search.js 	 bug 	 149 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/search.js 	 bug 	 181 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/structure.js 	 bug 	 321 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/structure.js 	 bug 	 374 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3021 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3221 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3239 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 4112 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 4619 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 4640 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 160 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 209 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 263 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/gis_data_editor.js 	 bug 	 282 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/indexes.js 	 bug 	 675 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/makegrid.js 	 bug 	 1036 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/makegrid.js 	 bug 	 1412 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 536 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 570 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 598 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 716 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 993 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 1039 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 1126 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/databases.js 	 bug 	 89 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/databases.js 	 bug 	 134 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 186 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 224 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 251 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 302 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 336 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/privileges.js 	 bug 	 366 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/server/variables.js 	 bug 	 109 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/chart.js 	 bug 	 382 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 48 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 71 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 121 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 247 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 281 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/operations.js 	 bug 	 316 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/relation.js 	 bug 	 115 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/structure.js 	 bug 	 228 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/zoom_plot_jqplot.js 	 bug 	 388 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Controllers/Server/DatabasesController.php 	 bug 	 122 	 Review the data-flow - use of uninitialized value.
+William_Desportes 	 /phpmyadmin/test/classes/TableTest.php 	 bug 	 59 	 Identical sub-expressions on both sides of operator "==="
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/navigation.js 	 bug 	 189 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/database/search.js 	 bug 	 241 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/table/select.js 	 bug 	 179 	 TypeError can be thrown as "data" might be null or undefined here.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/ReplicationGui.php 	 bug 	 320 	 The return value of "strtok" must be used.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/ReplicationGui.php 	 bug 	 326 	 The return value of "strtok" must be used.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/vendor/codemirror/lib/codemirror.js 	 bug 	 6191 	 TypeError can be thrown as "lines" might be null or undefined here.
+Michal_Čihař 	 /phpmyadmin/js/vendor/tracekit.js 	 bug 	 6 	 Do not use "undefined" to declare a parameter - use another name.
+Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WCSCapabilities/v1_0_0.js 	 bug 	 142 	 Rename or remove duplicate property name 'name'.
+Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WCSCapabilities/v1_0_0.js 	 bug 	 145 	 Rename or remove duplicate property name 'label'.
+Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WMTSCapabilities.js 	 bug 	 212 	 TypeError can be thrown as "style" might be null or undefined here.
+Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Renderer/SVG.js 	 bug 	 340 	 TypeError can be thrown as "src" might be null or undefined here.
+Michal_Čihař 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/deprecated.js 	 bug 	 5134 	 TypeError can be thrown as "src" might be null or undefined here.
+Madhura_Jayaratne 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.dateAxisRenderer.js 	 bug 	 488 	 TypeError can be thrown as "daTickInterval" might be null or undefined here.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Control/Graticule.js 	 bug 	 319 	 TypeError can be thrown as "labelPoint" might be null or undefined here.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/ArcXML.js 	 bug 	 347 	 Fix this expression; length of "query.where" is always greater or equal to zero.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/GeoJSON.js 	 bug 	 459 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/GeoJSON.js 	 bug 	 459 	 Add parentheses to perform "instanceof" operator before logical NOT operator.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/Text.js 	 bug 	 116 	 TypeError can be thrown as "style" might be null or undefined here.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Geometry/LineString.js 	 bug 	 330 	 TypeError can be thrown as "vert2" might be null or undefined here.
+Marc_Delisle 	 /phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Renderer/VML.js 	 bug 	 299 	 TypeError can be thrown as "fill" might be null or undefined here.
+Atul_Pratap_Singh 	 /phpmyadmin/js/server/status/monitor.js 	 bug 	 2085 	 TypeError can be thrown as "data" might be null or undefined here.
+Viduranga_Wijesooriya 	 /phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js 	 bug 	 1875 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Viduranga_Wijesooriya 	 /phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js 	 bug 	 1883 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js 	 bug 	 2215 	 TypeError can be thrown as "date" might be null or undefined here.
+Rouslan_Placella 	 /phpmyadmin/js/server/status/sorter.js 	 bug 	 18 	 TypeError can be thrown as "$table" might be null or undefined here.
+Rouslan_Placella 	 /phpmyadmin/js/vendor/jquery/jquery.ba-hashchange-1.3.js 	 bug 	 88 	 Do not use "undefined" to declare a parameter - use another name.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/js/functions.js 	 bug 	 3877 	 TypeError can be thrown as "data" might be null or undefined here.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.barRenderer.js 	 bug 	 477 	 Refactor or remove this statement.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.cursor.js 	 bug 	 1081 	 Remove this "delete" operator or pass an object property to it.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.cursor.js 	 bug 	 1082 	 Remove this "delete" operator or pass an object property to it.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 87 	 Do not use "undefined" to declare a variable - use another name.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 8826 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 8826 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 9512 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/jquery.jqplot.js 	 bug 	 9512 	 Remove this "===" check; it will always be false. Did you mean to use "=="?
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 391 	 TypeError can be thrown as "options" might be null or undefined here.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 683 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 708 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
+Marc_Delisle 	 /phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js 	 bug 	 752 	 Change this condition so that it does not always evaluate to "false"; some subsequent code is never executed.
+Tyron_Madlener 	 /phpmyadmin/js/vendor/jquery/jquery.tablesorter.js 	 bug 	 522 	 Change this condition so that it does not always evaluate to "true"; some subsequent code is never executed.
