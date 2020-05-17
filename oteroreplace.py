@@ -32,7 +32,6 @@ def replace_txt(tempTXT, txtName):
     for line in tempTXT:
       file.write(line)
 
-
 def desc_swapper(txtLoc, tempRules):
   newLines = []
   with open(txtLoc, "r+", encoding='utf-8') as file:
@@ -50,7 +49,6 @@ def desc_swapper(txtLoc, tempRules):
         print(newLine)
         ruleIndex+=1
   return newLines
-
 
 def rule_grabber(csvLoc):
   rules = []
