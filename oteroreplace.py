@@ -1,3 +1,4 @@
+# replace the descriptions of the flaw with the SonarQube rule that the flaw violated
 import csv
 from itertools import islice # csv iteration
 import os
@@ -20,18 +21,35 @@ def runner():
     "text_data\otero-phpmyadmin-auth2vuln.txt",    
   ]
 
-  for i in range(0,9):
+  for i in range(len(txts)):
      tempRules = rule_grabber(csvs[i])
-     desc_swapper(txts[i], tempRules)
+     tempTXT = desc_swapper(txts[i], tempRules)
+     replace_txt(tempTXT, txts[i])
+
+def replace_txt(tempTXT, txtName):
+  with open(txtName, "w", encoding='utf-8') as file:
+    ruleIndex = 0
+    for line in tempTXT:
+      file.write(line)
+
 
 def desc_swapper(txtLoc, tempRules):
-  descs = []
+  newLines = []
   with open(txtLoc, "r+", encoding='utf-8') as file:
     ruleIndex = 0
     for line in file:
         fields = line.split('\t')
-        fields[4] = tempRules[ruleIndex]
+        oldLine = fields[:4]
+        rule = tempRules[ruleIndex] + "\n"
+        
+        newLine = ""
+        for item in oldLine:
+          newLine+=item+"\t"
+        newLine+=rule
+        newLines.append(newLine)
+        print(newLine)
         ruleIndex+=1
+  return newLines
 
 
 def rule_grabber(csvLoc):

@@ -1,26 +1,26 @@
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Controllers/UserPasswordController.php 	 vuln 	 72 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3830 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3832 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/test/classes/Server/PrivilegesTest.php 	 vuln 	 984 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/test/classes/Server/PrivilegesTest.php 	 vuln 	 1400 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3272 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/js/vendor/u2f-api-polyfill.js 	 vuln 	 545 	 Make sure this cross-domain message is being sent to the intended domain.
-Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/Auth/AuthenticationCookie.php 	 vuln 	 244 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/Auth/AuthenticationHttp.php 	 vuln 	 149 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/AuthenticationPlugin.php 	 vuln 	 42 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/AuthenticationPlugin.php 	 vuln 	 134 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php 	 vuln 	 689 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php 	 vuln 	 740 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php 	 vuln 	 321 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php 	 vuln 	 351 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php 	 vuln 	 384 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationSignonTest.php 	 vuln 	 255 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Replication.php 	 vuln 	 100 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Deven_Bansod 	 /phpmyadmin/test/selenium/Database/EventsTest.php 	 vuln 	 145 	 Remove this call to "sleep".
-Deven_Bansod 	 /phpmyadmin/test/selenium/Database/EventsTest.php 	 vuln 	 185 	 Remove this call to "sleep".
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3011 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3017 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3650 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Osaid_Rehman_Nasir 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php 	 vuln 	 1115 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Deven_Bansod 	 /phpmyadmin/libraries/classes/Config/Validator.php 	 vuln 	 293 	 'password' detected in this variable name, review this potentially hardcoded credential.
-Spun_Nakandala 	 /phpmyadmin/test/selenium/CreateRemoveUserTest.php 	 vuln 	 47 	 'password' detected in this variable name, review this potentially hardcoded credential.
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Controllers/UserPasswordController.php 	 vuln 	 72 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3830 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3832 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/test/classes/Server/PrivilegesTest.php 	 vuln 	 984 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/test/classes/Server/PrivilegesTest.php 	 vuln 	 1400 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3272 	php:S2068
+Michal_Čihař 	 /phpmyadmin/js/vendor/u2f-api-polyfill.js 	 vuln 	 545 	javascript:S2819
+Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/Auth/AuthenticationCookie.php 	 vuln 	 244 	php:S2068
+Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/Auth/AuthenticationHttp.php 	 vuln 	 149 	php:S2068
+Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/AuthenticationPlugin.php 	 vuln 	 42 	php:S2068
+Michal_Čihař 	 /phpmyadmin/libraries/classes/Plugins/AuthenticationPlugin.php 	 vuln 	 134 	php:S2068
+Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php 	 vuln 	 689 	php:S2068
+Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php 	 vuln 	 740 	php:S2068
+Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php 	 vuln 	 321 	php:S2068
+Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php 	 vuln 	 351 	php:S2068
+Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationHttpTest.php 	 vuln 	 384 	php:S2068
+Michal_Čihař 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationSignonTest.php 	 vuln 	 255 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Replication.php 	 vuln 	 100 	php:S2068
+Deven_Bansod 	 /phpmyadmin/test/selenium/Database/EventsTest.php 	 vuln 	 145 	php:S2964
+Deven_Bansod 	 /phpmyadmin/test/selenium/Database/EventsTest.php 	 vuln 	 185 	php:S2964
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3011 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3017 	php:S2068
+Maurício_Meneghini_Fauth 	 /phpmyadmin/libraries/classes/Server/Privileges.php 	 vuln 	 3650 	php:S2068
+Osaid_Rehman_Nasir 	 /phpmyadmin/test/classes/Plugins/Auth/AuthenticationCookieTest.php 	 vuln 	 1115 	php:S2068
+Deven_Bansod 	 /phpmyadmin/libraries/classes/Config/Validator.php 	 vuln 	 293 	php:S2068
+Spun_Nakandala 	 /phpmyadmin/test/selenium/CreateRemoveUserTest.php 	 vuln 	 47 	php:S2068

@@ -6,13 +6,9 @@ Created on Thu Jan 16 18:50:33 2020
 """
 import oteromakegraphdata as mkgrf
 import oteroanalyzegraphs as anlyzgrf
-import oteroreplace as repc
 
 def main():
     print('start')    
-
-    repc.runner()
-    quit()
 
     repos = [ 'https://github.com/phpmyadmin/phpmyadmin',
              'https://github.com/drupal/drupal',
