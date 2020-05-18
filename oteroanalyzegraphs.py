@@ -37,13 +37,15 @@ def runner(repo):
 
 def bfiaf2excel(bfiaf, repo):
     
-    #print(bfiaf)
+    print(bfiaf)
     folder = "xl_data\\"
     xlname = folder + "otero-bfiaf.xlsx"
     try:
         book = load_workbook(xlname)
     except:
         book = openpyxl.Workbook()
+        default = book.get_sheet_by_name('Sheet')
+        book.remove_sheet(default)
 
     sheet = book.create_sheet(repo)
 
@@ -78,9 +80,22 @@ def bfiaf2excel(bfiaf, repo):
     Bugs    | Auth1 | Auth 2 | Authi |
     java:003| 1.4   | 9.2    | 0     |
     '''    
+    col = 2
     for tups in bfiaf:
-        for rule in tups[1]:
-            print(rule.value)
+        dict = tups[1]
+        for rule in dict:
+            row = 2
+            cleanRule = (rule.replace('\n', ''))
+            cl = sheet.cell(row=row, column=1)
+            rowRule = cl.value
+            while(rowRule != cleanRule):
+                row+=1
+                cl = sheet.cell(row=row, column=1)
+                rowRule = cl.value
+            cl = sheet.cell(row=row, column=col)
+            cl.value = dict[rule]
+            #print(rule, dict[rule])
+        col+=1
 
 
     book.save(xlname)
