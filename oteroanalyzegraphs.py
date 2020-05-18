@@ -7,7 +7,7 @@ Created on Sat Jan 25 18:55:22 2020
 import os
 import math
 import pandas as pd
-import xlsxwriter
+import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
 
 def runner(repo):
@@ -36,6 +36,40 @@ def runner(repo):
 
 
 def bfiaf2excel(bfiaf, repo):
+    
+    #print(bfiaf)
+    folder = "xl_data\\"
+    xlname = folder + "otero-bfiaf.xlsx"
+    try:
+        book = load_workbook(xlname)
+    except:
+        book = openpyxl.Workbook()
+
+    sheet = book.create_sheet(repo)
+
+    # generate column headers
+    cl = sheet.cell(row=1, column=1)
+    cl.value = "Bug_Rule"
+    col = 2; row = 1
+    for tups in bfiaf:
+        cl = sheet.cell(row=row, column=col)
+        cl.value = tups[0]
+        col+=1
+
+    # generate row headers i.e. rule types
+    rules = []
+    for tups in bfiaf:
+        for rule in tups[1]:
+            cleanRule = (rule.replace('\n', ''))
+            if(cleanRule not in rules):
+                rules.append(cleanRule)
+    col = 1; row = 2;
+    for rule in rules:
+        cl = sheet.cell(row=row, column=col)
+        cl.value = rule
+        #sheet.write(row,col, rule)
+        row+=1
+
     '''structure is...
     list: tups
         tup: author, dict
@@ -43,35 +77,13 @@ def bfiaf2excel(bfiaf, repo):
     '''
     Bugs    | Auth1 | Auth 2 | Authi |
     java:003| 1.4   | 9.2    | 0     |
-    '''        
-    #print(bfiaf)
-    folder = "xl_data\\"
-    xlname = folder + "otero-bfiaf.xlsx"
-    book = xlsxwriter.Workbook(xlname)
-    sheet = book.add_worksheet(repo)
-
-    # generate column headers
-    sheet.write(0,0, "Bug_Rule")
-    col = 1; row = 0
-    for tups in bfiaf:
-        #print(tups[0])
-        sheet.write(row, col, tups[0])
-        col+=1
-
-    # generate row headers
-    rules = []
+    '''    
     for tups in bfiaf:
         for rule in tups[1]:
-            cleanRule = (rule.replace('\n', ''))
-            if(cleanRule not in rules):
-                rules.append(cleanRule)
-    print(rules)
-    col = 0; row = 1;
-    for rule in rules:
-        sheet.write(row,col, rule)
-        row+=1
+            print(rule.value)
 
-    book.close()
+
+    book.save(xlname)
 
 #bug-frequency2inverseauthorfrequency
 def bf_iaf(txt, repo):
