@@ -9,6 +9,7 @@ import math
 import pandas as pd
 import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
+import sklearn
 
 def runner(repo):
     cwd = os.getcwd()
@@ -34,10 +35,17 @@ def runner(repo):
         bfiaf = bf_iaf(path, repo)
         bfiaf2excel(bfiaf, repo)
 
+    response = input("Bicluster? [y]/n\n")
+    if(response == 'y'):
+        bicluster(path, repo)
+
+def bicluster(xl, repo):
+    print("biclustering")
+
 
 def bfiaf2excel(bfiaf, repo):
     
-    print(bfiaf)
+    #print(bfiaf)
     folder = "xl_data\\"
     xlname = folder + "otero-bfiaf.xlsx"
     try:
@@ -80,6 +88,8 @@ def bfiaf2excel(bfiaf, repo):
     Bugs    | Auth1 | Auth 2 | Authi |
     java:003| 1.4   | 9.2    | 0     |
     '''    
+
+    # populate table 
     col = 2
     for tups in bfiaf:
         dict = tups[1]

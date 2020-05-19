@@ -180,6 +180,9 @@ def runner(repoAddress):
         auth2flawedFiles = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
         merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
         
+
+        #TODO flaw-flaw network
+
         #auth2Flaw Analysis
         response = input('Connect Authors To Flaws & Generate Lynksoft XLSX? [y]/n\n...')
         columnTypes = ['person', 'flag']
