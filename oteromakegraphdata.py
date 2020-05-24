@@ -83,7 +83,11 @@ def connect_coworkers(inputFiles, outputFile):
     with open(outputFile, "w", encoding='utf-8') as output:
         for conxn in connectedAuths:
                 output.write(str(conxn[0]) + '\t' +str(conxn[1]) + '\tcoworkers\n')
-                
+
+def connect_flaws(flawsList, outputFile):
+    print("TODO: connecting flaws")
+    return None       
+
 # connects bad files which have the same author
 def connect_flawedFiles(flawedFile, outputFile):
     lineList = []
@@ -179,9 +183,19 @@ def runner(repoAddress):
         fileList = [authorVulnFilesOutput, authorBuggyFilesOutput]  
         auth2flawedFiles = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
         merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
-        
 
-        #TODO flaw-flaw network
+         #TODO flaw-flaw network
+        # flaw2flaw Analysis
+        flaws = [
+            'text_data\otero-'+folderName+'-auth2bug.txt','text_data\otero-'+folderName+'-auth2vuln.txt']
+        print('\nStarting Flaw-Connectivity Analysis...', end = '')
+        flaw2flawOutput = 'text_data\otero-'+folderName+'-flaw2flaw.txt' # flawA flawB commonAuth
+        connect_flaws(flaws, flaw2flawOutput)
+        columnTypes = ['document', 'document'] # left column type, right column type
+        response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
+        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flaws.xlsx'
+        if(response == "y"):
+            makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
 
         #auth2Flaw Analysis
         response = input('Connect Authors To Flaws & Generate Lynksoft XLSX? [y]/n\n...')
@@ -219,6 +233,7 @@ def runner(repoAddress):
         XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flawedFiles.xlsx'
         if(response == "y"):
             makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
+
             
         # TODO implement option to delete leftover text files
         response = input('Delete .txt files? [y]/n\n')        

@@ -9,7 +9,6 @@ import math
 import pandas as pd
 import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
-import sklearn
 
 def runner(repo):
     cwd = os.getcwd()
@@ -27,27 +26,45 @@ def runner(repo):
 
     bugvulnfolder = os.getcwd() + "\\text_data\\"
     bugvulnfile = 'otero-'+repo+'-auth2flawedFiles.txt'
-    path = bugvulnfolder + bugvulnfile    
+    bugvulnpath = bugvulnfolder + bugvulnfile    
 
     # bf*iaf bug uniqueness distribution for each author
     response = input('Bug-Frequency * Inverse Author Frequency? [y]/n\n')
     if(response == 'y'):
-        bfiaf = bf_iaf(path, repo)
-        bfiaf2excel(bfiaf, repo)
+        bfiaf = ff_iaf(bugvulnpath, repo, "bug")
+        ffiaf2excel(bfiaf, repo, "Bug")
+
+   # vf*iaf vuln uniqueness distribution for each author
+    response = input('Vuln-Frequency * Inverse Author Frequency? [y]/n\n')
+    if(response == 'y'):
+        vfiaf = ff_iaf(bugvulnpath, repo, "vuln")
+        ffiaf2excel(bfiaf, repo, "Vulnerability")
+    
+    response = input("Calculate Proximity Measures of "+repo+"? [y]/n\n")
+    if(response == 'y'):
+        measure_prox(bugvulnpath, repo)
 
     response = input("Bicluster? [y]/n\n")
     if(response == 'y'):
-        bicluster(path, repo)
+        bicluster(bugvulnpath, repo)
+
+def measure_prox(file, repo):
+    print(file)
+
 
 def bicluster(xl, repo):
     print("biclustering")
 
 
-def bfiaf2excel(bfiaf, repo):
+def ffiaf2excel(ffiaf, repo, type):
     
     #print(bfiaf)
     folder = "xl_data\\"
-    xlname = folder + "otero-bfiaf.xlsx"
+    if(type == "Bug"):
+        xlname = folder + "otero-bfiaf.xlsx"
+    elif(type == "Vulnerability"):
+        xlname = folder + "otero-vfiaf.xlsx"
+
     try:
         book = load_workbook(xlname)
     except:
@@ -59,16 +76,16 @@ def bfiaf2excel(bfiaf, repo):
 
     # generate column headers
     cl = sheet.cell(row=1, column=1)
-    cl.value = "Bug_Rule"
+    cl.value = type+"_Rule"
     col = 2; row = 1
-    for tups in bfiaf:
+    for tups in ffiaf:
         cl = sheet.cell(row=row, column=col)
         cl.value = tups[0]
         col+=1
 
     # generate row headers i.e. rule types
     rules = []
-    for tups in bfiaf:
+    for tups in ffiaf:
         for rule in tups[1]:
             cleanRule = (rule.replace('\n', ''))
             if(cleanRule not in rules):
@@ -80,18 +97,17 @@ def bfiaf2excel(bfiaf, repo):
         #sheet.write(row,col, rule)
         row+=1
 
-    '''structure is...
+    '''
+    structure is...
     list: tups
         tup: author, dict
-            dict: bug, freq '''
+            dict: flaw, freq 
     '''
-    Bugs    | Auth1 | Auth 2 | Authi |
-    java:003| 1.4   | 9.2    | 0     |
-    '''    
+
 
     # populate table 
     col = 2
-    for tups in bfiaf:
+    for tups in ffiaf:
         dict = tups[1]
         for rule in dict:
             row = 2
@@ -110,83 +126,83 @@ def bfiaf2excel(bfiaf, repo):
 
     book.save(xlname)
 
-#bug-frequency2inverseauthorfrequency
-def bf_iaf(txt, repo):
 
-    bugs = []
+#flaw-frequency2inverseauthorfrequency
+def ff_iaf(txt, repo, type):
+
+    flaws = []
     authors = []
-    bugLines = []
+    flawLines = []
     with open(txt, encoding='utf-8') as t:
         for line in t:
             fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
-            if(fields[2] == ' bug  '): # is a bug? weird formatting, work with it
-                bugLines.append(fields) # copy necessary lines into list
-                bug = fields[4]
+            if(fields[2].strip() == type): # is a bug/vuln? weird formatting, work with it
+                flawLines.append(fields) # copy necessary lines into list
+                flaw = fields[4]
                 auth = fields[0]
-                if(bug not in bugs): # bug not encountered yet
-                    bugs.append(bug)
-                    #print(bug)
+                if(flaw not in flaws): # flaw not encountered yet
+                    flaws.append(flaw)
+                    #print(flaw)
                 if(auth not in authors): # author not encountered yet
                     authors.append(auth)
     
     nAuth = len(authors) # number of authors
     
-    #BF calculation
+    #FF calculation
     listDict = [] # list of freqDict
     for auth in authors:
-        freqDict = {} # of times each bug is connected to auth
-        #print("Calculating Bug Distribution for Author: " +auth)
-        for line in bugLines:
+        freqDict = {} # of times each flaw is connected to auth
+        for line in flawLines:
             if(line[0] == auth):
-                bug = line[4]
-                if(bug not in freqDict):
-                    freqDict[bug] = 1
+                flaw = line[4]
+                if(flaw not in freqDict):
+                    freqDict[flaw] = 1
                 else:
-                    freqDict[bug] +=1
+                    freqDict[flaw] +=1
         
-        listDict.append([auth, freqDict]) # author & their bug freq dist
+        listDict.append([auth, freqDict]) # author & their flaw freq dist
     
     '''structure is...
     list: tups
         tup: author, dict
-            dict: bug, freq '''
-    #AF calculation: num authors who have written a particular bug
+            dict: flaw, freq '''
+    #AF calculation: num authors who have written a particular flaw
     
-    encounteredBugs = []
-    authsPerBug = {} # bug | num auths who have written it
+    encounteredFlaws = []
+    authsPerFlaw = {} # flaw | num auths who have written it
     for tup in listDict:
         auth = tup[0]
-        for bug in tup[1]: # iterate through bugs of auths freqdist dict
-            if bug not in encounteredBugs: # new author of bug
-                authsPerBug[bug] = 1
-                encounteredBugs.append(bug)
-            else: authsPerBug[bug] += 1 # additional author of existing bug
+        for flaw in tup[1]: # iterate through flaws of auths freqdist dict
+            if flaw not in encounteredFlaws: # new author of flaw
+                authsPerFlaw[flaw] = 1
+                encounteredFlaws.append(flaw)
+            else: authsPerFlaw[flaw] += 1 # additional author of existing flaw
     
     
     '''structure is...
     list: tups
         tup: author, dict
-            dict: bug, bfiaf '''
-    #BF IAF calculation
-    bfiafs = []
+            dict: flaw, bfiaf '''
+    #FF IAF calculation
+    ffiafs = []
     for auth in authors:
-        bfiafs.append((auth, {}))
+        ffiafs.append((auth, {}))
     
-    for bug in authsPerBug:
-        iafeqn = (1 + nAuth)/(1+authsPerBug[bug])
+    for flaw in authsPerFlaw:
+        iafeqn = (1 + nAuth)/(1+authsPerFlaw[flaw])
         iaf = math.log(iafeqn,2)
-        for tup in listDict: # (auth, {bug, count})
+        for tup in listDict: # (auth, {flaw, count})
             auth = tup[0]
             authIndex = listDict.index(tup)
-            if(bug in tup[1]):
-                bugfreq4auth = tup[1][bug] # [1] selects dict, [bug] selects key
-            else: bugfreq4auth = 0
-            bfiafval = bugfreq4auth * iaf
+            if(flaw in tup[1]):
+                flawfreq4auth = tup[1][flaw] # [1] selects dict, [flaw] selects key
+            else: flawfreq4auth = 0
+            ffiafval = flawfreq4auth * iaf
             
             # append bug and bfiafval to dict
-            bfiafs[authIndex][1].update( {bug : bfiafval} ) 
+            ffiafs[authIndex][1].update( {flaw : ffiafval} ) 
     
-    return bfiafs
+    return ffiafs
     
 
 def gen_degreeCentrality(xlLoc, repo):
