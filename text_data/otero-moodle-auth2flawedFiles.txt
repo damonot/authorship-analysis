@@ -40,7 +40,7 @@ Rajesh_Taneja  	 /moodle/lib/behat/lib.php  	 vuln  	 540  	php:S2964
 Juan_Leyva  	 /moodle/auth/tests/external_test.php  	 vuln  	 75  	php:S2068
 Juan_Leyva  	 /moodle/auth/email/tests/external_test.php  	 vuln  	 88  	php:S2068
 Juan_Leyva  	 /moodle/auth/email/tests/external_test.php  	 vuln  	 133  	php:S2068
-skodak  	 /moodle/admin/cli/reset_password.php  	 vuln  	 57  	php:S2068
+Petr_Skoda  	 /moodle/admin/cli/reset_password.php  	 vuln  	 57  	php:S2068
 Damyon_Wiese  	 /moodle/mod/assign/feedback/editpdf/tests/behat/behat_assignfeedback_editpdf.php  	 vuln  	 65  	php:S2964
 Damyon_Wiese  	 /moodle/mod/assign/feedback/editpdf/tests/behat/behat_assignfeedback_editpdf.php  	 vuln  	 72  	php:S2964
 Damyon_Wiese  	 /moodle/mod/assign/feedback/editpdf/tests/behat/behat_assignfeedback_editpdf.php  	 vuln  	 79  	php:S2964
@@ -76,7 +76,7 @@ Inaki  	 /moodle/lib/ldaplib.php  	 vuln  	 220  	php:S4433
 Eloy_Lafuente_(stronk7)	 /moodle/backup/util/dbops/restore_dbops.class.php  	 vuln  	 1232  	php:S2068
 Petr_Skoda  	 /moodle/lib/jabber/XMPP/XMLStream.php  	 vuln  	 319  	php:S2964
 Petr_Skoda  	 /moodle/lib/phpmailer/src/PHPMailer.php  	 vuln  	 349  	php:S2068
-skodak  	 /moodle/lib/db/install.php  	 vuln  	 230  	php:S2068
+Petr_Skoda  	 /moodle/lib/db/install.php  	 vuln  	 230  	php:S2068
 moodler  	 /moodle/lib/jabber/XMPP/XMPP.php  	 vuln  	 392  	php:S4423
 Marina_Glancy  	 /moodle/lib/adodb/drivers/adodb-ldap.inc.php  	 vuln  	 85  	php:S4433
 donal72  	 /moodle/mnet/lib.php  	 vuln  	 71  	php:S4830
