@@ -273,7 +273,7 @@ Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js  
 Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js  	 bug  	 886  	javascript:S3403
 Damyon_Wiese  	 /moodle/lib/editor/atto/yui/src/rangy/js/rangy-core.js  	 bug  	 3832  	javascript:S2583
 Dan_Poltawski  	 /moodle/lib/amd/src/permissionmanager.js  	 bug  	 195  	javascript:S2873
-poltawski  	 /moodle/blocks/tag_youtube/block_tag_youtube.php  	 bug  	 220  	javascript:S2259
+Dan_Poltawski  	 /moodle/blocks/tag_youtube/block_tag_youtube.php  	 bug  	 220  	javascript:S2259
 Jean-Michel_Vedrine  	 /moodle/mod/lesson/override_form.php  	 bug  	 174  	php:S1763
 Jean-Michel_Vedrine  	 /moodle/mod/lesson/override_form.php  	 bug  	 174  	php:S836
 Tim_Hunt  	 /moodle/mod/quiz/locallib.php  	 bug  	 196  	php:S836
