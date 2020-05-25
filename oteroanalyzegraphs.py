@@ -38,7 +38,7 @@ def runner(repo):
     response = input('Vuln-Frequency * Inverse Author Frequency? [y]/n\n')
     if(response == 'y'):
         vfiaf = ff_iaf(bugvulnpath, repo, "vuln")
-        ffiaf2excel(bfiaf, repo, "Vulnerability")
+        ffiaf2excel(vfiaf, repo, "Vulnerability")
     
     response = input("Calculate Proximity Measures of "+repo+"? [y]/n\n")
     if(response == 'y'):
@@ -62,7 +62,7 @@ def ffiaf2excel(ffiaf, repo, type):
     folder = "xl_data\\"
     if(type == "Bug"):
         xlname = folder + "otero-bfiaf.xlsx"
-    elif(type == "Vulnerability"):
+    if(type == "Vulnerability"):
         xlname = folder + "otero-vfiaf.xlsx"
 
     try:
@@ -129,7 +129,6 @@ def ffiaf2excel(ffiaf, repo, type):
 
 #flaw-frequency2inverseauthorfrequency
 def ff_iaf(txt, repo, type):
-
     flaws = []
     authors = []
     flawLines = []
@@ -142,7 +141,6 @@ def ff_iaf(txt, repo, type):
                 auth = fields[0]
                 if(flaw not in flaws): # flaw not encountered yet
                     flaws.append(flaw)
-                    #print(flaw)
                 if(auth not in authors): # author not encountered yet
                     authors.append(auth)
     
