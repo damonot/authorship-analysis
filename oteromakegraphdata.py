@@ -84,9 +84,57 @@ def connect_coworkers(inputFiles, outputFile):
         for conxn in connectedAuths:
                 output.write(str(conxn[0]) + '\t' +str(conxn[1]) + '\tcoworkers\n')
 
-def connect_flaws(flawsList, outputFile):
-    print("TODO: connecting flaws")
-    return None       
+
+#connect bugs to vulns
+def connect_flaws(flawsList, outputFile, repo):
+    bugsFile = flawsList[0]
+    vulnsFile = flawsList[1]
+    '''structure is...
+    list: tups
+        tup: vuln, dict
+            dict: bug, count '''
+    vulns = {}
+    flawedFiles = []
+    vulnfilepairs = []
+    with open(vulnsFile, encoding='utf-8') as file:
+        for line in file:
+            fields = line.split()
+            vulnLoc = fields[1]
+            vulnRule = fields[4]
+            pair = (vulnRule, vulnLoc)
+            if pair not in vulns:
+                vulns[pair] = 1
+            else:
+                vulns[pair] +=1
+            #if(pair not in vulnfilepairs):
+            #    vulnfilepairs.append[pair]
+
+
+    vuln2bugs = []
+    for pair in vulns:
+        bugDict = count_bugs(pair, bugsFile)
+        print(bugDict)
+        #TODO multiply bug entries per vuln based on num of 1 vulnrule violated in file
+        #TODO combine bug entries of same rule from diff files 
+        vuln2bugs.append((vulnRule, bugDict))
+
+def count_bugs(vulnfiletup, bugsFile):
+    print(vulnfiletup[1]) # file
+    vulnFile = vulnfiletup[1]
+    with open(bugsFile, encoding='utf-8') as file:
+        bugsofvuln = {}
+        for line in file:
+            fields = line.split()
+            bugFile = fields[1]
+            bugRule = fields[4]
+            if bugFile == vulnFile:
+                if bugRule not in bugsofvuln:
+                    bugsofvuln[bugRule] = 1
+                else:
+                    bugsofvuln[bugRule] +=1   
+
+    return bugsofvuln
+
 
 # connects bad files which have the same author
 def connect_flawedFiles(flawedFile, outputFile):
@@ -150,7 +198,7 @@ def runner(repoAddress):
 
     # Download Repo
     folderName = repoAddress.rsplit('/', 1)[-1] # last part of gitURL
-    getrep.download(repoAddress)
+    #getrep.download(repoAddress)
     
     # Path data for analysis steps
     cwd = os.getcwd()
@@ -170,7 +218,7 @@ def runner(repoAddress):
         response = input('Perform Auth2Vuln Analysis? [y]/n\n')
         if(response == 'y'):
             analyze_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
-            
+        
         
         # Bug Analysis       
         bugCSV ='raw_data\otero-'+folderName+'-bug.csv' # formerly authorBugInput
@@ -189,13 +237,17 @@ def runner(repoAddress):
         flaws = [
             'text_data\otero-'+folderName+'-auth2bug.txt','text_data\otero-'+folderName+'-auth2vuln.txt']
         print('\nStarting Flaw-Connectivity Analysis...', end = '')
-        flaw2flawOutput = 'text_data\otero-'+folderName+'-flaw2flaw.txt' # flawA flawB commonAuth
-        connect_flaws(flaws, flaw2flawOutput)
+        bug2vulnOutput = 'text_data\otero-'+folderName+'-flaw2flaw.txt' # flawA flawB commonAuth
+        response = input('Perform flaw2flaw Analysis? [y]/n\n')
+        if(response == 'y'):
+                connect_flaws(flaws, bug2vulnOutput, folderName)
+
+        #TODO convery connect_flaws output to lynksoft format 
         columnTypes = ['document', 'document'] # left column type, right column type
         response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
         XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flaws.xlsx'
         if(response == "y"):
-            makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
+            makelynks.genXLSX(bug2vulnOutput, columnTypes, XLSXoutput)
 
         #auth2Flaw Analysis
         response = input('Connect Authors To Flaws & Generate Lynksoft XLSX? [y]/n\n...')
