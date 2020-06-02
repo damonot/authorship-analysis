@@ -9,6 +9,7 @@ import oteromakelynksoft as makelynks
 import oteroanalyzegraphs as anlyzgrf
 from itertools import islice # csv iteration
 import csv, subprocess, os # bash
+import pandas as pd
 import os.path
 import unicodedata
 
@@ -155,6 +156,42 @@ def count_bugs(vulnfiletup, bugsFile, holderIndex):
     return bugsofvuln
 
 
+# Degree Correlation Assortativity
+def dca(flawsFile, repo, holder):
+    if(holder == "AUTHOR"):
+        holderIndex = 0
+        xlOut = 'xl_data\\otero-'+repo+'-authDCA.xlsx'
+    elif(holder == "FILE"):
+        xlOut = 'xl_data\\otero-'+repo+'-fileDCA.xlsx'
+        holderIndex = 1
+    else:
+        print("Holder Type Not Recognized.")
+        xlOut = ''
+        quit()
+
+    degrees = {}
+    with open(flawsFile, encoding='utf-8') as file:
+        for line in file:
+            fields = line.split()
+            holder = fields[holderIndex]
+            if holder not in degrees:
+                degrees[holder] = 1
+            else:
+                degrees[holder] +=1
+
+    dict2xl(degrees, xlOut)
+
+    #print(degrees)
+    for key in degrees:
+        print(key+": "+str(degrees[key]))
+
+def dict2xl(dict, xlOut):
+    df = pd.DataFrame(data=dict, index=[0])
+    df = (df.T)
+    print (df)
+    df.to_excel(xlOut)
+
+
 # connects bad files which have the same author
 def connect_flawedFiles(flawedFile, outputFile):
     lineList = []
@@ -263,6 +300,18 @@ def runner(repoAddress):
         response = input('Perform bug2vuln Analysis by FILE? [y]/n\n')
         if(response == 'y'):
             connect_flaws(flaws, bug2vulnOutput, folderName, "FILE")
+
+
+
+        # DCA per repo 
+        flawedFile = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
+        print('\nStarting Flaw-Connectivity Analysis...', end = '')
+        response = input('Perform DCA Analysis by AUTHOR? [y]/n\n')
+        if(response == 'y'):
+            dca(flawedFile, folderName, "AUTHOR")
+        response = input('Perform DCA Analysis by FILE? [y]/n\n')
+        if(response == 'y'):
+            dca(flawedFile, folderName, "FILE")
             
 
         #TODO convery connect_flaws output to lynksoft format 
