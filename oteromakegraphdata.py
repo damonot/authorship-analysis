@@ -6,6 +6,7 @@ Created on Wed Nov  6 20:51:17 2019
 """
 import oterogetrepo as getrep # download git repos
 import oteromakelynksoft as makelynks
+import oteroanalyzegraphs as anlyzgrf
 from itertools import islice # csv iteration
 import csv, subprocess, os # bash
 import os.path
@@ -86,9 +87,17 @@ def connect_coworkers(inputFiles, outputFile):
 
 
 #connect bugs to vulns
-def connect_flaws(flawsList, outputFile, repo):
+def connect_flaws(flawsList, outputFile, repo, holder):
     bugsFile = flawsList[0]
     vulnsFile = flawsList[1]
+    if(holder == "AUTHOR"):
+        holderIndex = 0
+    elif(holder == "FILE"):
+        holderIndex = 1
+    else:
+        print("Holder Type Not Recognized.")
+        quit()
+
     '''structure is...
     list: tups
         tup: vuln, dict
@@ -99,9 +108,9 @@ def connect_flaws(flawsList, outputFile, repo):
     with open(vulnsFile, encoding='utf-8') as file:
         for line in file:
             fields = line.split()
-            vulnLoc = fields[1]
+            vulnHolder = fields[holderIndex]
             vulnRule = fields[4]
-            pair = (vulnRule, vulnLoc)
+            pair = (vulnRule, vulnHolder)
             if pair not in vulns:
                 vulns[pair] = 1
             else:
@@ -112,26 +121,32 @@ def connect_flaws(flawsList, outputFile, repo):
 
     vuln2bugs = []
     for pair in vulns:
-        bugDict = count_bugs(pair, bugsFile)
-        print(bugDict)
+        basebugDict = count_bugs(pair, bugsFile, holderIndex)
+        print(basebugDict)
+        scaledbugDict = mult_bugs(vulns[pair], basebugDict)
         #TODO multiply bug entries per vuln based on num of 1 vulnrule violated in file
         #TODO combine bug entries of same rule from diff files 
-        vuln2bugs.append((vulnRule, bugDict))
+        vuln2bugs.append((vulnRule, scaledbugDict))
+        
+        #anlyzgrf.ffiaf2excel()
 
-def count_bugs(vulnfiletup, bugsFile):
+def mult_bugs(vulnCount, bugDict):
+    print(vulnCount)
+
+def count_bugs(vulnfiletup, bugsFile, holderIndex):
     print(vulnfiletup[1]) # file
     vulnFile = vulnfiletup[1]
     with open(bugsFile, encoding='utf-8') as file:
         bugsofvuln = {}
         for line in file:
             fields = line.split()
-            bugFile = fields[1]
+            bugFile = fields[holderIndex]
             bugRule = fields[4]
             if bugFile == vulnFile:
                 if bugRule not in bugsofvuln:
                     bugsofvuln[bugRule] = 1
                 else:
-                    bugsofvuln[bugRule] +=1   
+                    bugsofvuln[bugRule] +=1 
 
     return bugsofvuln
 
@@ -238,9 +253,13 @@ def runner(repoAddress):
             'text_data\otero-'+folderName+'-auth2bug.txt','text_data\otero-'+folderName+'-auth2vuln.txt']
         print('\nStarting Flaw-Connectivity Analysis...', end = '')
         bug2vulnOutput = 'text_data\otero-'+folderName+'-flaw2flaw.txt' # flawA flawB commonAuth
-        response = input('Perform flaw2flaw Analysis? [y]/n\n')
+        response = input('Perform bug2vuln Analysis by AUTHOR? [y]/n\n')
         if(response == 'y'):
-                connect_flaws(flaws, bug2vulnOutput, folderName)
+            connect_flaws(flaws, bug2vulnOutput, folderName, "AUTHOR")
+        response = input('Perform bug2vuln Analysis by FILE? [y]/n\n')
+        if(response == 'y'):
+            connect_flaws(flaws, bug2vulnOutput, folderName, "FILE")
+            
 
         #TODO convery connect_flaws output to lynksoft format 
         columnTypes = ['document', 'document'] # left column type, right column type
