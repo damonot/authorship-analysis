@@ -122,7 +122,7 @@ def connect_flaws(flawsList, outputFile, repo, holder):
     vuln2bugs = []
     for pair in vulns:
         basebugDict = count_bugs(pair, bugsFile, holderIndex)
-        print(basebugDict)
+        #print(basebugDict)
         scaledbugDict = mult_bugs(vulns[pair], basebugDict)
         #TODO combine bug entries of same rule from diff files (put this funciton in anlyzgrf) 
         vuln2bugs.append(("V-"+vulnRule, scaledbugDict))
