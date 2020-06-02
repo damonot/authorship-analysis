@@ -66,8 +66,10 @@ def ffiaf2excel(ffiaf, repo, type):
         xlname = folder + "otero-vfiaf.xlsx"
     if(type == "AUTHOR"):
         xlname = folder + "otero-"+repo+"-authorProxmeasure.xlsx"
+        type = "Bug"
     if(type == "FILE"):
         xlname = folder + "otero-"+repo+"-fileProxmeasure.xlsx"
+        type = "Bug"
     try:
         book = load_workbook(xlname)
     except:

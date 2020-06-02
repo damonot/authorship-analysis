@@ -124,14 +124,18 @@ def connect_flaws(flawsList, outputFile, repo, holder):
         basebugDict = count_bugs(pair, bugsFile, holderIndex)
         print(basebugDict)
         scaledbugDict = mult_bugs(vulns[pair], basebugDict)
-        #TODO multiply bug entries per vuln based on num of 1 vulnrule violated in file
-        #TODO combine bug entries of same rule from diff files 
-        vuln2bugs.append((vulnRule, scaledbugDict))
-        
-        #anlyzgrf.ffiaf2excel()
+        #TODO combine bug entries of same rule from diff files (put this funciton in anlyzgrf) 
+        vuln2bugs.append(("V-"+vulnRule, scaledbugDict))
+    
+
+    #TODO adapt ffiaf2excel function OR adapt data structure
+    anlyzgrf.ffiaf2excel(vuln2bugs, repo, holder)
 
 def mult_bugs(vulnCount, bugDict):
     print(vulnCount)
+    for key in bugDict.keys():
+        bugDict[key] *= vulnCount
+    return bugDict
 
 def count_bugs(vulnfiletup, bugsFile, holderIndex):
     print(vulnfiletup[1]) # file
