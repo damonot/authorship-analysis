@@ -7,9 +7,10 @@ Created on Thu Jan 16 18:50:33 2020
 import oteromakegraphdata as mkgrf
 import oteroanalyzegraphs as anlyzgrf
 import oteroreplace as repc
-
+import oterocalcdca as calcdca
 def main():
     print('start')    
+
 
 
     repos = [ 'https://github.com/phpmyadmin/phpmyadmin',
@@ -17,6 +18,11 @@ def main():
              'https://github.com/moodle/moodle']
     
     
+    for repo in repos:
+        calcdca.runner(repo)
+
+    quit()
+
     for repo in repos:
         response = input('Generate graph data for '+repo+'? [y]/n\n')
         if(response == 'y'):
