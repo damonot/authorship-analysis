@@ -55,16 +55,44 @@ def bicluster(txt, repo):
 
 def network2excel(network, repo, type):
     folder = "xl_data\\"
+
+    xlname = folder + "otero-"+repo+"-biconNetwork.xlsx"
+    try:
+        book = load_workbook(xlname)
+    except:
+        book = openpyxl.Workbook()
+        default = book.get_sheet_by_name('Sheet')
+        book.remove_sheet(default)
+
+    sheet = book.create_sheet(repo)
+
+
+    row = 1
+    for conn in network:
+        col = 1
+        cl = sheet.cell(row=row, column=col)
+        cl.value = conn[0]
+        col+=1
+        cl = sheet.cell(row=row, column=col)
+        cl.value = conn[1]
+        row+=1
+
+    book.save(xlname)
+
+
+
 def get_network(data):
     allperms = []
     for tup in data:
         flaws = []
         for flaw in tup[1]:
-            flaws.append(flaw)
+            flaws.append(flaw.rstrip())
         flawperms = permutations(flaws, 2)
-        allperms.append(flawperms)
-
-    allperms = list(dict.fromkeys(allperms)) # remove duplicate entries
+        for perm in list(flawperms):
+            if(perm not in allperms):
+                allperms.append(perm)
+    
+    print(allperms)
     return allperms
 
 def get_numerical_data(txt, repo):
@@ -296,9 +324,4 @@ def df2excel(df, xlName, sheetName):
         writer.book = load_workbook(xlName)
         df.to_excel(writer, sheetName, index=False)
     
-
-
-    
-#oterolynks-phpmyadmin-auth2flaws.xlsx
-
 
