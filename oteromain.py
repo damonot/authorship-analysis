@@ -17,11 +17,6 @@ def main():
              'https://github.com/drupal/drupal',
              'https://github.com/moodle/moodle']
     
-    
-    for repo in repos:
-        calcdca.runner(repo)
-
-    quit()
 
     for repo in repos:
         response = input('Generate graph data for '+repo+'? [y]/n\n')

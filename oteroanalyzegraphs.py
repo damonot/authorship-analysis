@@ -9,6 +9,7 @@ import math
 import pandas as pd
 import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
+from itertools import permutations
 
 def runner(repo):
     cwd = os.getcwd()
@@ -44,8 +45,65 @@ def runner(repo):
     if(response == 'y'):
         bicluster(bugvulnpath, repo)
 
-def bicluster(xl, repo):
+def bicluster(txt, repo):
     print("biclustering")
+    data = get_numerical_data(txt, repo)
+    print(data)
+    network = get_network(data)
+    ffiaf2excel(data, repo, "BiCluster")
+    network2excel(network, repo, "BiCluster")
+
+def network2excel(network, repo, type):
+    folder = "xl_data\\"
+def get_network(data):
+    allperms = []
+    for tup in data:
+        flaws = []
+        for flaw in tup[1]:
+            flaws.append(flaw)
+        flawperms = permutations(flaws, 2)
+        allperms.append(flawperms)
+
+    allperms = list(dict.fromkeys(allperms)) # remove duplicate entries
+    return allperms
+
+def get_numerical_data(txt, repo):
+    flaws = []
+    authors = []
+    flawLines = []
+    with open(txt, encoding='utf-8') as t:
+        for line in t:
+            fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
+            flawLines.append(fields) # copy necessary lines into list
+            flaw = fields[4]
+            auth = fields[0]
+            if(flaw not in flaws): # flaw not encountered yet
+                flaws.append(flaw)
+            if(auth not in authors): # author not encountered yet
+                authors.append(auth)
+    
+    nAuth = len(authors) # number of authors
+    
+    #FF calculation
+    listDict = [] # list of freqDict
+    for auth in authors:
+        freqDict = {} # of times each flaw is connected to auth
+        for line in flawLines:
+            if(line[0] == auth):
+                flaw = line[4]
+                if(flaw not in freqDict):
+                    freqDict[flaw] = 1
+                else:
+                    freqDict[flaw] +=1
+        
+        listDict.append([auth, freqDict]) # author & their flaw freq dist
+    
+    '''structure is...
+    list: tups
+        tup: author, dict
+            dict: flaw, freq '''
+
+    return listDict
 
 
 def ffiaf2excel(ffiaf, repo, type):
@@ -62,6 +120,9 @@ def ffiaf2excel(ffiaf, repo, type):
     if(type == "FILE"):
         xlname = folder + "otero-"+repo+"-fileProxmeasure.xlsx"
         type = "Bug"
+    if(type == "BiCluster"):
+        xlname = folder + "otero-"+repo+"-biconData.xlsx"
+        type = "Flaw"
     try:
         book = load_workbook(xlname)
     except:
