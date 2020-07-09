@@ -1,0 +1,17 @@
+﻿Flaw_Rule,Maurício_Meneghini_Fauth  ,Michal_Čihař  ,Deven_Bansod  ,Osaid_Rehman_Nasir  ,Spun_Nakandala  ,William_Desportes  ,Madhura_Jayaratne  ,Marc_Delisle  ,Atul_Pratap_Singh  ,Viduranga_Wijesooriya  ,Rouslan_Placella  ,Tyron_Madlener  
+php:S2068,10,10,1,1,1,0,0,0,0,0,0,0
+php:S905,1,0,0,0,0,0,0,0,0,0,0,0
+javascript:S2259,56,3,0,0,0,0,1,6,1,0,1,0
+php:S836,1,0,0,0,0,0,0,0,0,0,0,0
+php:S2201,2,0,0,0,0,0,0,0,0,0,0,0
+javascript:S2819,0,1,0,0,0,0,0,0,0,0,0,0
+javascript:S2137,0,1,0,0,0,0,0,1,0,0,1,0
+javascript:DuplicatePropertyName,0,2,0,0,0,0,0,0,0,0,0,0
+php:S2964,0,0,2,0,0,0,0,0,0,0,0,0
+php:S1764,0,0,0,0,0,1,0,0,0,0,0,0
+javascript:S3981,0,0,0,0,0,0,0,1,0,0,0,0
+javascript:S2583,0,0,0,0,0,0,0,6,0,2,0,1
+javascript:S3812,0,0,0,0,0,0,0,1,0,0,0,0
+javascript:S905,0,0,0,0,0,0,0,1,0,0,0,0
+javascript:S3001,0,0,0,0,0,0,0,2,0,0,0,0
+javascript:S3403,0,0,0,0,0,0,0,2,0,0,0,0
