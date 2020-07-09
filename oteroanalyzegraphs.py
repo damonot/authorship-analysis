@@ -39,18 +39,10 @@ def runner(repo):
     if(response == 'y'):
         vfiaf = ff_iaf(bugvulnpath, repo, "vuln")
         ffiaf2excel(vfiaf, repo, "Vulnerability")
-    
-    response = input("Calculate Proximity Measures of "+repo+"? [y]/n\n")
-    if(response == 'y'):
-        measure_prox(bugvulnpath, repo)
 
     response = input("Bicluster? [y]/n\n")
     if(response == 'y'):
         bicluster(bugvulnpath, repo)
-
-def measure_prox(file, repo):
-    print(file)
-
 
 def bicluster(xl, repo):
     print("biclustering")
