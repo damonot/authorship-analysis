@@ -12,7 +12,7 @@ def main():
                         action="store_true")
     
     parser.add_argument("-r", "--runall", 
-                        help="run all clone, generative, and analytical functions of program",
+                        help="run all clone, generative, and analytical functions of program.",
                         action="store_true")
 
     parser.add_argument("-e", "--except", 
@@ -51,6 +51,10 @@ def main():
     parser.add_argument("--coworkers", 
                         help="generate .txt of coworkers; authors of flaws from the same file.",
                         action="store_true")
+
+    parser.add_argument("--lynks", 
+                    help="generate Lynksoft-formatted XLSX of existing .txt files.",
+                    action="store_true")
 
 
     args = parser.parse_args()
