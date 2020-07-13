@@ -91,6 +91,7 @@ def validate_ignored(ignored, arguments):
             print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
             quit()
 
+
 def grab_repos():
     repos = []
     config = os.getcwd() + "\\config\\repositories.txt"
