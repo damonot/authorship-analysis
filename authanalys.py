@@ -1,9 +1,11 @@
 
 import argparse
-import oteromakegraphdata as mkgrf
-import oteroanalyzegraphs as anlyzgrf
-import oteroreplace as repc
-import oterocalcdca as calcdca
+import re
+import scripts.oteromakegraphdata as mkgrf
+import scripts.oteroanalyzegraphs as anlyzgrf
+import scripts.oteroreplace as repc
+import scripts.oterocalcdca as calcdca
+
 def main():
     import argparse
     parser = argparse.ArgumentParser()
@@ -15,18 +17,20 @@ def main():
                         help="run all clone, generative, and analytical functions of program.",
                         action="store_true")
 
-    parser.add_argument("-e", "--except", 
-                        help="exempt specific clone, generative, or analytical functions of program from --runall.")
+    parser.add_argument("-i", "--ignore", 
+                        help="exempt specific clone, generative, or analytical functions of program from --runall. e.g. to exempt biclustering, use '--ignore bicluster'",
+                        nargs="+", type=str)
 
     parser.add_argument("--deleteall", 
-                        help="delete all .txt and .xlsx files created by authanalys.py")
+                        help="delete all .txt and .xlsx files created by authanalys.py",
+                        action="store_true")
 
     parser.add_argument("-b", "--bicluster", 
                         help="biclustering analysis of authors and code flaws.",
                         action="store_true")
 
     parser.add_argument("-c", "--clonerepo", 
-                        help="download repository to local machine via Git.")
+                        help="download repository to local machine via Git. Specify path to .txt file containt Git URLs.")
 
     parser.add_argument("-f", "--ffiaf", 
                         help="Flaw-Frequency * Inverse Author Frequency (FFIAF) analysis of authors and code flaws.",
@@ -58,12 +62,19 @@ def main():
 
 
     args = parser.parse_args()
+    validated = validate_ignored(args.ignore, args)
+    if not validated:
+        quit()
+
     if args.verbose:
-        print("verbosity turned on")
+        print("Verbose Mode On")
 
-
-    print('start')    
-
+    if args.runall:
+        if args.verbose:
+            print("Running all functions; ignoring {}".format(args.ignore))
+        
+    mkgrf.runner(args.verbose, args.ignore)
+    anlyzgrf.runner(args.verbose, args.ignore)
 
 
     repos = [ 'https://github.com/phpmyadmin/phpmyadmin',
@@ -83,6 +94,29 @@ def main():
             
             
     print('Program Complete.')
+
+def validate_ignored(ignored, arguments):
+    if len(list(ignored)) == 0:
+        return False
+
+    args = str(arguments)
+    args = args.replace("Namespace(", "")
+    args = re.sub(r"\[.*?\]", '', args)
+    args = args.replace("ignore", "")
+    args = args.split(', ')
+    
+    cleanedArgs = []
+    for arg in args: 
+        clean = arg.split("=")[0]
+        cleanedArgs.append(clean)
+    cleanedArgs = list(filter(str.strip, cleanedArgs))
+
+    for arg in ignored:
+        if arg not in cleanedArgs:
+            print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
+            quit()
+    
+    return True
 
 if __name__ == '__main__':
     main()
