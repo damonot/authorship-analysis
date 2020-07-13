@@ -48,22 +48,20 @@ def authbug(verbose, overwrite, repo):
 
 
 def find_auth(verbose, overwrite, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
-    if verbose:
-        print("Starting "+flawType+" analysis...")
-    
-    print(authflawOUT)
     doAnalyze = 'y'    
 
     # authflaw .txt already generated?
     if(os.path.isfile(authflawOUT)):     #TODO provide option to ovveride this check
             if(not overwrite):
-                doAnalyze = input("auth"+flawType+" analysis has already been conducted."+" Re-analyze "+repoBashPath+"? [y]/n\n")
+                doAnalyze = input("The auth"+flawType+" file has already been written."+" Overwrite "+authflawOUT+"? [y]/n\n")
     else:
         if verbose:
             print("No prior analysis file found. Reading CSV now...")
     
     output = authflawOUT # stops weird udf error
     if(doAnalyze == 'y'):
+        if verbose:
+            print("Calling bash script to scrape authors...(this may take a while)")
         csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, output)
 
 def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
