@@ -25,6 +25,10 @@ def main():
                         help="delete all .txt and .xlsx files created by authanalys.py",
                         action="store_true")
 
+    parser.add_argument("-o", "--overwrite", 
+                        help="overwrite pre-existing .txt and .xlsx files created by previauthanlys.py running previously",
+                        action="store_true")
+
     parser.add_argument("-b", "--bicluster", 
                         help="biclustering analysis of authors and code flaws.",
                         action="store_true")
@@ -110,28 +114,28 @@ def go(args, repo):
         args = trueall(args)
 
     if args.authvuln:
-        mkgrf.authvuln(args.verbose, repo)
+        mkgrf.authvuln(args.verbose, args.override, repo)
 
     if args.authbug:
-        mkgrf.authbug(args.verbose, repo)
+        mkgrf.authbug(args.verbose, args.override, repo)
 
     if args.flaws:
-        mkgrf.flaws(args.verbose, repo)
+        mkgrf.flaws(args.verbose, args.override, repo)
 
     if args.coworkers:
-        mkgrf.coworkers(args.verbose, repo)
+        mkgrf.coworkers(args.verbose, args.override, repo)
 
     if args.lynks:
-        mkgrf.lynks(args.verbose, repo)
+        mkgrf.lynks(args.verbose, args.override, repo)
 
     if args.bicluster:
-        anlyzgrf.bicluster(args.verbose, repo)
+        anlyzgrf.bicluster(args.verbose, args.override, repo)
 
     if args.dca:
-        anlyzgrf.dca(args.verbose, repo)
+        anlyzgrf.dca(args.verbose, args.override, repo)
 
     if args.ffiaf:
-        anlyzgrf.ffiaf(args.verbose, repo)
+        anlyzgrf.ffiaf(args.verbose, args.override, repo)
 
 
 
@@ -156,6 +160,7 @@ def go(args, repo):
             
             
     print('Program Complete.')'''
+
 
 def trueall(args):
     args.bicluster = True

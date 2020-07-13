@@ -16,7 +16,7 @@ import unicodedata
 
 
 
-def authvuln(verbose, repo):
+def authvuln(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Vulnerabilities in {}...".format(repo, repo))
     cf.check(verbose, repo)
@@ -30,7 +30,7 @@ def authvuln(verbose, repo):
     find_auth(verbose, authvulnIN, os.getcwd(), repoBashPath, flawType, authvulnOUT)
 
 
-def authbug(verbose, repo):
+def authbug(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Bugs in {}...".format(repo))
     cf.check(verbose, repo)
@@ -40,10 +40,10 @@ def authbug(verbose, repo):
     repoPath = os.getcwd() + '\\' + repo
     repoBashPath = fix_path(repoPath)
 
-    find_auth(verbose, authbugIN, os.getcwd(), repoBashPath, flawType, authbugOUT)
+    find_auth(verbose, overwrite, authbugIN, os.getcwd(), repoBashPath, flawType, authbugOUT)
 
 
-def find_auth(verbose, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
+def find_auth(verbose, overwrite, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
     if verbose:
         print("Starting "+flawType+" analysis...", end = "")
     
@@ -51,8 +51,8 @@ def find_auth(verbose, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
 
     # authflaw .txt already generated?
     if(os.path.isfile(authflawOUT)):     #TODO provide option to ovveride this check
-            doAnalyze = input("auth"+flawType+" analysis has already been conducted."+
-                      " Re-analyze "+repoBashPath+"? [y]/n\n")
+            if(not overwrite):
+                doAnalyze = input("auth"+flawType+" analysis has already been conducted."+" Re-analyze "+repoBashPath+"? [y]/n\n")
     elif verbose:
         print("No prior analysis file found. Reading CSV now...")
     
