@@ -18,13 +18,48 @@ import unicodedata
 
 def authvuln(verbose, repo):
     if(verbose):
-        print("Finding Authors of Vulnerabilities for {}...".format(repo))
-
-    vulnCSV = 'input\otero-'+repo+'-vuln.csv'
-
+        print("Finding Authors of Vulnerabilities in {}...".format(repo))
     cf.check(verbose, repo)
-    authorVulnFilesOutput='output\otero-'+repo+'-auth2vuln.txt' # file output by bash
-    #analyze_auth(vulnCSV, authorVulnFilesOutput, os.getcwd(), repo, "vuln")
+    authvulnIN = 'input\otero-'+repo+'-vuln.csv'
+    authvulnOUT = 'output\\'+repo+'-authvuln.txt'
+
+    flawType = "vuln"
+    repoPath = os.getcwd() + '\\' + repo
+    repoBashPath = fix_path(repoPath)
+
+    find_auth(verbose, authvulnIN, os.getcwd(), repoBashPath, flawType, authvulnOUT)
+
+def find_auth(verbose, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
+    if verbose:
+        print("Starting "+flawType+" analysis...", end = "")
+    
+    doAnalyze = 'y'    
+
+    # has the author-flaw .txt already been generated?
+    if(os.path.isfile(authflawOUT)):
+            doAnalyze = input("Author of "+flawType+" analysis has already been conducted."+
+                      " Re-analyze "+repoBashPath+"? [y]/n\n")
+    elif verbose:
+        print("No prior analysis file found. Reading CSV now...")
+    
+    output = authflawOUT # stops weird udf error
+    if(doAnalyze == 'y'):
+        csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, output)
+
+def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
+    csvLoc =  cwd + '\\'+ authflawIN # absolute path to csv file
+    cwdBash = fix_path(cwd) # reformats for bash conventions
+    script = cwd + '\\scripts\\otero-AuthorFinder.sh'
+    
+    with open(csvLoc) as fd:
+        for row in islice(csv.reader(fd), 1, None): # skips header
+            fileBashPath = cwdBash + '/' + row[0] # bashformatted path to file
+            badLine = row[2]
+            description = row[1]
+            flawRule = row[4]
+
+            # calls AuthorFinder.sh to find author of vulnerable code snippits
+            subprocess.run([script, repoBashPath, fileBashPath, badLine, flawType, flawRule, outputFile], shell=True)
 
 def runner(repoAddress):
     print('Before running this program please conduct analysis using SonarQube'
@@ -156,37 +191,8 @@ def fix_path(path):
     
     return finalPath
 
-# FEATURE EXTRACTION: find author of the given error
-def analyze_auth(authorErrorInput, authorErrorOutput, cwd, repoBashPath, errorType):
-    print('\nStarting '+errorType+' analysis...', end = '')
-    doAnalyze = 'y'    
 
-    # has the author-error .txt already been generated?
-    if(os.path.isfile(authorErrorOutput)):
-            doAnalyze = input('It appears author '+errorType+' analysis has already been conducted.'+
-                      ' Re-analyze '+repoBashPath+'? [y]/n\n')
-    else:
-        print('No prior analysis file found. Reading CSV now...')
-    
-    # generate author-error from raw SonarQube CSV
-    authErrorOut = authorErrorOutput # stops weird udf error
-    if(doAnalyze == 'y'):
-        get_auths_from_csv(authorErrorInput, cwd, repoBashPath, errorType, authErrorOut)
 
-# DATA CLEANING: generate text file of author-file pairs
-def get_auths_from_csv(CSV, cwd, repoBashPath, errorType, outputFile):
-    csvLoc =  cwd + '\\'+ CSV # absolute path to csv file
-    cwdBash = fix_path(cwd) # reformats for bash conventions
-    script = cwd + '\\otero-AuthorFinder.sh'
-    
-    with open(csvLoc) as fd: # iterate through sonarQube import CSV
-        for row in islice(csv.reader(fd), 1, None): # skips header
-            fileBashPath = cwdBash + '/' + row[0] # bashformatted path to file
-            badLine = row[2] # line of file with flaw
-            description = row[1] # description of flaw
-            errorRule = row[4] # TODO subsititute rule with desc
-            # calls AuthorFinder.sh to find author of vulnerable code snippits
-            subprocess.run([script, repoBashPath, fileBashPath, badLine, errorType, errorRule, outputFile], shell=True)
 
 # connects authors that have contributed to the same file
 def connect_coworkers(inputFiles, outputFile):
