@@ -68,10 +68,28 @@ def main():
         print("Verbose Mode On")    
 
     repos = grab_repos()
-    print(repos)
     for repo in repos:
         go(args, repo)
 
+
+def validate_ignored(ignored, arguments):
+
+    args = str(arguments)
+    args = args.replace("Namespace(", "")
+    args = re.sub(r"\[.*?\]", '', args)
+    args = args.replace("ignore", "")
+    args = args.split(', ')
+    
+    cleanedArgs = []
+    for arg in args: 
+        clean = arg.split("=")[0]
+        cleanedArgs.append(clean)
+    cleanedArgs = list(filter(str.strip, cleanedArgs))
+
+    for arg in ignored:
+        if arg not in cleanedArgs:
+            print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
+            quit()
 
 def grab_repos():
     repos = []
@@ -88,15 +106,7 @@ def go(args, repo):
     if args.runall:
         if args.verbose:
             print("\nRunning all functions for {}; ignoring {}".format(repo, args.ignore))
-    
-    if args.bicluster:
-        anlyzgrf.bicluster(args.verbose, repo)
-
-    if args.dca:
-        anlyzgrf.dca(args.verbose, repo)
-
-    if args.ffiaf:
-        anlyzgrf.ffiaf(args.verbose, repo)
+        args = trueall(args)
 
     if args.authvuln:
         mkgrf.authvuln(args.verbose, repo)
@@ -112,6 +122,15 @@ def go(args, repo):
 
     if args.lynks:
         mkgrf.lynks(args.verbose, repo)
+
+    if args.bicluster:
+        anlyzgrf.bicluster(args.verbose, repo)
+
+    if args.dca:
+        anlyzgrf.dca(args.verbose, repo)
+
+    if args.ffiaf:
+        anlyzgrf.ffiaf(args.verbose, repo)
 
 
 
@@ -137,25 +156,17 @@ def go(args, repo):
             
     print('Program Complete.')'''
 
+def trueall(args):
+    args.bicluster = True
+    args.dca = True
+    args.ffiaf = True
+    args.authvuln = True
+    args.authbug = True
+    args.flaws = True
+    args.coworkers = True
+    args.lynks = True
 
-def validate_ignored(ignored, arguments):
-
-    args = str(arguments)
-    args = args.replace("Namespace(", "")
-    args = re.sub(r"\[.*?\]", '', args)
-    args = args.replace("ignore", "")
-    args = args.split(', ')
-    
-    cleanedArgs = []
-    for arg in args: 
-        clean = arg.split("=")[0]
-        cleanedArgs.append(clean)
-    cleanedArgs = list(filter(str.strip, cleanedArgs))
-
-    for arg in ignored:
-        if arg not in cleanedArgs:
-            print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
-            quit()
+    return args
 
 
 if __name__ == '__main__':
