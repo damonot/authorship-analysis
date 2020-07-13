@@ -28,7 +28,7 @@ def authvuln(verbose, overwrite, repo):
     repoPath = cwd + '\\input\\' + repo
     repoBashPath = fix_path(repoPath)
 
-    find_auth(verbose, authvulnIN, cwd, repoBashPath, flawType, authvulnOUT)
+    find_auth(verbose, overwrite, authvulnIN, cwd, repoBashPath, flawType, authvulnOUT)
 
 
 def authbug(verbose, overwrite, repo):
