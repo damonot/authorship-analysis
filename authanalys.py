@@ -1,10 +1,10 @@
 
-import argparse
+
 import re
+import os
+import argparse
 import scripts.oteromakegraphdata as mkgrf
 import scripts.oteroanalyzegraphs as anlyzgrf
-import scripts.oteroreplace as repc
-import scripts.oterocalcdca as calcdca
 
 def main():
     import argparse
@@ -30,7 +30,7 @@ def main():
                         action="store_true")
 
     parser.add_argument("-c", "--clonerepo", 
-                        help="download repository to local machine via Git. Specify path to .txt file containt Git URLs.")
+                        help="download repository to local machine via Git.")
 
     parser.add_argument("-f", "--ffiaf", 
                         help="Flaw-Frequency * Inverse Author Frequency (FFIAF) analysis of authors and code flaws.",
@@ -60,21 +60,63 @@ def main():
                     help="generate Lynksoft-formatted XLSX of existing .txt files.",
                     action="store_true")
 
-
     args = parser.parse_args()
-    validated = validate_ignored(args.ignore, args)
-    if not validated:
-        quit()
+    if(args.ignore):
+        validate_ignored(args.ignore, args)
 
     if args.verbose:
-        print("Verbose Mode On")
+        print("Verbose Mode On")    
+
+    repos = grab_repos()
+    print(repos)
+    for repo in repos:
+        go(args, repo)
+
+
+def grab_repos():
+    repos = []
+    config = os.getcwd() + "\\config\\repositories.txt"
+    with open(config, encoding='utf-8') as tx:
+        for line in tx:
+            repo = line.rsplit('/', 1)[-1] # last part of gitURL
+            repos.append(repo.rstrip())
+    return repos
+
+
+def go(args, repo):
 
     if args.runall:
         if args.verbose:
-            print("Running all functions; ignoring {}".format(args.ignore))
-        
-    mkgrf.runner(args.verbose, args.ignore)
-    anlyzgrf.runner(args.verbose, args.ignore)
+            print("\nRunning all functions for {}; ignoring {}".format(repo, args.ignore))
+    
+    if args.bicluster:
+        anlyzgrf.bicluster(args.verbose, repo)
+
+    if args.dca:
+        anlyzgrf.dca(args.verbose, repo)
+
+    if args.ffiaf:
+        anlyzgrf.ffiaf(args.verbose, repo)
+
+    if args.authvuln:
+        mkgrf.authvuln(args.verbose, repo)
+
+    if args.authbug:
+        mkgrf.authbug(args.verbose, repo)
+
+    if args.flaws:
+        mkgrf.flaws(args.verbose, repo)
+
+    if args.coworkers:
+        mkgrf.coworkers(args.verbose, repo)
+
+    if args.lynks:
+        mkgrf.lynks(args.verbose, repo)
+
+
+
+    '''#mkgrf.runner(args.verbose, args.ignore)
+    #anlyzgrf.runner(args.verbose, args.ignore)
 
 
     repos = [ 'https://github.com/phpmyadmin/phpmyadmin',
@@ -93,11 +135,10 @@ def main():
             anlyzgrf.runner(name)
             
             
-    print('Program Complete.')
+    print('Program Complete.')'''
+
 
 def validate_ignored(ignored, arguments):
-    if len(list(ignored)) == 0:
-        return False
 
     args = str(arguments)
     args = args.replace("Namespace(", "")
@@ -115,8 +156,7 @@ def validate_ignored(ignored, arguments):
         if arg not in cleanedArgs:
             print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
             quit()
-    
-    return True
+
 
 if __name__ == '__main__':
     main()

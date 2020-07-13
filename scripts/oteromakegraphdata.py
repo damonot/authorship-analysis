@@ -7,11 +7,143 @@ Created on Wed Nov  6 20:51:17 2019
 import scripts.oterogetrepo as getrep # download git repos
 import scripts.oteromakelynksoft as makelynks
 import scripts.oteroanalyzegraphs as anlyzgrf
+import scripts.checkfolder as cf
 from itertools import islice # csv iteration
 import csv, subprocess, os # bash
 import pandas as pd
 import os.path
 import unicodedata
+
+
+
+def authvuln(verbose, repo):
+    if(verbose):
+        print("Finding Authors of Vulnerabilities for {}...".format(repo))
+
+    vulnCSV = 'input\otero-'+repo+'-vuln.csv'
+
+    cf.check(verbose, repo)
+    authorVulnFilesOutput='output\otero-'+repo+'-auth2vuln.txt' # file output by bash
+    #analyze_auth(vulnCSV, authorVulnFilesOutput, os.getcwd(), repo, "vuln")
+
+def runner(repoAddress):
+    print('Before running this program please conduct analysis using SonarQube'
+          +' and export the results.\n')
+
+    # Download Repo
+    folderName = repoAddress.rsplit('/', 1)[-1] # last part of gitURL
+    #getrep.download(repoAddress)
+    
+    # Path data for analysis steps
+    cwd = os.getcwd()
+    repoPath = cwd + '\\'+folderName    
+    repoBashPath = fix_path(repoPath)            
+    
+    response = input('Has SonarQube analysis already been conducted on '+folderName+' data?\n'+
+                     '[y]/n\n')
+    
+    
+    if(response == 'y'):
+        
+
+        # Vulnerablity Analysis    
+        vulnCSV = 'raw_data\otero-'+folderName+'-vuln.csv' # formerly authVulnInput
+        authorVulnFilesOutput='text_data\otero-'+folderName+'-auth2vuln.txt' # file output by bash
+        response = input('Perform Auth2Vuln Analysis? [y]/n\n')
+        if(response == 'y'):
+            analyze_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
+        
+        
+        # Bug Analysis       
+        bugCSV ='raw_data\otero-'+folderName+'-bug.csv' # formerly authorBugInput
+        authorBuggyFilesOutput='text_data\otero-'+folderName+'-auth2bug.txt' # file output by bash
+        response = input('Perform Auth2Bug Analysis? [y]/n\n')
+        if(response == 'y'):
+            analyze_auth(bugCSV, authorBuggyFilesOutput, cwd, repoBashPath, "bug")
+       
+        # Merge vulnFiles with buggyFiles
+        fileList = [authorVulnFilesOutput, authorBuggyFilesOutput]  
+        auth2flawedFiles = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
+        merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
+
+         #TODO flaw-flaw network
+        # flaw2flaw Analysis
+        flaws = [
+            'text_data\otero-'+folderName+'-auth2bug.txt','text_data\otero-'+folderName+'-auth2vuln.txt']
+        print('\nStarting Flaw-Connectivity Analysis...', end = '')
+        bug2vulnOutput = 'text_data\otero-'+folderName+'-flaw2flaw.txt' # flawA flawB commonAuth
+        response = input('Perform bug2vuln Analysis by AUTHOR? [y]/n\n')
+        if(response == 'y'):
+            connect_flaws(flaws, bug2vulnOutput, folderName, "AUTHOR")
+        response = input('Perform bug2vuln Analysis by FILE? [y]/n\n')
+        if(response == 'y'):
+            connect_flaws(flaws, bug2vulnOutput, folderName, "FILE")
+
+
+
+        # DCA per repo 
+        flawedFile = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
+        print('\nStarting Flaw-Connectivity Analysis...', end = '')
+        response = input('Perform DCA Analysis by AUTHOR? [y]/n\n')
+        if(response == 'y'):
+            dca(flawedFile, folderName, "AUTHOR")
+        response = input('Perform DCA Analysis by FILE? [y]/n\n')
+        if(response == 'y'):
+            dca(flawedFile, folderName, "FILE")
+            
+
+        #TODO convery connect_flaws output to lynksoft format 
+        columnTypes = ['document', 'document'] # left column type, right column type
+        response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
+        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flaws.xlsx'
+        if(response == "y"):
+            makelynks.genXLSX(bug2vulnOutput, columnTypes, XLSXoutput)
+
+        #auth2Flaw Analysis
+        response = input('Connect Authors To Flaws & Generate Lynksoft XLSX? [y]/n\n...')
+        columnTypes = ['person', 'flag']
+        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-auth2flaws.xlsx'
+        if(response == 'y'):
+            makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
+        
+        
+        # auth2flawedFile Analysis
+        print('\nStarting Author-Flawed File Analysis...', end = '')
+        columnTypes = ['person', 'document'] # left column type, right column type
+        response = input("Generate Author2FlawedFiles Lynsoft XLSX for "+folderName+"? [y]/n\n")
+        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-auth2flawedfiles.xlsx'
+        if(response == "y"):
+            makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
+        
+        # Auth-Auth Analysis
+        print('\nStarting Coworker Analysis...', end = '')
+        coworkersOutput = 'text_data\otero-'+folderName+'-coworkers.txt'
+        connect_coworkers(auth2flawedFiles, coworkersOutput)        
+        columnTypes = ['person', 'person'] # left column type, right column type
+        response = input("Generate Author-Author Lynsoft XLSX for "+folderName+"? [y]/n\n")
+        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-coworkers.xlsx'
+        if(response == "y"):
+            makelynks.genXLSX(coworkersOutput, columnTypes, XLSXoutput)
+        
+        
+        # File-File Analysis
+        print('\nStarting File-Connectivity Analysis...', end = '')
+        flawedFilesOutput = 'text_data\otero-'+folderName+'-flawedFiles.txt' 
+        connect_flawedFiles(auth2flawedFiles, flawedFilesOutput) # auth2files input -> file2file output
+        columnTypes = ['document', 'document'] # left column type, right column type
+        response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
+        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flawedFiles.xlsx'
+        if(response == "y"):
+            makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
+
+            
+        # TODO implement option to delete leftover text files
+        response = input('Delete .txt files? [y]/n\n')        
+        if(response == "y"):
+            print("Delete all files that start with 'otero-' and end with '.txt'")
+    
+    else:
+        print('Please analyze '+folderName+' in SonarQube and export the results before continuing.')
 
 
 # converts windows path system to bash-readable format
@@ -248,124 +380,6 @@ def merge_files(fileList, outputFile):
                     if(response == 'y'):
                         os.remove(fname)        
 
-def runner(repoAddress):
-    print('Before running this program please conduct analysis using SonarQube'
-          +' and export the results.\n')
-
-    # Download Repo
-    folderName = repoAddress.rsplit('/', 1)[-1] # last part of gitURL
-    #getrep.download(repoAddress)
-    
-    # Path data for analysis steps
-    cwd = os.getcwd()
-    repoPath = cwd + '\\'+folderName    
-    repoBashPath = fix_path(repoPath)            
-    
-    response = input('Has SonarQube analysis already been conducted on '+folderName+' data?\n'+
-                     '[y]/n\n')
-    
-    
-    if(response == 'y'):
-        
-
-        # Vulnerablity Analysis    
-        vulnCSV = 'raw_data\otero-'+folderName+'-vuln.csv' # formerly authVulnInput
-        authorVulnFilesOutput='text_data\otero-'+folderName+'-auth2vuln.txt' # file output by bash
-        response = input('Perform Auth2Vuln Analysis? [y]/n\n')
-        if(response == 'y'):
-            analyze_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
-        
-        
-        # Bug Analysis       
-        bugCSV ='raw_data\otero-'+folderName+'-bug.csv' # formerly authorBugInput
-        authorBuggyFilesOutput='text_data\otero-'+folderName+'-auth2bug.txt' # file output by bash
-        response = input('Perform Auth2Bug Analysis? [y]/n\n')
-        if(response == 'y'):
-            analyze_auth(bugCSV, authorBuggyFilesOutput, cwd, repoBashPath, "bug")
-       
-        # Merge vulnFiles with buggyFiles
-        fileList = [authorVulnFilesOutput, authorBuggyFilesOutput]  
-        auth2flawedFiles = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
-        merge_files(fileList, auth2flawedFiles) # fileList in -> auth2flawed out
-
-         #TODO flaw-flaw network
-        # flaw2flaw Analysis
-        flaws = [
-            'text_data\otero-'+folderName+'-auth2bug.txt','text_data\otero-'+folderName+'-auth2vuln.txt']
-        print('\nStarting Flaw-Connectivity Analysis...', end = '')
-        bug2vulnOutput = 'text_data\otero-'+folderName+'-flaw2flaw.txt' # flawA flawB commonAuth
-        response = input('Perform bug2vuln Analysis by AUTHOR? [y]/n\n')
-        if(response == 'y'):
-            connect_flaws(flaws, bug2vulnOutput, folderName, "AUTHOR")
-        response = input('Perform bug2vuln Analysis by FILE? [y]/n\n')
-        if(response == 'y'):
-            connect_flaws(flaws, bug2vulnOutput, folderName, "FILE")
-
-
-
-        # DCA per repo 
-        flawedFile = 'text_data\otero-'+folderName+'-auth2flawedFiles.txt'
-        print('\nStarting Flaw-Connectivity Analysis...', end = '')
-        response = input('Perform DCA Analysis by AUTHOR? [y]/n\n')
-        if(response == 'y'):
-            dca(flawedFile, folderName, "AUTHOR")
-        response = input('Perform DCA Analysis by FILE? [y]/n\n')
-        if(response == 'y'):
-            dca(flawedFile, folderName, "FILE")
-            
-
-        #TODO convery connect_flaws output to lynksoft format 
-        columnTypes = ['document', 'document'] # left column type, right column type
-        response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flaws.xlsx'
-        if(response == "y"):
-            makelynks.genXLSX(bug2vulnOutput, columnTypes, XLSXoutput)
-
-        #auth2Flaw Analysis
-        response = input('Connect Authors To Flaws & Generate Lynksoft XLSX? [y]/n\n...')
-        columnTypes = ['person', 'flag']
-        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-auth2flaws.xlsx'
-        if(response == 'y'):
-            makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
-        
-        
-        # auth2flawedFile Analysis
-        print('\nStarting Author-Flawed File Analysis...', end = '')
-        columnTypes = ['person', 'document'] # left column type, right column type
-        response = input("Generate Author2FlawedFiles Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-auth2flawedfiles.xlsx'
-        if(response == "y"):
-            makelynks.genXLSX(auth2flawedFiles, columnTypes, XLSXoutput)
-        
-        # Auth-Auth Analysis
-        print('\nStarting Coworker Analysis...', end = '')
-        coworkersOutput = 'text_data\otero-'+folderName+'-coworkers.txt'
-        connect_coworkers(auth2flawedFiles, coworkersOutput)        
-        columnTypes = ['person', 'person'] # left column type, right column type
-        response = input("Generate Author-Author Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-coworkers.xlsx'
-        if(response == "y"):
-            makelynks.genXLSX(coworkersOutput, columnTypes, XLSXoutput)
-        
-        
-        # File-File Analysis
-        print('\nStarting File-Connectivity Analysis...', end = '')
-        flawedFilesOutput = 'text_data\otero-'+folderName+'-flawedFiles.txt' 
-        connect_flawedFiles(auth2flawedFiles, flawedFilesOutput) # auth2files input -> file2file output
-        columnTypes = ['document', 'document'] # left column type, right column type
-        response = input("Generate File-File Lynsoft XLSX for "+folderName+"? [y]/n\n")
-        XLSXoutput = 'xl_data\lynks\oterolynks-'+folderName+'-flawedFiles.xlsx'
-        if(response == "y"):
-            makelynks.genXLSX(flawedFilesOutput, columnTypes, XLSXoutput)
-
-            
-        # TODO implement option to delete leftover text files
-        response = input('Delete .txt files? [y]/n\n')        
-        if(response == "y"):
-            print("Delete all files that start with 'otero-' and end with '.txt'")
-    
-    else:
-        print('Please analyze '+folderName+' in SonarQube and export the results before continuing.')
 
 
     
