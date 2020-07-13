@@ -4,9 +4,9 @@ Created on Wed Nov  6 20:51:17 2019
 
 @author: damon
 """
-import oterogetrepo as getrep # download git repos
-import oteromakelynksoft as makelynks
-import oteroanalyzegraphs as anlyzgrf
+import scripts.oterogetrepo as getrep # download git repos
+import scripts.oteromakelynksoft as makelynks
+import scripts.oteroanalyzegraphs as anlyzgrf
 from itertools import islice # csv iteration
 import csv, subprocess, os # bash
 import pandas as pd
