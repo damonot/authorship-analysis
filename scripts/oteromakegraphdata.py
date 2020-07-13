@@ -18,10 +18,10 @@ import unicodedata
 
 def authvuln(verbose, repo):
     if(verbose):
-        print("Finding Authors of Vulnerabilities in {}...".format(repo))
+        print("Finding Authors of Vulnerabilities in {}...".format(repo, repo))
     cf.check(verbose, repo)
-    authvulnIN = 'input\otero-'+repo+'-vuln.csv'
-    authvulnOUT = 'output\\'+repo+'-authvuln.txt'
+    authvulnIN = 'input\{}\{}-vuln.csv'.format(repo, repo)
+    authvulnOUT = 'output\{}\{}-authvuln.txt'.format(repo, repo)
 
     flawType = "vuln"
     repoPath = os.getcwd() + '\\' + repo
@@ -29,15 +29,29 @@ def authvuln(verbose, repo):
 
     find_auth(verbose, authvulnIN, os.getcwd(), repoBashPath, flawType, authvulnOUT)
 
+
+def authbug(verbose, repo):
+    if(verbose):
+        print("Finding Authors of Bugs in {}...".format(repo))
+    cf.check(verbose, repo)
+    authbugIN = 'input\{}\{}-bug.csv'.format(repo, repo)
+    authbugOUT = 'output\{}\{}-authbug.txt'.format(repo, repo)
+    flawType = "bug"
+    repoPath = os.getcwd() + '\\' + repo
+    repoBashPath = fix_path(repoPath)
+
+    find_auth(verbose, authbugIN, os.getcwd(), repoBashPath, flawType, authbugOUT)
+
+
 def find_auth(verbose, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
     if verbose:
         print("Starting "+flawType+" analysis...", end = "")
     
     doAnalyze = 'y'    
 
-    # has the author-flaw .txt already been generated?
-    if(os.path.isfile(authflawOUT)):
-            doAnalyze = input("Author of "+flawType+" analysis has already been conducted."+
+    # authflaw .txt already generated?
+    if(os.path.isfile(authflawOUT)):     #TODO provide option to ovveride this check
+            doAnalyze = input("auth"+flawType+" analysis has already been conducted."+
                       " Re-analyze "+repoBashPath+"? [y]/n\n")
     elif verbose:
         print("No prior analysis file found. Reading CSV now...")
