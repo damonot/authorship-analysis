@@ -114,28 +114,28 @@ def go(args, repo):
         args = trueall(args)
 
     if args.authvuln:
-        mkgrf.authvuln(args.verbose, args.override, repo)
+        mkgrf.authvuln(args.verbose, args.overwrite, repo)
 
     if args.authbug:
-        mkgrf.authbug(args.verbose, args.override, repo)
+        mkgrf.authbug(args.verbose, args.overwrite, repo)
 
     if args.flaws:
-        mkgrf.flaws(args.verbose, args.override, repo)
+        mkgrf.flaws(args.verbose, args.overwrite, repo)
 
     if args.coworkers:
-        mkgrf.coworkers(args.verbose, args.override, repo)
+        mkgrf.coworkers(args.verbose, args.overwrite, repo)
 
     if args.lynks:
-        mkgrf.lynks(args.verbose, args.override, repo)
+        mkgrf.lynks(args.verbose, args.overwrite, repo)
 
     if args.bicluster:
-        anlyzgrf.bicluster(args.verbose, args.override, repo)
+        anlyzgrf.bicluster(args.verbose, args.overwrite, repo)
 
     if args.dca:
-        anlyzgrf.dca(args.verbose, args.override, repo)
+        anlyzgrf.dca(args.verbose, args.overwrite, repo)
 
     if args.ffiaf:
-        anlyzgrf.ffiaf(args.verbose, args.override, repo)
+        anlyzgrf.ffiaf(args.verbose, args.overwrite, repo)
 
 
 

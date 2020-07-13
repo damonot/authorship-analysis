@@ -20,27 +20,31 @@ def authvuln(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Vulnerabilities in {}...".format(repo, repo))
     cf.check(verbose, repo)
-    authvulnIN = 'input\{}\{}-vuln.csv'.format(repo, repo)
-    authvulnOUT = 'output\{}\{}-authvuln.txt'.format(repo, repo)
+    cwd = os.getcwd()
+    authvulnIN = cwd + '\input\{}-vuln.csv'.format(repo, repo)
+    authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
 
     flawType = "vuln"
     repoPath = os.getcwd() + '\\' + repo
     repoBashPath = fix_path(repoPath)
 
-    find_auth(verbose, authvulnIN, os.getcwd(), repoBashPath, flawType, authvulnOUT)
+    find_auth(verbose, authvulnIN, cwd, repoBashPath, flawType, authvulnOUT)
 
 
 def authbug(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Bugs in {}...".format(repo))
     cf.check(verbose, repo)
-    authbugIN = 'input\{}\{}-bug.csv'.format(repo, repo)
-    authbugOUT = 'output\{}\{}-authbug.txt'.format(repo, repo)
+
+    cwd = os.getcwd()
+    authbugIN = cwd + '\input\{}-bug.csv'.format(repo, repo)
+    authbugOUT = cwd + '\output\{}\{}-authbug.txt'.format(repo, repo)
     flawType = "bug"
     repoPath = os.getcwd() + '\\' + repo
     repoBashPath = fix_path(repoPath)
 
-    find_auth(verbose, overwrite, authbugIN, os.getcwd(), repoBashPath, flawType, authbugOUT)
+    print(authbugOUT)
+    #find_auth(verbose, overwrite, authbugIN, cwd, repoBashPath, flawType, authbugOUT)
 
 
 def find_auth(verbose, overwrite, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
