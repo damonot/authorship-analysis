@@ -65,6 +65,7 @@ def main():
                     action="store_true")
 
     args = parser.parse_args()
+
     if(args.ignore):
         validate_ignored(args.ignore, args)
 
@@ -76,42 +77,12 @@ def main():
         go(args, repo)
 
 
-def validate_ignored(ignored, arguments):
-
-    args = str(arguments)
-    args = args.replace("Namespace(", "")
-    args = re.sub(r"\[.*?\]", '', args)
-    args = args.replace("ignore", "")
-    args = args.split(', ')
-    
-    cleanedArgs = []
-    for arg in args: 
-        clean = arg.split("=")[0]
-        cleanedArgs.append(clean)
-    cleanedArgs = list(filter(str.strip, cleanedArgs))
-
-    for arg in ignored:
-        if arg not in cleanedArgs:
-            print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
-            quit()
-
-
-def grab_repos():
-    repos = []
-    config = os.getcwd() + "\\config\\repositories.txt"
-    with open(config, encoding='utf-8') as tx:
-        for line in tx:
-            repo = line.rsplit('/', 1)[-1] # last part of gitURL
-            repos.append(repo.rstrip())
-    return repos
-
-
 def go(args, repo):
-
     if args.runall:
         if args.verbose:
             print("\nRunning all functions for {}; ignoring {}".format(repo, args.ignore))
         args = trueall(args)
+        args = ignore(args)
 
     if args.authvuln:
         mkgrf.authvuln(args.verbose, args.overwrite, repo)
@@ -138,28 +109,40 @@ def go(args, repo):
         anlyzgrf.ffiaf(args.verbose, args.overwrite, repo)
 
 
+def validate_ignored(ignored, arguments):
 
-    '''#mkgrf.runner(args.verbose, args.ignore)
-    #anlyzgrf.runner(args.verbose, args.ignore)
+    args = get_args(arguments)
+
+    for arg in ignored:
+        if arg not in args:
+            print("Invalid --ignore arguments! '{}' not recognized. Terminating.".format(arg))
+            quit()
 
 
-    repos = [ 'https://github.com/phpmyadmin/phpmyadmin',
-             'https://github.com/drupal/drupal',
-             'https://github.com/moodle/moodle']
+def grab_repos():
+    repos = []
+    config = os.getcwd() + "\\config\\repositories.txt"
+    with open(config, encoding='utf-8') as tx:
+        for line in tx:
+            repo = line.rsplit('/', 1)[-1] # last part of gitURL
+            repos.append(repo.rstrip())
+    return repos
+
+
+def get_args(arguments):
+    args = str(arguments)
+    args = args.replace("Namespace(", "")
+    args = re.sub(r"\[.*?\]", '', args)
+    args = args.replace("ignore", "")
+    args = args.split(', ')
     
+    cleanedArgs = []
+    for arg in args: 
+        clean = arg.split("=")[0]
+        cleanedArgs.append(clean)
+    cleanedArgs = list(filter(str.strip, cleanedArgs))
 
-    for repo in repos:
-        response = input('Generate graph data for '+repo+'? [y]/n\n')
-        if(response == 'y'):
-            mkgrf.runner(repo) # phpmyadmin
-
-        response = input('Analyze graph data for '+repo+'? [y]/n\n')
-        if(response == 'y'):
-            name = repo.rsplit('/', 1)[-1] # last part of gitURL
-            anlyzgrf.runner(name)
-            
-            
-    print('Program Complete.')'''
+    return cleanedArgs
 
 
 def trueall(args):
@@ -171,6 +154,30 @@ def trueall(args):
     args.flaws = True
     args.coworkers = True
     args.lynks = True
+
+    return args
+
+
+def ignore(args):
+    if args.ignore is None:
+        return args
+    
+    if "bicluster" in args.ignore:
+        args.bicluster = False
+    if "dca" in args.ignore:
+        args.dca = False
+    if "ffiaf" in args.ignore:
+        args.ffiaf = False
+    if "authvuln" in args.ignore:
+        args.authvuln = False
+    if "authbug" in args.ignore:
+        args.authbug = False
+    if "flaws" in args.ignore:
+        args.flaws = False
+    if "coworkers" in args.ignore:
+        args.coworkers = False
+    if "lynks" in args.ignore:
+        args.lynks = False
 
     return args
 
