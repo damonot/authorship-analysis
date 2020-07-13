@@ -25,7 +25,7 @@ def authvuln(verbose, overwrite, repo):
     authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
 
     flawType = "vuln"
-    repoPath = os.getcwd() + '\\' + repo
+    repoPath = cwd + '\\input\\' + repo
     repoBashPath = fix_path(repoPath)
 
     find_auth(verbose, authvulnIN, cwd, repoBashPath, flawType, authvulnOUT)
@@ -39,33 +39,35 @@ def authbug(verbose, overwrite, repo):
     cwd = os.getcwd()
     authbugIN = cwd + '\input\{}-bug.csv'.format(repo, repo)
     authbugOUT = cwd + '\output\{}\{}-authbug.txt'.format(repo, repo)
+
     flawType = "bug"
-    repoPath = os.getcwd() + '\\' + repo
+    repoPath = cwd + '\\input\\' + repo
     repoBashPath = fix_path(repoPath)
 
-    print(authbugOUT)
-    #find_auth(verbose, overwrite, authbugIN, cwd, repoBashPath, flawType, authbugOUT)
+    find_auth(verbose, overwrite, authbugIN, cwd, repoBashPath, flawType, authbugOUT)
 
 
 def find_auth(verbose, overwrite, authflawIN, cwd, repoBashPath, flawType, authflawOUT):
     if verbose:
-        print("Starting "+flawType+" analysis...", end = "")
+        print("Starting "+flawType+" analysis...")
     
+    print(authflawOUT)
     doAnalyze = 'y'    
 
     # authflaw .txt already generated?
     if(os.path.isfile(authflawOUT)):     #TODO provide option to ovveride this check
             if(not overwrite):
                 doAnalyze = input("auth"+flawType+" analysis has already been conducted."+" Re-analyze "+repoBashPath+"? [y]/n\n")
-    elif verbose:
-        print("No prior analysis file found. Reading CSV now...")
+    else:
+        if verbose:
+            print("No prior analysis file found. Reading CSV now...")
     
     output = authflawOUT # stops weird udf error
     if(doAnalyze == 'y'):
         csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, output)
 
 def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
-    csvLoc =  cwd + '\\'+ authflawIN # absolute path to csv file
+    csvLoc =  authflawIN # absolute path to csv file
     cwdBash = fix_path(cwd) # reformats for bash conventions
     script = cwd + '\\scripts\\otero-AuthorFinder.sh'
     
