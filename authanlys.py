@@ -1,5 +1,4 @@
-
-
+'''Damon Otero. https://github.com/damonot''' 
 import re
 import os
 import argparse
@@ -7,7 +6,6 @@ import scripts.oteromakegraphdata as mkgrf
 import scripts.oteroanalyzegraphs as anlyzgrf
 
 def main():
-    import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("-v", "--verbose", 
                         help="increase output verbosity.",
@@ -70,7 +68,9 @@ def main():
         validate_ignored(args.ignore, args)
 
     if args.verbose:
-        print("Verbose Mode On")    
+        print("Verbose Mode On")
+    if args.overwrite:
+        print("Overwrite Mode On")        
 
     repos = grab_repos()
     for repo in repos:
