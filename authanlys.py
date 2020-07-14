@@ -88,6 +88,8 @@ def go(args, repo):
         args = trueall(args)
         args = ignore(args)
 
+    print(args)
+
     if args.authvuln:
         mkgrf.authvuln(args.verbose, args.overwrite, repo)
 
@@ -95,7 +97,7 @@ def go(args, repo):
         mkgrf.authbug(args.verbose, args.overwrite, repo)
     
     if args.authflaw:
-        mkgrf.authbug(args.verbose, args.overwrite, repo)   
+        mkgrf.authflaw(args.verbose, args.overwrite, repo)   
 
     if args.flaws:
         mkgrf.flaws(args.verbose, args.overwrite, repo)
@@ -114,6 +116,8 @@ def go(args, repo):
 
     if args.ffiaf:
         anlyzgrf.ffiaf(args.verbose, args.overwrite, repo)
+
+    print("Done.")
 
 
 def validate_ignored(ignored, arguments):

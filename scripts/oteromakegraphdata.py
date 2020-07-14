@@ -99,7 +99,7 @@ def authflaw(verbose, overwrite, repo):
         authvuln(verbose, overwrite, repo)
 
 
-    authflawOUT = '\output\{}\{}-authflaw.txt'.format(repo, repo)
+    authflawOUT = cwd + '\output\{}\{}-authflaw.txt'.format(repo, repo)
     merge_files(verbose, overwrite, [authbugOUT, authvulnOUT], authflawOUT)
 
 # merge list of files into single file
@@ -116,10 +116,10 @@ def merge_files(verbose, overwrite, fileList, outputFile):
                     with open(fname, encoding='utf-8') as infile:
                         for line in infile:
                             outfile.write(line)
-                if(os.path.isfile(fname)): # delete files after merged
-                    response = input("Delete un-merged file {}? [y]/n\n".format(fname))
-                    if(response == 'y'):
-                        os.remove(fname)
+                #if(os.path.isfile(fname)): # delete files after merged
+                #    response = input("Delete un-merged file {}? [y]/n\n".format(fname))
+                #    if(response == 'y'):
+                #        os.remove(fname)
 
 def runner(repoAddress):
     print('Before running this program please conduct analysis using SonarQube'
