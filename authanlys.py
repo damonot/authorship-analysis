@@ -49,7 +49,11 @@ def main():
     parser.add_argument("-ab", "--authbug", 
                         help="generate .txt of authors and bugs from raw csv.",
                         action="store_true")       
-                        
+    
+    parser.add_argument("-af", "--authflaw", 
+                    help="combine output of --authbug and --authvuln.",
+                    action="store_true") 
+
     parser.add_argument("--flaws", 
                         help="generate .txt of flaws linked by author or by file.",
                         action="store_true")      
@@ -89,6 +93,9 @@ def go(args, repo):
 
     if args.authbug:
         mkgrf.authbug(args.verbose, args.overwrite, repo)
+    
+    if args.authflaw:
+        mkgrf.authbug(args.verbose, args.overwrite, repo)   
 
     if args.flaws:
         mkgrf.flaws(args.verbose, args.overwrite, repo)
@@ -151,6 +158,7 @@ def trueall(args):
     args.ffiaf = True
     args.authvuln = True
     args.authbug = True
+    args.authflaw = True
     args.flaws = True
     args.coworkers = True
     args.lynks = True
@@ -172,6 +180,8 @@ def ignore(args):
         args.authvuln = False
     if "authbug" in args.ignore:
         args.authbug = False
+    if "authflaw" in args.ignore:
+        args.authflaw = False
     if "flaws" in args.ignore:
         args.flaws = False
     if "coworkers" in args.ignore:

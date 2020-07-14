@@ -7,7 +7,7 @@ Created on Wed Nov  6 20:51:17 2019
 import scripts.oterogetrepo as getrep # download git repos
 import scripts.oteromakelynksoft as makelynks
 import scripts.oteroanalyzegraphs as anlyzgrf
-import scripts.checkfolder as cf
+import scripts.check as check
 from itertools import islice # csv iteration
 import csv, subprocess, os # bash
 import pandas as pd
@@ -19,7 +19,7 @@ import unicodedata
 def authvuln(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Vulnerabilities in {}...".format(repo, repo))
-    cf.check(verbose, repo)
+    check.folder(verbose, repo)
     cwd = os.getcwd()
     authvulnIN = cwd + '\input\{}-vuln.csv'.format(repo, repo)
     authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
@@ -34,7 +34,7 @@ def authvuln(verbose, overwrite, repo):
 def authbug(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Bugs in {}...".format(repo))
-    cf.check(verbose, repo)
+    check.folder(verbose, repo)
 
     cwd = os.getcwd()
     authbugIN = cwd + '\input\{}-bug.csv'.format(repo, repo)
@@ -64,6 +64,7 @@ def find_auth(verbose, overwrite, authflawIN, cwd, repoBashPath, flawType, authf
             print("Calling bash script to scrape authors...(this may take a while)")
         csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, output)
 
+
 def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
     csvLoc =  authflawIN # absolute path to csv file
     cwdBash = fix_path(cwd) # reformats for bash conventions
@@ -78,6 +79,47 @@ def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
 
             # calls AuthorFinder.sh to find author of vulnerable code snippits
             subprocess.run([script, repoBashPath, fileBashPath, badLine, flawType, flawRule, outputFile], shell=True)
+
+
+def authflaw(verbose, overwrite, repo):
+    if(verbose):
+        print("Merging --authbug and --authvuln output for {}...".format(repo))
+    check.folder(verbose, repo)
+
+    cwd = os.getcwd()
+    authbugOUT = cwd + '\output\{}\{}-authbug.txt'.format(repo, repo)
+    authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
+    if(not(check.fyle(verbose, repo, authbugOUT))):
+        if(verbose):
+            print("authbug .txt not found for {}".format(repo))
+        authbug(verbose, overwrite, repo)
+    if(not(check.fyle(verbose, repo, authvulnOUT))):
+        if(verbose):
+            print("authvuln .txt not found for {}".format(repo))
+        authvuln(verbose, overwrite, repo)
+
+
+    authflawOUT = '\output\{}\{}-authflaw.txt'.format(repo, repo)
+    merge_files(verbose, overwrite, [authbugOUT, authvulnOUT], authflawOUT)
+
+# merge list of files into single file
+def merge_files(verbose, overwrite, fileList, outputFile):
+    response = 'y'
+    if(not(overwrite)):
+        if(os.path.isfile(outputFile)):
+            response = input("Overwrite {}? [y]/n\n".format(outputFile))
+
+    if(response == 'y'):
+        with open(outputFile, 'w', encoding='utf-8') as outfile:
+            for fname in fileList:
+                if(os.path.isfile(fname)):
+                    with open(fname, encoding='utf-8') as infile:
+                        for line in infile:
+                            outfile.write(line)
+                if(os.path.isfile(fname)): # delete files after merged
+                    response = input("Delete un-merged file {}? [y]/n\n".format(fname))
+                    if(response == 'y'):
+                        os.remove(fname)
 
 def runner(repoAddress):
     print('Before running this program please conduct analysis using SonarQube'
@@ -386,23 +428,7 @@ def connect_flawedFiles(flawedFile, outputFile):
         for conxn in connectedFiles:
                 output.write(str(conxn[0]) + '\t' + str(conxn[1]) + '\t'+ str(conxn[2]) + '\n')         
 
-# Merges a list of files into 1 file
-def merge_files(fileList, outputFile):
-    response = 'y'
-    if(os.path.isfile(outputFile)):
-        response = input("Merge has already been conducted. Overwrite " + outputFile+"? [y]/n\n")
         
-    if(response == 'y'):
-        with open(outputFile, 'w', encoding='utf-8') as outfile:
-            for fname in fileList:
-                if(os.path.isfile(fname)):
-                    with open(fname, encoding='utf-8') as infile:
-                        for line in infile:
-                            outfile.write(line)
-                if(os.path.isfile(fname)): # delete files after merged
-                    response = input('Delete un-merged file '+fname+'? [y]/n\n')
-                    if(response == 'y'):
-                        os.remove(fname)        
 
 
 
