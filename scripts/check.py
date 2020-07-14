@@ -12,7 +12,7 @@ def folder(verbose, repo):
       print("\t{} created in 'output' folder.".format(repo))
   else:
     if verbose:
-      print("\t{} already exists in 'output' folder.".format(repo))
+      print("\t{} folder already exists in 'output'".format(repo))
 
 def fyle(verbose, repo, fyle):
   if os.path.isfile(fyle):
