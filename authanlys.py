@@ -4,6 +4,7 @@ import os
 import argparse
 import scripts.oteromakegraphdata as mkgrf
 import scripts.oteroanalyzegraphs as anlyzgrf
+import bicluster
 
 def main():
     parser = argparse.ArgumentParser()
@@ -80,6 +81,8 @@ def main():
     for repo in repos:
         go(args, repo)
 
+    print("Done.")
+
 
 def go(args, repo):
     if args.runall:
@@ -109,15 +112,13 @@ def go(args, repo):
         mkgrf.lynks(args.verbose, args.overwrite, repo)
 
     if args.bicluster:
-        anlyzgrf.bicluster(args.verbose, args.overwrite, repo)
+        bicluster.gather_data(args.verbose, args.overwrite, repo)
 
     if args.dca:
         anlyzgrf.dca(args.verbose, args.overwrite, repo)
 
     if args.ffiaf:
         anlyzgrf.ffiaf(args.verbose, args.overwrite, repo)
-
-    print("Done.")
 
 
 def validate_ignored(ignored, arguments):
