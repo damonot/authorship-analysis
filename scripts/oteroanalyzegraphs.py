@@ -10,9 +10,6 @@ import pandas as pd
 import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
 from itertools import permutations
-#from bicon import data_preprocessing
-#from bicon import BiCoN
-#from bicon import results_analysis
 
 def runner(repo):
     cwd = os.getcwd()
@@ -44,50 +41,6 @@ def runner(repo):
         vfiaf = ff_iaf(bugvulnpath, repo, "vuln")
         ffiaf2excel(vfiaf, repo, "Vulnerability")
 
-    response = input("Bicluster? [y]/n\n")
-    if(response == 'y'):
-        bicluster(bugvulnpath, repo)
-
-def bicluster(txt, repo):
-    print("biclustering")
-    data = get_numerical_data(txt, repo)
-
-
-    #TODO move this section to makegraphdata.py
-    response = input("Generate new Bicluster Data? [y]/n")
-    if(response == 'y'):
-        network = get_network(data)
-        ffiaf2excel(data, repo, "BiCluster")
-        network2excel(network, repo, "BiCluster")
-    bicon_analysis(repo)
-
-def bicon_analysis(repo):
-
-    folder = "xl_data\\"
-    path_expr = folder + "otero-"+repo+"-biconExprs.csv"
-    path_net = folder + "otero-"+repo+"-biconNetwork.tsv"
-
-    GE,G,labels, _= data_preprocessing(path_expr, path_net)
-    L_g_min = 10
-    L_g_max = 15
-    model = BiCoN(GE,G,L_g_min,L_g_max)
-    solution,scores= model.run_search()
-
-    results = results_analysis(solution, labels)
-    results.convergence_plot(scores)
-
-    resultLoc = folder + "otero-"+repo+"-biconResults.csv"
-    results.save(output = resultLoc)
-
-    netOut = folder + "otero-"+repo+"-biconNetwork.png"
-    results.show_networks(GE, G, output = netOut)
-    
-    clusterOut = folder + "otero-"+repo+"-biconClustermap.png"
-    results.show_clustermap(GE, G, output = clusterOut)
-
-
-
-
 def network2excel(network, repo, type):
     folder = "xl_data\\"
 
@@ -113,7 +66,6 @@ def network2excel(network, repo, type):
         row+=1
 
     book.save(xlname)
-
 
 
 def get_network(data):
