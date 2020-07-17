@@ -91,11 +91,11 @@ def authflaw(verbose, overwrite, repo):
     authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
     if(not(check.fyle(verbose, repo, authbugOUT))):
         if(verbose):
-            print("authbug .txt not found for {}".format(repo))
+            print("{}-authbug .txt not found for {}".format(repo, repo))
         authbug(verbose, overwrite, repo)
     if(not(check.fyle(verbose, repo, authvulnOUT))):
         if(verbose):
-            print("authvuln .txt not found for {}".format(repo))
+            print("{}-authvuln .txt not found for {}".format(repo, repo))
         authvuln(verbose, overwrite, repo)
 
 
@@ -146,7 +146,7 @@ def runner(repoAddress):
         authorVulnFilesOutput='text_data\otero-'+folderName+'-auth2vuln.txt' # file output by bash
         response = input('Perform Auth2Vuln Analysis? [y]/n\n')
         if(response == 'y'):
-            analyze_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
+            find_auth(vulnCSV, authorVulnFilesOutput, cwd, repoBashPath, "vuln")
         
         
         # Bug Analysis       
@@ -154,7 +154,7 @@ def runner(repoAddress):
         authorBuggyFilesOutput='text_data\otero-'+folderName+'-auth2bug.txt' # file output by bash
         response = input('Perform Auth2Bug Analysis? [y]/n\n')
         if(response == 'y'):
-            analyze_auth(bugCSV, authorBuggyFilesOutput, cwd, repoBashPath, "bug")
+            find_auth(bugCSV, authorBuggyFilesOutput, cwd, repoBashPath, "bug")
        
         # Merge vulnFiles with buggyFiles
         fileList = [authorVulnFilesOutput, authorBuggyFilesOutput]  
