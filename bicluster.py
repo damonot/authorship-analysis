@@ -1,4 +1,9 @@
 import bicon
+
+def test(verbose, overwrite, repo):
+    print("hello")
+
+
 def gather_data(txt, repo):
     print("biclustering")
     data = get_numerical_data(txt, repo)
