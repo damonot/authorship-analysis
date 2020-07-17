@@ -4,7 +4,7 @@ import os
 import argparse
 import scripts.oteromakegraphdata as mkgrf
 import scripts.oteroanalyzegraphs as anlyzgrf
-import bicluster
+import scripts.setupbicluster as setupbicluster
 
 def main():
     parser = argparse.ArgumentParser()
@@ -85,13 +85,16 @@ def main():
 
 
 def go(args, repo):
+    if args.verbose:
+        print(repo+" active")
+        
     if args.runall:
         if args.verbose:
             print("\nRunning all functions for {}; ignoring {}".format(repo, args.ignore))
         args = trueall(args)
         args = ignore(args)
 
-    print(args)
+    #print(args)
 
     if args.authvuln:
         mkgrf.authvuln(args.verbose, args.overwrite, repo)
@@ -112,7 +115,7 @@ def go(args, repo):
         mkgrf.lynks(args.verbose, args.overwrite, repo)
 
     if args.bicluster:
-        bicluster.gather_data(args.verbose, args.overwrite, repo)
+        setupbicluster.go(args.verbose, args.overwrite, repo)
 
     if args.dca:
         anlyzgrf.dca(args.verbose, args.overwrite, repo)
