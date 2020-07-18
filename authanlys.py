@@ -81,12 +81,12 @@ def main():
     for repo in repos:
         go(args, repo)
 
-    print("Done.")
+    print("\nDone.")
 
 
 def go(args, repo):
     if args.verbose:
-        print(repo+" active")
+        print("==={} active===".format(repo))
         
     if args.runall:
         if args.verbose:
