@@ -1,26 +1,50 @@
-import bicon
+import os
+import sys
+from bicon import data_preprocessing
+from bicon import BiCoN
+from bicon import results_analysis
+import scripts.check as check
+from itertools import permutations
+from openpyxl import load_workbook
+import openpyxl # 1-indexed, not 0-indexed
 
-def test(verbose, overwrite, repo):
-    print("hello")
+def main(verbose, overwrite, repo):
+    if verbose:
+        print("bicluster main -v {} -o {} repo {}".format(verbose, overwrite, repo))
+
+    gather_data(verbose, overwrite, repo)
 
 
-def gather_data(txt, repo):
+def gather_data(verbose, overwrite, repo):
     print("biclustering")
+    cwd = os.getcwd()
+    txt = '{}\output\{}\{}-authflaw.txt'.format(cwd, repo, repo)
+    print(txt)
     data = get_numerical_data(txt, repo)
 
+    #exists = check.fyle(verbose, repo, txt)
+    #if not exists:
+    #    generate_dependency(verbose, repo)
 
-    #TODO move this section to makegraphdata.py
-    response = input("Generate new Bicluster Data? [y]/n")
-    if(response == 'y'):
-        network = get_network(data)
-        ffiaf2excel(data, repo, "BiCluster")
-        network2excel(network, repo, "BiCluster")
+
+    #network = get_network(data)
+    #ffiaf2excel(data, repo, "BiCluster")
+    #network2excel(network, repo, "BiCluster")
     bicon_analysis(repo)
+
+def generate_dependency(verbose, repo):
+    if verbose:
+        print("'{}-authflaw.txt' not found. Generating now...".format(repo))
+    
+    #TODO call (venv) python authanalys.py -af -o through cmd
 
 
 def bicon_analysis(repo):
+    cwd = os.getcwd()
 
-    folder = "xl_data\\"
+    folder = '{}\output\\xl_data\\'.format(cwd)
+    print(folder)
+
     path_expr = folder + "otero-"+repo+"-biconExprs.csv"
     path_net = folder + "otero-"+repo+"-biconNetwork.tsv"
 
@@ -100,7 +124,7 @@ def get_network(data):
 def ffiaf2excel(ffiaf, repo, type):
     
     #print(bfiaf)
-    folder = "xl_data\\"
+    folder = '{}\output\\xl_data\\'.format(os.getcwd())
     if(type == "Bug"):
         xlname = folder + "otero-bfiaf.xlsx"
     if(type == "Vulnerability"):
@@ -177,7 +201,7 @@ def ffiaf2excel(ffiaf, repo, type):
 
 
 def network2excel(network, repo, type):
-    folder = "xl_data\\"
+    folder = '{}\output\\xl_data\\'.format(os.getcwd())
 
     xlname = folder + "otero-"+repo+"-biconExprs.xlsx"
     try:
@@ -201,3 +225,7 @@ def network2excel(network, repo, type):
         row+=1
 
     book.save(xlname)
+
+
+if __name__ == '__main__':
+    main(sys.argv[1], sys.argv[2], sys.argv[3])
