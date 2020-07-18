@@ -15,8 +15,6 @@ def go(verbose, overwrite, repo):
 
 def check_setup(verbose, overwrite):
   path = os.getcwd() + "\\bicon-venv"
-  if verbose:
-    print(path)
   if os.path.exists(path):
     return True
   else:
@@ -29,13 +27,7 @@ def setup_venv(verbose, overwrite, repo):
 
 def start_venv(verbose, overwrite, repo):
   if verbose:
-    print("launching bicon-venv...")
+    print("launching bicon-venv for {}...".format(repo))
 
   batch = os.getcwd() + '\scripts\startbiconvenv.bat'
-  #os.system('cmd /k "'+batch+'"')
-
-  os.system('cmd /k "start cmd.exe /k "'+batch+'"')
-
-  #subprocess.run([batch])
-
-  #subprocess.call([r'C:\Users\Ron\Desktop\Run Batch\Matrix.bat'])
+  os.system('cmd /c "start cmd.exe /k "{} {} {} {}"'.format(batch, verbose, overwrite, repo)) # TODO change /k to /c when done implementing
