@@ -11,12 +11,14 @@ colorlog==4.1.0
 cycler==0.10.0
 decorator==4.4.2
 easydev==0.9.38
+et-xmlfile==1.0.1
 gevent==20.6.2
 greenlet==0.4.16
 grequests==0.6.0
 gseapy==0.9.15
 html5lib==1.1
 idna==2.10
+jdcal==1.4.1
 joblib==0.16.0
 kiwisolver==1.2.0
 lxml==4.5.2
@@ -25,6 +27,7 @@ mygene==3.1.0
 networkx==2.3
 nose==1.3.7
 numpy==1.18.1
+openpyxl==3.0.4
 pandas==1.0.1
 pexpect==4.8.0
 ptyprocess==0.6.0
