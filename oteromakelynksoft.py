@@ -163,7 +163,7 @@ def genXLSX(file, columnType, xlsxName):
             
             #format auth, flaw, type, line, desc
             relationship = []
-            revrelationship = []
+            revrelationship = [] # if this breaks, maybe switch the R back to lowercase?
             if(columnType[1] == "flag"):
                 flaw = (str(fields[3])+' @ '+str(fields[1]))
                 relationship = [fields[0], flaw, fields[2]]
