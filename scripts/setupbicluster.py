@@ -23,7 +23,8 @@ def check_setup(verbose, overwrite):
 def setup_venv(verbose, overwrite, repo):
   if verbose:    
     print("No 'bicon-venv' folder found. Setting up Bi-Cluster (BiCon) Virtual Environment...")
-  os.system('cmd /k "python -m venv bicon-venv"')
+  os.system('cmd /c "python -m venv bicon-venv"')
+  
 
 def start_venv(verbose, overwrite, repo):
   if verbose:
