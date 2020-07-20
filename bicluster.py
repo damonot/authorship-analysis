@@ -18,9 +18,9 @@ def main(verbose, overwrite, repo):
 def gather_data(verbose, overwrite, repo):
     print("biclustering")
     cwd = os.getcwd()
-    txt = '{}\output\{}\{}-authflaw.txt'.format(cwd, repo, repo)
-    print(txt)
-    data = get_numerical_data(txt, repo)
+    #txt = '{}\output\{}\{}-authflaw.txt'.format(cwd, repo, repo)
+    #print(txt)
+    #data = get_numerical_data(txt, repo)
 
     #exists = check.fyle(verbose, repo, txt)
     #if not exists:
@@ -45,8 +45,11 @@ def bicon_analysis(repo):
     folder = '{}\output\\xl_data\\'.format(cwd)
     print(folder)
 
-    path_expr = folder + "otero-"+repo+"-biconExprs.csv"
-    path_net = folder + "otero-"+repo+"-biconNetwork.tsv"
+    path_expr = "{}\\{}-biconExprs.csv".format(folder, repo)
+    path_net = "{}\\{}-biconNetwork.tsv".format(folder, repo)
+
+    print(path_expr)
+    print(path_net)
 
     GE,G,labels, _= data_preprocessing(path_expr, path_net)
     L_g_min = 3
@@ -57,13 +60,13 @@ def bicon_analysis(repo):
     results = results_analysis(solution, labels)
     results.convergence_plot(scores)
 
-    resultLoc = folder + "otero-"+repo+"-biconResults.csv"
+    resultLoc = folder + repo+"-biconResults.csv"
     results.save(output = resultLoc)
 
-    netOut = folder + "otero-"+repo+"-biconNetwork.png"
+    netOut = folder + repo+"-biconNetwork.png"
     results.show_networks(GE, G, output = netOut)
     
-    clusterOut = folder + "otero-"+repo+"-biconClustermap.png"
+    clusterOut = folder + repo+"-biconClustermap.png"
     results.show_clustermap(GE, G, output = clusterOut)
 
 
