@@ -16,20 +16,25 @@ def main(verbose, overwrite, repo):
 
 
 def gather_data(verbose, overwrite, repo):
-    print("biclustering")
+    if verbose:
+        print("gathering files for {}".format(repo))
     cwd = os.getcwd()
-    #txt = '{}\output\{}\{}-authflaw.txt'.format(cwd, repo, repo)
-    #print(txt)
-    #data = get_numerical_data(txt, repo)
+    
+    '''
+    txt = '{}\output\{}\{}-authflaw.txt'.format(cwd, repo, repo)
+    print(txt)
+    data = get_numerical_data(txt, repo)
 
-    #exists = check.fyle(verbose, repo, txt)
-    #if not exists:
-    #    generate_dependency(verbose, repo)
+    exists = check.fyle(verbose, repo, txt)
+    if not exists:
+        generate_dependency(verbose, repo)
 
 
-    #network = get_network(data)
-    #ffiaf2excel(data, repo, "BiCluster")
-    #network2excel(network, repo, "BiCluster")
+    network = get_network(data)
+    ffiaf2excel(data, repo, "BiCluster")
+    network2excel(network, repo, "BiCluster")
+    '''
+
     bicon_analysis(repo)
 
 def generate_dependency(verbose, repo):
@@ -40,20 +45,19 @@ def generate_dependency(verbose, repo):
 
 
 def bicon_analysis(repo):
+    if verbose:
+        print("biclustering for {}".format(repo))
     cwd = os.getcwd()
 
     folder = '{}\output\\xl_data\\'.format(cwd)
-    print(folder)
 
     path_expr = "{}\\{}-biconExprs.csv".format(folder, repo)
     path_net = "{}\\{}-biconNetwork.tsv".format(folder, repo)
 
-    print(path_expr)
-    print(path_net)
 
     GE,G,labels, _= data_preprocessing(path_expr, path_net)
     L_g_min = 3
-    L_g_max = 15
+    L_g_max = 5
     model = BiCoN(GE,G,L_g_min,L_g_max)
     solution,scores= model.run_search()
 
