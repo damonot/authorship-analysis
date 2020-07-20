@@ -49,7 +49,7 @@ def bicon_analysis(repo):
     path_net = folder + "otero-"+repo+"-biconNetwork.tsv"
 
     GE,G,labels, _= data_preprocessing(path_expr, path_net)
-    L_g_min = 10
+    L_g_min = 3
     L_g_max = 15
     model = BiCoN(GE,G,L_g_min,L_g_max)
     solution,scores= model.run_search()
