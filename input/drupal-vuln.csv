@@ -1,0 +1,33 @@
+File,Message,Line,Severity,Rule
+drupal/core/modules/system/tests/modules/csrf_race_test/src/Controller/TestController.php,"Remove this call to ""sleep"".",63,MINOR,php:S2964
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",161,MINOR,php:S2964
+drupal/core/modules/quickedit/tests/src/FunctionalJavascript/QuickEditLoadingTest.php,"Remove this call to ""sleep"".",315,MINOR,php:S2964
+drupal/core/lib/Drupal/Core/Command/ServerCommand.php,"Remove this call to ""sleep"".",258,MINOR,php:S2964
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",114,MINOR,php:S2964
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",121,MINOR,php:S2964
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",215,MINOR,php:S2964
+drupal/core/tests/Drupal/Tests/Core/Command/QuickStartTest.php,"Remove this call to ""sleep"".",222,MINOR,php:S2964
+drupal/core/modules/migrate/tests/src/Kernel/process/FileCopyTest.php,"Remove this call to ""sleep"".",97,MINOR,php:S2964
+drupal/core/modules/content_translation/tests/src/Functional/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",549,MINOR,php:S2964
+drupal/core/modules/content_translation/tests/src/Functional/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",612,MINOR,php:S2964
+drupal/core/modules/datetime_range/tests/src/Kernel/DateRangeItemTest.php,"Remove this call to ""sleep"".",99,MINOR,php:S2964
+drupal/core/modules/content_translation/src/Tests/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",619,MINOR,php:S2964
+drupal/core/modules/node/tests/src/Functional/NodeFormSaveChangedTimeTest.php,"Remove this call to ""sleep"".",70,MINOR,php:S2964
+drupal/core/modules/content_translation/src/Tests/ContentTranslationUITestBase.php,"Remove this call to ""sleep"".",556,MINOR,php:S2964
+drupal/core/modules/system/tests/modules/entity_test/src/Entity/EntityTestMulChanged.php,"Remove this call to ""sleep"".",74,MINOR,php:S2964
+drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php,"Remove this call to ""sleep"".",309,MINOR,php:S2964
+drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php,"Remove this call to ""sleep"".",329,MINOR,php:S2964
+drupal/core/modules/user/tests/src/Unit/UserAuthTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",55,BLOCKER,php:S2068
+drupal/core/tests/Drupal/Tests/Component/PhpStorage/MTimeProtectedFileStorageBase.php,"Remove this call to ""sleep"".",106,MINOR,php:S2964
+drupal/core/modules/system/tests/src/Functional/System/ShutdownFunctionsTest.php,"Remove this call to ""sleep"".",48,MINOR,php:S2964
+drupal/core/lib/Drupal/Core/Database/Driver/sqlite/Connection.php,Add password protection to this database.,116,BLOCKER,php:S2115
+drupal/core/modules/locale/tests/src/Functional/LocaleUpdateCronTest.php,"Remove this call to ""sleep"".",107,MINOR,php:S2964
+drupal/core/modules/system/tests/src/Functional/FileTransfer/FileTransferTest.php,"'password' detected in this variable name, review this potentially hardcoded credential.",18,BLOCKER,php:S2068
+drupal/core/modules/system/tests/src/Functional/System/CronRunTest.php,"Remove this call to ""sleep"".",76,MINOR,php:S2964
+drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php,"Remove this call to ""sleep"".",243,MINOR,php:S2964
+drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php,"Remove this call to ""sleep"".",250,MINOR,php:S2964
+drupal/core/modules/system/tests/src/Functional/Session/SessionTest.php,"Remove this call to ""sleep"".",257,MINOR,php:S2964
+drupal/core/modules/statistics/tests/src/Functional/StatisticsAdminTest.php,"Remove this call to ""sleep"".",166,MINOR,php:S2964
+drupal/core/modules/aggregator/tests/src/Functional/UpdateFeedItemTest.php,"Remove this call to ""sleep"".",61,MINOR,php:S2964
+drupal/core/modules/system/tests/src/Functional/Lock/LockFunctionalTest.php,"Remove this call to ""sleep"".",49,MINOR,php:S2964
+drupal/core/modules/tracker/tests/src/Functional/TrackerTest.php,"Remove this call to ""sleep"".",259,MINOR,php:S2964

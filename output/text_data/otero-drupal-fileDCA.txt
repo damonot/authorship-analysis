@@ -1,0 +1,6 @@
+degree	frequency
+1	92
+2	14
+3	5
+4	1
+5	2

@@ -1,0 +1,363 @@
+Creation Date,Update Date,Rule,Status,Severity,File,Line,Message
+2019-12-18T12:12:07-0500,2020-01-14T19:38:15-0500,javascript:S2201,OPEN,MAJOR,moodle:lib/babel-polyfill/polyfill.js,3497,"The return value of ""from"" must be used."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,264,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,340,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,512,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,1060,"TypeError can be thrown as ""c"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,1130,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,1275,"TypeError can be thrown as ""args"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,1877,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,1889,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,1970,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2003,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2058,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2114,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2137,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2241,"TypeError can be thrown as ""c"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2305,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2372,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2434,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-12-09T04:28:25-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/adapter.js,2557,"TypeError can be thrown as ""window"" might be null or undefined here."
+2019-10-31T05:58:37-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/atto/plugins/h5p/yui/build/moodle-atto_h5p-button/moodle-atto_h5p-button-debug.js,534,"TypeError can be thrown as ""h5pfile"" might be null or undefined here."
+2019-10-31T05:58:37-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/atto/plugins/h5p/yui/build/moodle-atto_h5p-button/moodle-atto_h5p-button.js,534,"TypeError can be thrown as ""h5pfile"" might be null or undefined here."
+2019-10-31T05:58:37-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/atto/plugins/h5p/yui/src/button/js/button.js,532,"TypeError can be thrown as ""h5pfile"" might be null or undefined here."
+2019-10-29T22:23:40-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:grade/grading/form/lib.php,556,Review the data-flow - use of uninitialized value.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,6,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,12,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,13,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,14,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,18,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,67,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,75,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,75,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,75,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,75,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,79,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,79,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,79,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,79,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,99,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,99,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,101,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,101,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,101,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,106,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:lib/h5p/doc/spec_en.html,106,Replace this <i> tag by <em>.
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-content-upgrade-process.js,118,"Was ""+="" meant instead?"
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-version.js,14,"Was ""+="" meant instead?"
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-version.js,15,"Was ""+="" meant instead?"
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-version.js,20,"Was ""+="" meant instead?"
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-version.js,21,"Was ""+="" meant instead?"
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-version.js,24,"Was ""+="" meant instead?"
+2019-10-28T22:22:43-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/h5p/js/h5p-version.js,25,"Was ""+="" meant instead?"
+2019-10-14T06:21:22-0400,2020-01-14T19:38:15-0500,php:S3923,OPEN,MAJOR,moodle:mod/quiz/tests/behat/behat_mod_quiz.php,54,Remove this conditional structure or edit its code blocks so that they're not all the same.
+2019-10-03T01:20:33-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:calendar/lib.php,2224,Remove this unreachable code.
+2019-09-25T01:52:38-0400,2020-01-14T19:38:15-0500,javascript:S3981,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,7399,"Fix this expression; length of ""value"" is always greater or equal to zero."
+2019-09-25T01:52:38-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,7506,"TypeError can be thrown as ""object"" might be null or undefined here."
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:media/player/videojs/amd/src/video-lazy.js,5004,TypeError can be thrown as this operand might have primitive type.
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:media/player/videojs/amd/src/video-lazy.js,5236,TypeError can be thrown as this operand might have primitive type.
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,21718,"TypeError can be thrown as ""descriptor"" might be null or undefined here."
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,35884,"TypeError can be thrown as ""lastMatchedSample"" might be null or undefined here."
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S1143,OPEN,CRITICAL,moodle:media/player/videojs/amd/src/video-lazy.js,38122,"Remove this ""throw"" statement from this ""finally"" block."
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,51629,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?"
+2019-09-19T21:29:19-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,51665,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?"
+2019-09-18T01:07:21-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:analytics/classes/calculation_info.php,147,Review the data-flow - use of uninitialized value.
+2019-07-19T02:12:48-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/babel-polyfill/polyfill.js,585,"TypeError can be thrown as ""result"" might be null or undefined here."
+2019-07-19T02:12:48-0400,2020-01-14T19:38:15-0500,javascript:S2137,OPEN,MAJOR,moodle:lib/babel-polyfill/polyfill.js,3063,"Do not use ""Infinity"" to declare a variable - use another name."
+2019-07-19T02:12:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/babel-polyfill/polyfill.js,3772,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2019-07-19T02:12:48-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/babel-polyfill/polyfill.js,3772,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2019-07-19T02:12:48-0400,2020-01-14T19:38:15-0500,javascript:S2137,OPEN,MAJOR,moodle:lib/babel-polyfill/polyfill.js,6485,"Do not use ""undefined"" to declare a variable - use another name."
+2019-07-04T22:10:08-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:message/amd/src/message_drawer_view_conversation_patcher.js,193,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2019-07-04T22:10:08-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:message/amd/src/message_drawer_view_conversation_patcher.js,194,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2019-05-10T00:24:05-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:enrol/database/tests/sync_test.php,104,Review the data-flow - use of uninitialized value.
+2019-05-03T03:00:00-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:badges/classes/badge.php,254,Remove this unreachable code.
+2019-05-03T03:00:00-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:badges/classes/badge.php,311,Remove this unreachable code.
+2019-04-10T06:35:29-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/form/course.php,108,Review the data-flow - use of uninitialized value.
+2019-04-03T23:25:29-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/forum/classes/local/exporters/group.php,91,Review the data-flow - use of uninitialized value.
+2019-04-03T23:25:29-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/forum/classes/local/exporters/group.php,93,Review the data-flow - use of uninitialized value.
+2019-04-03T23:25:29-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/forum/deprecatedlib.php,1638,Review the data-flow - use of uninitialized value.
+2019-04-01T01:48:22-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:lib/setuplib.php,1845,Remove or correct this useless self-assignment
+2019-03-21T21:24:05-0400,2020-01-14T19:38:15-0500,php:S1764,OPEN,MAJOR,moodle:mod/forum/classes/local/exporters/post.php,464,"Identical sub-expressions on both sides of operator ""&&"""
+2019-02-26T22:35:36-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:message/amd/src/message_drawer_router.js,158,"TypeError can be thrown as ""firstFocusable"" might be null or undefined here."
+2019-02-11T11:20:42-0500,2020-01-14T19:38:15-0500,javascript:S2873,OPEN,MAJOR,moodle:lib/tests/behat/app_behat_runtime.js,623,This expression might have a value which cannot be called; it might not be a function.
+2018-12-18T21:10:23-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/assign/locallib.php,9276,Review the data-flow - use of uninitialized value.
+2018-11-15T01:43:21-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:message/amd/src/message_drawer_view_conversation.js,346,"TypeError can be thrown as ""otherUser"" might be null or undefined here."
+2018-11-15T01:43:21-0500,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:message/amd/src/message_drawer_view_conversation.js,1949,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2018-11-13T08:17:40-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/accesslib.php,6316,Remove this unreachable code.
+2018-11-09T04:55:23-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:backup/util/ui/classes/privacy/provider.php,323,Review the data-flow - use of uninitialized value.
+2018-10-30T04:18:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:notes/tests/privacy_test.php,407,Review the data-flow - use of uninitialized value.
+2018-10-30T04:18:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:notes/tests/privacy_test.php,409,Review the data-flow - use of uninitialized value.
+2018-10-30T04:18:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:notes/tests/privacy_test.php,425,Review the data-flow - use of uninitialized value.
+2018-10-30T04:18:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:notes/tests/privacy_test.php,484,Review the data-flow - use of uninitialized value.
+2018-10-30T04:18:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:notes/tests/privacy_test.php,486,Review the data-flow - use of uninitialized value.
+2018-10-30T04:18:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:notes/tests/privacy_test.php,489,Review the data-flow - use of uninitialized value.
+2018-10-17T01:12:18-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:admin/tool/dataprivacy/classes/expiry_info.php,199,"The return value of ""array_merge"" must be used."
+2018-10-08T08:49:55-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:admin/tool/dataprivacy/tests/expired_contexts_test.php,444,"Either remove this useless object instantiation of class ""expired_context"" or use it"
+2018-10-08T08:49:55-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:admin/tool/dataprivacy/tests/expired_contexts_test.php,484,"Either remove this useless object instantiation of class ""expired_context"" or use it"
+2018-10-08T08:49:55-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:admin/tool/dataprivacy/tests/expired_contexts_test.php,1358,"Either remove this useless object instantiation of class ""expired_context"" or use it"
+2018-10-08T08:49:55-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:admin/tool/dataprivacy/tests/expired_contexts_test.php,1517,"Either remove this useless object instantiation of class ""expired_context"" or use it"
+2018-10-08T08:49:55-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:admin/tool/dataprivacy/tests/expired_contexts_test.php,1569,"Either remove this useless object instantiation of class ""expired_context"" or use it"
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js,498,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js,3048,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js,4171,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify-debug.js,4726,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js,498,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js,3048,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js,4171,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-beautify/moodle-atto_html-beautify.js,4726,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-codemirror/moodle-atto_html-codemirror-debug.js,6161,"TypeError can be thrown as ""lines"" might be null or undefined here."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/build/moodle-atto_html-codemirror/moodle-atto_html-codemirror.js,6161,"TypeError can be thrown as ""lines"" might be null or undefined here."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-css.js,203,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-html.js,278,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/src/beautify/js/beautify-html.js,833,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/src/beautify/js/beautify.js,480,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2018-09-11T22:12:15-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/atto/plugins/html/yui/src/codemirror/js/codemirror.js,6157,"TypeError can be thrown as ""lines"" might be null or undefined here."
+2018-04-26T23:29:29-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:competency/tests/privacy_test.php,2598,Review the data-flow - use of uninitialized value.
+2018-04-26T22:49:48-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:badges/tests/privacy_test.php,784,Remove or correct this useless self-assignment
+2018-04-15T23:30:13-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:admin/tool/policy/classes/output/acceptances.php,89,Remove or correct this useless self-assignment
+2018-04-15T23:30:13-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:admin/tool/policy/classes/output/acceptances.php,90,Remove or correct this useless self-assignment
+2017-11-02T23:27:40-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:calendar/lib.php,2735,Remove or correct this useless self-assignment
+2017-11-02T23:27:40-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:calendar/lib.php,2737,Remove or correct this useless self-assignment
+2017-10-25T00:30:21-0400,2020-01-14T19:38:15-0500,javascript:DuplicatePropertyName,OPEN,MAJOR,moodle:lib/requirejs/moodle-config.js,20,Rename or remove duplicate property name '*'.
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Imap/Client/DateTime.php,42,"Either remove this useless object instantiation of class ""DateTime"" or use it"
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Imap/Client/DateTime.php,51,"Either remove this useless object instantiation of class ""DateTime"" or use it"
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Imap/Client/DateTime.php,64,"Either remove this useless object instantiation of class ""DateTime"" or use it"
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Imap/Client/DateTime.php,76,"Either remove this useless object instantiation of class ""DateTime"" or use it"
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Imap/Client/DateTime.php,89,"Either remove this useless object instantiation of class ""DateTime"" or use it"
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Imap/Client/Socket/Pop3.php,506,Remove this unreachable code.
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Mail/Mbox/Parse.php,84,"The return value of ""ltrim"" must be used."
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Mail/Rfc822/Group.php,118,Review the data-flow - use of uninitialized value.
+2017-10-22T22:16:54-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Mime/Headers/ContentParam.php,336,"The return value of ""substr"" must be used."
+2017-10-03T13:22:09-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/workshop/locallib.php,4628,Review the data-flow - use of uninitialized value.
+2017-10-01T22:30:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/amd/src/chartjs-lazy.js,3807,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2017-10-01T22:30:48-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/amd/src/chartjs-lazy.js,3807,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?"
+2017-10-01T22:30:48-0400,2020-01-14T19:38:15-0500,javascript:S1656,OPEN,MAJOR,moodle:lib/amd/src/chartjs-lazy.js,13001,Remove or correct this useless self-assignment.
+2017-09-27T02:58:20-0400,2020-01-14T19:38:15-0500,Web:ImgWithoutAltCheck,OPEN,MINOR,moodle:lib/markdown/Markdown.php,797,"Add an ""alt"" attribute to this image."
+2017-09-27T02:58:20-0400,2020-01-14T19:38:15-0500,Web:ImgWithoutAltCheck,OPEN,MINOR,moodle:lib/markdown/MarkdownExtra.php,906,"Add an ""alt"" attribute to this image."
+2017-09-19T08:44:41-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/flickrclient.php,155,Remove this unreachable code.
+2017-09-06T07:57:11-0400,2020-01-14T19:38:15-0500,php:S1764,OPEN,MAJOR,moodle:mod/workshop/locallib.php,2971,"Identical sub-expressions on both sides of operator ""or"""
+2017-09-06T07:57:11-0400,2020-01-14T19:38:15-0500,php:S1764,OPEN,MAJOR,moodle:mod/workshop/locallib.php,2971,"Identical sub-expressions on both sides of operator ""!="""
+2017-07-24T01:51:54-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/mlbackend/php/classes/processor.php,261,Review the data-flow - use of uninitialized value.
+2017-05-04T04:53:19-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:calendar/tests/event_mapper_test.php,410,Review the data-flow - use of uninitialized value.
+2017-03-10T13:04:47-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/classes/user.php,1107,Remove this unreachable code.
+2017-03-03T08:57:01-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/tests/behat/behat_navigation.php,519,Review the data-flow - use of uninitialized value.
+2017-02-13T19:42:28-0500,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/filestorage/tests/file_system_filedir_test.php,159,"Either remove this useless object instantiation of class ""file_system_filedir"" or use it"
+2017-02-13T19:42:28-0500,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/filestorage/tests/file_system_filedir_test.php,183,"Either remove this useless object instantiation of class ""file_system_filedir"" or use it"
+2017-02-13T19:42:28-0500,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:lib/filestorage/tests/file_system_filedir_test.php,196,"Either remove this useless object instantiation of class ""file_system_filedir"" or use it"
+2016-11-04T05:30:43-0400,2020-01-14T19:38:15-0500,javascript:S1656,OPEN,MAJOR,moodle:media/player/videojs/amd/src/video-lazy.js,10253,Remove or correct this useless self-assignment.
+2016-10-25T05:10:52-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:course/lib.php,4601,Remove or correct this useless self-assignment
+2016-10-25T05:10:52-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:course/lib.php,4614,Remove or correct this useless self-assignment
+2016-10-24T06:03:49-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/assign/override_form.php,190,Review the data-flow - use of uninitialized value.
+2016-10-24T06:03:49-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/assign/override_form.php,190,Review the data-flow - use of uninitialized value.
+2016-10-21T00:34:00-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:enrol/lti/tests/tool_provider_test.php,78,"Either remove this useless object instantiation of class ""tool_provider"" or use it"
+2016-10-18T23:14:24-0400,2020-01-14T19:38:15-0500,php:S1862,OPEN,MAJOR,moodle:lib/ltiprovider/src/ToolProvider/Service/ToolSettings.php,123,This branch duplicates the one on line 121.
+2016-10-18T23:14:24-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/ltiprovider/src/ToolProvider/ToolProxy.php,187,Review the data-flow - use of uninitialized value.
+2016-10-04T06:16:29-0400,2020-01-14T19:38:15-0500,javascript:S2137,OPEN,MAJOR,moodle:lib/jquery/ui-1.12.1/jquery-ui.js,1340,"Do not use ""undefined"" to declare a parameter - use another name."
+2016-10-04T06:16:29-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/jquery/ui-1.12.1/jquery-ui.js,11802,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2016-10-04T06:16:29-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/jquery/ui-1.12.1/jquery-ui.js,11924,"TypeError can be thrown as ""outerDimensions"" might be null or undefined here."
+2016-09-23T05:49:48-0400,2020-01-14T19:38:15-0500,javascript:S1143,OPEN,CRITICAL,moodle:theme/boost/amd/src/tether.js,416,"Remove this ""throw"" statement from this ""finally"" block."
+2016-09-23T05:49:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:theme/boost/amd/src/tether.js,426,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2016-09-23T05:49:48-0400,2020-01-14T19:38:15-0500,javascript:S1143,OPEN,CRITICAL,moodle:theme/boost/amd/src/tether.js,1286,"Remove this ""throw"" statement from this ""finally"" block."
+2016-09-23T05:49:48-0400,2020-01-14T19:38:15-0500,javascript:S1143,OPEN,CRITICAL,moodle:theme/boost/amd/src/tether.js,1748,"Remove this ""throw"" statement from this ""finally"" block."
+2016-07-22T14:39:42-0400,2020-01-14T19:38:15-0500,Web:DoctypePresenceCheck,OPEN,MAJOR,moodle:mod/lti/tests/fixtures/tool_provider.php,26,Insert a <!DOCTYPE> declaration to before this <html> tag.
+2016-04-27T01:27:12-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:mod/feedback/backup/moodle2/restore_feedback_stepslib.php,89,Remove or correct this useless self-assignment
+2016-04-27T01:27:12-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:mod/feedback/backup/moodle2/restore_feedback_stepslib.php,108,Remove or correct this useless self-assignment
+2016-04-17T23:05:59-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:competency/tests/external_test.php,1110,"The return value of ""array"" must be used."
+2016-04-17T23:05:59-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:competency/tests/external_test.php,1141,"The return value of ""array"" must be used."
+2016-04-17T22:58:32-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:admin/tool/lp/amd/src/menubar.js,299,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2016-04-17T22:58:32-0400,2020-01-14T19:38:15-0500,javascript:UnreachableCode,OPEN,MAJOR,moodle:admin/tool/lp/amd/src/tree.js,492,"Remove this code after the ""return"" statement."
+2016-04-10T21:49:56-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:tag/classes/tag.php,1615,"The return value of ""array_unique"" must be used."
+2016-04-10T21:49:56-0400,2020-01-14T19:38:15-0500,php:S2201,OPEN,MAJOR,moodle:tag/classes/tag.php,1688,"The return value of ""array_unique"" must be used."
+2016-03-29T23:48:39-0400,2020-01-14T19:38:15-0500,Web:PageWithoutTitleCheck,OPEN,MAJOR,moodle:files/converter/unoconv/tests/fixtures/unoconv-source.html,2,Add a <title> tag to this page.
+2016-01-14T08:45:54-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:blocks/rss_client/classes/output/renderer.php,96,Remove this unreachable code.
+2015-12-31T09:18:36-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/glossary/classes/external.php,233,Review the data-flow - use of uninitialized value.
+2015-12-07T22:52:40-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/adodb/adodb-active-record.inc.php,194,Review the data-flow - use of uninitialized value.
+2015-10-08T17:32:03-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:lib/classes/update/code_manager.php,443,Remove or correct this useless self-assignment
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S2873,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js,3832,This expression might have a value which cannot be called; it might not be a function.
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js,4637,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?"
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js,5276,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S2873,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js,3832,This expression might have a value which cannot be called; it might not be a function.
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js,4637,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?"
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js,5276,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js,247,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?"
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/src/rangy/js/rangy-classapplier.js,886,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2015-09-30T01:08:15-0400,2020-01-14T19:38:15-0500,javascript:S2873,OPEN,MAJOR,moodle:lib/editor/atto/yui/src/rangy/js/rangy-core.js,3832,This expression might have a value which cannot be called; it might not be a function.
+2015-09-01T01:31:58-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/amd/src/permissionmanager.js,195,"TypeError can be thrown as ""existingrolelinks"" might be null or undefined here."
+2015-08-17T23:12:55-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:blocks/tag_youtube/block_tag_youtube.php,220,Remove this unreachable code.
+2015-04-02T07:56:52-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/lesson/override_form.php,174,Review the data-flow - use of uninitialized value.
+2015-04-02T07:56:52-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/lesson/override_form.php,174,Review the data-flow - use of uninitialized value.
+2015-03-26T13:45:49-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/quiz/locallib.php,196,Review the data-flow - use of uninitialized value.
+2014-11-28T09:47:39-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:mod/lesson/format.php,636,Remove this unreachable code.
+2014-11-28T09:47:39-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:question/format.php,812,Remove this unreachable code.
+2014-11-28T09:47:39-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:question/format.php,1100,Remove this unreachable code.
+2014-10-08T07:15:00-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/google/curlio.php,153,Review the data-flow - use of uninitialized value.
+2014-10-02T12:22:23-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:mod/quiz/classes/structure.php,657,Remove or correct this useless self-assignment
+2014-09-25T22:31:42-0400,2020-01-14T19:38:15-0500,php:S2757,OPEN,MAJOR,moodle:lib/adodb/drivers/adodb-mssqlnative.inc.php,801,"Was ""!="" meant instead?"
+2014-09-25T22:31:42-0400,2020-01-14T19:38:15-0500,php:S2757,OPEN,MAJOR,moodle:lib/adodb/drivers/adodb-mssqlnative.inc.php,812,"Was ""!="" meant instead?"
+2014-09-24T17:48:13-0400,2020-01-14T19:38:15-0500,php:S3923,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_static.php,1297,Remove this conditional structure or edit its code blocks so that they're not all the same.
+2014-09-24T02:59:13-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Stream/Wrapper/Combine.php,285,Remove or correct this useless self-assignment
+2014-09-24T02:59:13-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/horde/framework/Horde/Util.php,462,Review the data-flow - use of uninitialized value.
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,49,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,55,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,61,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,67,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,73,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,79,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,85,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,91,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,97,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,103,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,110,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,117,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,124,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-09-02T08:03:19-0400,2020-01-14T19:38:15-0500,php:S1848,OPEN,MAJOR,moodle:availability/tests/tree_test.php,131,"Either remove this useless object instantiation of class ""tree"" or use it"
+2014-08-17T06:15:04-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/scorm/datamodels/sequencinglib.php,635,Review the data-flow - use of uninitialized value.
+2014-08-11T23:56:42-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:grade/report/grader/lib.php,1175,Review the data-flow - use of uninitialized value.
+2014-07-27T22:01:41-0400,2020-01-14T19:38:15-0500,Web:UnsupportedTagsInHtml5Check,OPEN,MAJOR,moodle:mod/chat/gui_sockets/index.php,84,"Remove this deprecated ""frame"" element."
+2014-07-27T22:01:41-0400,2020-01-14T19:38:15-0500,Web:FrameWithoutTitleCheck,OPEN,MINOR,moodle:mod/chat/gui_sockets/index.php,84,"Add a ""title"" attribute to this <frame> tag."
+2014-07-27T22:01:41-0400,2020-01-14T19:38:15-0500,Web:UnsupportedTagsInHtml5Check,OPEN,MAJOR,moodle:mod/chat/gui_sockets/index.php,87,"Remove this deprecated ""frame"" element."
+2014-07-27T22:01:41-0400,2020-01-14T19:38:15-0500,Web:FrameWithoutTitleCheck,OPEN,MINOR,moodle:mod/chat/gui_sockets/index.php,87,"Add a ""title"" attribute to this <frame> tag."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2137,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/align-plugin/align-plugin-debug.js,18,"Do not use ""undefined"" to declare a variable - use another name."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2137,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/align-plugin/align-plugin.js,18,"Do not use ""undefined"" to declare a variable - use another name."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2201,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/axis-numeric-base/axis-numeric-base-debug.js,539,"The return value of ""ceil"" must be used."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2201,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/axis-numeric-base/axis-numeric-base.js,539,"The return value of ""ceil"" must be used."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S1656,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/axis-time-base/axis-time-base-debug.js,235,Remove or correct this useless self-assignment.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S1656,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/axis-time-base/axis-time-base.js,235,Remove or correct this useless self-assignment.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3812,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/charts-base/charts-base-debug.js,709,"Add parentheses to perform ""instanceof"" operator before logical NOT operator."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-base/charts-base-debug.js,709,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-base/charts-base-debug.js,3200,"TypeError can be thrown as ""seriesAxesCollection"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-base/charts-base-debug.js,3909,"TypeError can be thrown as ""axis"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-base/charts-base.js,709,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3812,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/charts-base/charts-base.js,709,"Add parentheses to perform ""instanceof"" operator before logical NOT operator."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-base/charts-base.js,3200,"TypeError can be thrown as ""seriesAxesCollection"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-base/charts-base.js,3909,"TypeError can be thrown as ""axis"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-legend/charts-legend-debug.js,127,"TypeError can be thrown as ""item"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-legend/charts-legend-debug.js,583,"TypeError can be thrown as ""axis"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-legend/charts-legend.js,127,"TypeError can be thrown as ""item"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/charts-legend/charts-legend.js,583,"TypeError can be thrown as ""axis"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3981,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/datatable-paginator/datatable-paginator-debug.js,855,"Fix this expression; length of ""_pg"" is always greater or equal to zero."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3981,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/datatable-paginator/datatable-paginator-debug.js,861,"Fix this expression; length of ""this._paged"" is always greater or equal to zero."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3981,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/datatable-paginator/datatable-paginator.js,855,"Fix this expression; length of ""_pg"" is always greater or equal to zero."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3981,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/datatable-paginator/datatable-paginator.js,861,"Fix this expression; length of ""this._paged"" is always greater or equal to zero."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/dom-base/dom-base-debug.js,376,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/dom-base/dom-base.js,372,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S4043,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/editor-base/editor-base-debug.js,376,"Move this array ""reverse"" operation to a separate statement."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S4043,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/editor-base/editor-base.js,374,"Move this array ""reverse"" operation to a separate statement."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/event-base-ie/event-base-ie-debug.js,112,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/event-base-ie/event-base-ie.js,112,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/event-mouseenter/event-mouseenter-debug.js,102,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/event-mouseenter/event-mouseenter.js,102,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler-debug.js,197,"TypeError can be thrown as ""action"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler-debug.js,207,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler.js,197,"TypeError can be thrown as ""action"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/handlebars-compiler/handlebars-compiler.js,207,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2201,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/imageloader/imageloader-debug.js,393,"The return value of ""test"" must be used."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2201,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/imageloader/imageloader.js,384,"The return value of ""test"" must be used."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/matrix/matrix-debug.js,648,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/matrix/matrix-debug.js,653,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/matrix/matrix.js,648,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/matrix/matrix.js,653,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/querystring-stringify/querystring-stringify-debug.js,66,"Was ""+="" meant instead?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2757,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/querystring-stringify/querystring-stringify.js,66,"Was ""+="" meant instead?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:UnreachableCode,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/recordset-base/recordset-base-debug.js,40,Remove this unreachable code.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:UnreachableCode,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/recordset-base/recordset-base.js,40,Remove this unreachable code.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-bar/series-bar-debug.js,111,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-bar/series-bar.js,111,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-column/series-column-debug.js,111,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-column/series-column.js,111,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-stacked/series-stacked-debug.js,94,"TypeError can be thrown as ""prevXCoords"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-stacked/series-stacked-debug.js,175,"TypeError can be thrown as ""prevYCoords"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-stacked/series-stacked.js,94,"TypeError can be thrown as ""prevXCoords"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/series-stacked/series-stacked.js,175,"TypeError can be thrown as ""prevYCoords"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/stylesheet/stylesheet-debug.js,192,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/stylesheet/stylesheet-debug.js,198,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/stylesheet/stylesheet.js,192,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/stylesheet/stylesheet.js,198,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/transition/transition-debug.js,212,"TypeError can be thrown as ""config"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/transition/transition-debug.js,596,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/transition/transition.js,212,"TypeError can be thrown as ""config"" might be null or undefined here."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/yuilib/3.17.2/transition/transition.js,595,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed."
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-base/yui-base-debug.js,2725,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-base/yui-base-debug.js,2764,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-base/yui-base.js,2478,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-base/yui-base.js,2517,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-core/yui-core-debug.js,2725,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-core/yui-core-debug.js,2764,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-core/yui-core.js,2478,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-core/yui-core.js,2517,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-nodejs/yui-nodejs-debug.js,2725,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-nodejs/yui-nodejs-debug.js,2764,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-nodejs/yui-nodejs.js,2478,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui-nodejs/yui-nodejs.js,2517,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui/yui-debug.js,2725,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui/yui-debug.js,2764,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui/yui.js,2478,TypeError can be thrown as this operand might have primitive type.
+2014-06-09T04:25:17-0400,2020-01-14T19:38:15-0500,javascript:S3785,OPEN,CRITICAL,moodle:lib/yuilib/3.17.2/yui/yui.js,2517,TypeError can be thrown as this operand might have primitive type.
+2014-04-07T16:02:37-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:lib/adminlib.php,5689,Remove or correct this useless self-assignment
+2014-04-07T15:11:37-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:availability/condition/profile/classes/condition.php,439,Remove this unreachable code.
+2014-03-25T22:01:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js,474,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-03-25T22:01:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy-debug.js,485,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-03-25T22:01:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js,474,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-03-25T22:01:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/build/moodle-editor_atto-rangy/moodle-editor_atto-rangy.js,485,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-03-25T22:01:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/src/rangy/js/rangy-core.js,474,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-03-25T22:01:48-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/atto/yui/src/rangy/js/rangy-core.js,485,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2014-03-25T21:59:36-0400,2020-01-14T19:38:15-0500,javascript:S905,OPEN,MAJOR,moodle:lib/editor/atto/plugins/backcolor/yui/src/button/meta/editor.js,1,Refactor or remove this statement.
+2014-03-25T21:59:36-0400,2020-01-14T19:38:15-0500,javascript:S905,OPEN,MAJOR,moodle:lib/editor/atto/plugins/fontcolor/yui/src/button/meta/editor.js,1,Refactor or remove this statement.
+2014-03-20T05:31:34-0400,2020-01-14T19:38:15-0500,javascript:S3403,OPEN,MAJOR,moodle:lib/jquery/jquery-3.4.1.js,7540,"Remove this ""!=="" check; it will always be true. Did you mean to use ""!=""?"
+2014-03-14T00:11:49-0400,2020-01-14T19:38:15-0500,php:S1862,OPEN,MAJOR,moodle:lib/htmlpurifier/HTMLPurifier/Lexer/PH5P.php,3956,This branch duplicates the one on line 3926.
+2014-02-14T10:53:04-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:question/type/randomsamatch/db/upgradelib.php,218,Remove this unreachable code.
+2013-12-04T20:47:55-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:badges/criteria/award_criteria_course.php,237,Review the data-flow - use of uninitialized value.
+2013-11-18T23:07:01-0500,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:admin/tool/uploaduser/index.php,1232,Remove or correct this useless self-assignment
+2013-10-09T14:16:54-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/grade/tests/grade_item_test.php,557,Review the data-flow - use of uninitialized value.
+2013-10-09T14:16:54-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/grade/tests/grade_item_test.php,584,Review the data-flow - use of uninitialized value.
+2013-10-02T21:30:32-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:mod/assign/feedback/editpdf/classes/page_editor.php,102,Review the data-flow - use of uninitialized value.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_colors.php,452,Review the data-flow - use of uninitialized value.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,83,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,87,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,91,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,95,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,99,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,103,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,107,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,111,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,115,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,119,Remove this unreachable code.
+2013-09-23T17:19:53-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/tcpdf/include/tcpdf_filters.php,123,Remove this unreachable code.
+2013-09-20T11:58:35-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/typo3/class.t3lib_utility_debug.php,312,Review the data-flow - use of uninitialized value.
+2013-09-20T11:48:43-0400,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/markdown/Markdown.php,38,Review the data-flow - use of uninitialized value.
+2013-09-20T06:45:36-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:mod/scorm/module.js,465,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2013-08-18T22:08:40-0400,2020-01-14T19:38:15-0500,javascript:DuplicatePropertyName,OPEN,MAJOR,moodle:mod/chat/gui_ajax/module.js,46,Rename or remove duplicate property name 'resize'.
+2013-08-06T15:04:35-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/editor/tinymce/plugins/spellchecker/classes/GoogleSpell.php,132,Remove this unreachable code.
+2013-05-25T16:47:28-0400,2020-01-14T19:38:15-0500,Web:BoldAndItalicTagsCheck,OPEN,MINOR,moodle:enrol/paypal/enrol.html,5,Replace this <b> tag by <strong>.
+2013-04-07T09:35:27-0400,2020-01-14T19:38:15-0500,php:S1862,OPEN,MAJOR,moodle:lib/simplepie/library/SimplePie/Misc.php,1450,This case duplicates the one on line 1318.
+2013-04-07T09:35:27-0400,2020-01-14T19:38:15-0500,php:S1862,OPEN,MAJOR,moodle:lib/simplepie/library/SimplePie/Misc.php,1455,This case duplicates the one on line 1325.
+2013-04-02T03:49:02-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/badgeslib.php,674,Remove this unreachable code.
+2013-03-24T12:48:11-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/adodb/drivers/adodb-mssqlnative.inc.php,506,Remove this unreachable code.
+2013-03-09T10:16:42-0500,2020-01-14T19:38:15-0500,javascript:UnreachableCode,OPEN,MAJOR,moodle:mod/feedback/yui/dragdrop/dragdrop.js,226,"Remove this code after the ""return"" statement."
+2013-01-17T20:17:30-0500,2020-01-14T19:38:15-0500,php:S1764,OPEN,MAJOR,moodle:lib/testing/lib.php,84,"Identical sub-expressions on both sides of operator ""!="""
+2013-01-13T23:14:54-0500,2020-01-14T19:38:15-0500,php:S1145,OPEN,MAJOR,moodle:grade/grading/form/lib.php,397,"Remove this ""if"" statement."
+2013-01-12T09:50:00-0500,2020-01-14T19:38:15-0500,php:S905,OPEN,MAJOR,moodle:enrol/flatfile/lib.php,619,Remove or refactor this statement.
+2013-01-06T12:15:20-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/excellib.class.php,428,Review the data-flow - use of uninitialized value.
+2013-01-06T12:15:20-0500,2020-01-14T19:38:15-0500,php:S836,OPEN,MAJOR,moodle:lib/excellib.class.php,432,Review the data-flow - use of uninitialized value.
+2012-10-15T02:25:01-0400,2020-01-14T19:38:15-0500,php:S1862,OPEN,MAJOR,moodle:mod/scorm/datamodels/scorm_13lib.php,953,This case duplicates the one on line 940.
+2012-09-12T01:52:50-0400,2020-01-14T19:38:15-0500,Web:UnsupportedTagsInHtml5Check,OPEN,MAJOR,moodle:mod/chat/gui_sockets/index.php,82,"Remove this deprecated ""frameset"" element."
+2012-08-11T09:58:05-0400,2020-01-14T19:38:15-0500,Web:PageWithoutTitleCheck,OPEN,MAJOR,moodle:lib/editor/tinymce/plugins/moodleemoticon/dialog.php,43,Add a <title> tag to this page.
+2012-07-26T22:52:26-0400,2020-01-14T19:38:15-0500,php:S1656,OPEN,MAJOR,moodle:repository/s3/S3.php,2050,Remove or correct this useless self-assignment
+2012-07-19T07:50:17-0400,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:question/behaviour/adaptive/renderer.php,112,Remove this unreachable code.
+2012-07-06T02:10:14-0400,2020-01-14T19:38:15-0500,javascript:DuplicatePropertyName,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js,15504,Rename or remove duplicate property name 'mceToggleFormat'.
+2012-06-24T22:18:42-0400,2020-01-14T19:38:15-0500,Web:FieldsetWithoutLegendCheck,OPEN,MINOR,moodle:mod/quiz/comment.php,125,Add a <legend> tag to this fieldset.
+2012-05-20T23:57:52-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:repository/filepicker.js,258,"TypeError can be thrown as ""mytreeel"" might be null or undefined here."
+2012-05-20T23:57:51-0400,2020-01-14T19:38:15-0500,php:S1764,OPEN,MAJOR,moodle:lib/filestorage/stored_file.php,79,"Identical sub-expressions on both sides of operator ""!="""
+2012-05-20T23:57:51-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:repository/filepicker.js,1609,"TypeError can be thrown as ""container"" might be null or undefined here."
+2012-04-30T04:53:25-0400,2020-01-14T19:38:15-0500,javascript:UnreachableCode,OPEN,MAJOR,moodle:course/dndupload.js,226,"Remove this code after the ""return"" statement."
+2012-04-21T05:04:54-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js,13681,"TypeError can be thrown as ""o"" might be null or undefined here."
+2012-04-21T05:04:54-0400,2020-01-14T19:38:15-0500,javascript:S2583,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js,14190,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed."
+2012-04-21T05:04:54-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js,19037,"TypeError can be thrown as ""containerBlock"" might be null or undefined here."
+2012-04-21T05:04:54-0400,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/tiny_mce_src.js,19083,"TypeError can be thrown as ""parentBlock"" might be null or undefined here."
+2012-04-03T16:31:00-0400,2020-01-14T19:38:15-0500,php:S1764,OPEN,MAJOR,moodle:mod/workshop/form/accumulative/tests/lib_test.php,115,"Identical sub-expressions on both sides of operator ""/"""
+2012-03-03T04:44:15-0500,2020-01-14T19:38:15-0500,php:S1763,OPEN,MAJOR,moodle:lib/editor/tinymce/plugins/spellchecker/classes/EnchantSpell.php,35,Remove this unreachable code.
+2012-03-03T04:44:15-0500,2020-01-14T19:38:15-0500,javascript:S2259,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/plugins/advlink/js/advlink.js,430,"TypeError can be thrown as ""elm"" might be null or undefined here."
+2012-03-03T04:44:15-0500,2020-01-14T19:38:15-0500,javascript:S2137,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/plugins/autosave/editor_plugin_src.js,51,"Do not use ""undefined"" to declare a variable - use another name."
+2012-03-03T04:44:15-0500,2020-01-14T19:38:15-0500,Web:DoctypePresenceCheck,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/plugins/preview/example.html,1,Insert a <!DOCTYPE> declaration to before this <html> tag.
+2012-03-03T04:44:15-0500,2020-01-14T19:38:15-0500,javascript:S1656,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/plugins/table/js/table.js,331,Remove or correct this useless self-assignment.
+2012-03-03T04:44:15-0500,2020-01-14T19:38:15-0500,javascript:DuplicatePropertyName,OPEN,MAJOR,moodle:lib/editor/tinymce/tiny_mce/3.5.11/themes/advanced/js/color_picker.js,39,Rename or remove duplicate property name '

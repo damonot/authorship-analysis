@@ -1,0 +1,95 @@
+File,Message,Line,Severity,Rule
+phpmyadmin/libraries/classes/Controllers/ExportController.php,Remove or refactor this statement.,619,MAJOR,php:S905
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",2989,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",174,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",3846,MAJOR,javascript:S2259
+phpmyadmin/js/config.js,"TypeError can be thrown as ""data"" might be null or undefined here.",826,MAJOR,javascript:S2259
+phpmyadmin/js/database/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",72,MAJOR,javascript:S2259
+phpmyadmin/js/database/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",101,MAJOR,javascript:S2259
+phpmyadmin/js/database/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",126,MAJOR,javascript:S2259
+phpmyadmin/js/database/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",161,MAJOR,javascript:S2259
+phpmyadmin/js/database/search.js,"TypeError can be thrown as ""data"" might be null or undefined here.",149,MAJOR,javascript:S2259
+phpmyadmin/js/database/search.js,"TypeError can be thrown as ""data"" might be null or undefined here.",181,MAJOR,javascript:S2259
+phpmyadmin/js/database/structure.js,"TypeError can be thrown as ""data"" might be null or undefined here.",321,MAJOR,javascript:S2259
+phpmyadmin/js/database/structure.js,"TypeError can be thrown as ""data"" might be null or undefined here.",374,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",3021,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",3221,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",3239,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",4112,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",4619,MAJOR,javascript:S2259
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",4640,MAJOR,javascript:S2259
+phpmyadmin/js/gis_data_editor.js,"TypeError can be thrown as ""data"" might be null or undefined here.",160,MAJOR,javascript:S2259
+phpmyadmin/js/gis_data_editor.js,"TypeError can be thrown as ""data"" might be null or undefined here.",209,MAJOR,javascript:S2259
+phpmyadmin/js/gis_data_editor.js,"TypeError can be thrown as ""data"" might be null or undefined here.",263,MAJOR,javascript:S2259
+phpmyadmin/js/gis_data_editor.js,"TypeError can be thrown as ""data"" might be null or undefined here.",282,MAJOR,javascript:S2259
+phpmyadmin/js/indexes.js,"TypeError can be thrown as ""data"" might be null or undefined here.",675,MAJOR,javascript:S2259
+phpmyadmin/js/makegrid.js,"TypeError can be thrown as ""data"" might be null or undefined here.",1036,MAJOR,javascript:S2259
+phpmyadmin/js/makegrid.js,"TypeError can be thrown as ""data"" might be null or undefined here.",1412,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",536,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",570,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",598,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",716,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",993,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",1039,MAJOR,javascript:S2259
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",1126,MAJOR,javascript:S2259
+phpmyadmin/js/server/databases.js,"TypeError can be thrown as ""data"" might be null or undefined here.",89,MAJOR,javascript:S2259
+phpmyadmin/js/server/databases.js,"TypeError can be thrown as ""data"" might be null or undefined here.",134,MAJOR,javascript:S2259
+phpmyadmin/js/server/privileges.js,"TypeError can be thrown as ""data"" might be null or undefined here.",186,MAJOR,javascript:S2259
+phpmyadmin/js/server/privileges.js,"TypeError can be thrown as ""data"" might be null or undefined here.",224,MAJOR,javascript:S2259
+phpmyadmin/js/server/privileges.js,"TypeError can be thrown as ""data"" might be null or undefined here.",251,MAJOR,javascript:S2259
+phpmyadmin/js/server/privileges.js,"TypeError can be thrown as ""data"" might be null or undefined here.",302,MAJOR,javascript:S2259
+phpmyadmin/js/server/privileges.js,"TypeError can be thrown as ""data"" might be null or undefined here.",336,MAJOR,javascript:S2259
+phpmyadmin/js/server/privileges.js,"TypeError can be thrown as ""data"" might be null or undefined here.",366,MAJOR,javascript:S2259
+phpmyadmin/js/server/variables.js,"TypeError can be thrown as ""data"" might be null or undefined here.",109,MAJOR,javascript:S2259
+phpmyadmin/js/table/chart.js,"TypeError can be thrown as ""data"" might be null or undefined here.",382,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",48,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",71,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",121,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",247,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",281,MAJOR,javascript:S2259
+phpmyadmin/js/table/operations.js,"TypeError can be thrown as ""data"" might be null or undefined here.",316,MAJOR,javascript:S2259
+phpmyadmin/js/table/relation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",115,MAJOR,javascript:S2259
+phpmyadmin/js/table/structure.js,"TypeError can be thrown as ""data"" might be null or undefined here.",228,MAJOR,javascript:S2259
+phpmyadmin/js/table/zoom_plot_jqplot.js,"TypeError can be thrown as ""data"" might be null or undefined here.",388,MAJOR,javascript:S2259
+phpmyadmin/libraries/classes/Controllers/Server/DatabasesController.php,Review the data-flow - use of uninitialized value.,122,MAJOR,php:S836
+phpmyadmin/test/classes/TableTest.php,"Identical sub-expressions on both sides of operator ""===""",59,MAJOR,php:S1764
+phpmyadmin/js/navigation.js,"TypeError can be thrown as ""data"" might be null or undefined here.",189,MAJOR,javascript:S2259
+phpmyadmin/js/database/search.js,"TypeError can be thrown as ""data"" might be null or undefined here.",241,MAJOR,javascript:S2259
+phpmyadmin/js/table/select.js,"TypeError can be thrown as ""data"" might be null or undefined here.",179,MAJOR,javascript:S2259
+phpmyadmin/libraries/classes/ReplicationGui.php,"The return value of ""strtok"" must be used.",320,MAJOR,php:S2201
+phpmyadmin/libraries/classes/ReplicationGui.php,"The return value of ""strtok"" must be used.",326,MAJOR,php:S2201
+phpmyadmin/js/vendor/codemirror/lib/codemirror.js,"TypeError can be thrown as ""lines"" might be null or undefined here.",6191,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/tracekit.js,"Do not use ""undefined"" to declare a parameter - use another name.",6,MAJOR,javascript:S2137
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WCSCapabilities/v1_0_0.js,Rename or remove duplicate property name 'name'.,142,MAJOR,javascript:DuplicatePropertyName
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WCSCapabilities/v1_0_0.js,Rename or remove duplicate property name 'label'.,145,MAJOR,javascript:DuplicatePropertyName
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/WMTSCapabilities.js,"TypeError can be thrown as ""style"" might be null or undefined here.",212,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Renderer/SVG.js,"TypeError can be thrown as ""src"" might be null or undefined here.",340,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/deprecated.js,"TypeError can be thrown as ""src"" might be null or undefined here.",5134,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.dateAxisRenderer.js,"TypeError can be thrown as ""daTickInterval"" might be null or undefined here.",488,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Control/Graticule.js,"TypeError can be thrown as ""labelPoint"" might be null or undefined here.",319,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/ArcXML.js,"Fix this expression; length of ""query.where"" is always greater or equal to zero.",347,MAJOR,javascript:S3981
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/GeoJSON.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",459,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/GeoJSON.js,"Add parentheses to perform ""instanceof"" operator before logical NOT operator.",459,CRITICAL,javascript:S3812
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Format/Text.js,"TypeError can be thrown as ""style"" might be null or undefined here.",116,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Geometry/LineString.js,"TypeError can be thrown as ""vert2"" might be null or undefined here.",330,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/openlayers/src/openlayers/lib/OpenLayers/Renderer/VML.js,"TypeError can be thrown as ""fill"" might be null or undefined here.",299,MAJOR,javascript:S2259
+phpmyadmin/js/server/status/monitor.js,"TypeError can be thrown as ""data"" might be null or undefined here.",2085,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",1875,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",1883,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jquery/jquery-ui-timepicker-addon.js,"TypeError can be thrown as ""date"" might be null or undefined here.",2215,MAJOR,javascript:S2259
+phpmyadmin/js/server/status/sorter.js,"TypeError can be thrown as ""$table"" might be null or undefined here.",18,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/jquery/jquery.ba-hashchange-1.3.js,"Do not use ""undefined"" to declare a parameter - use another name.",88,MAJOR,javascript:S2137
+phpmyadmin/js/functions.js,"TypeError can be thrown as ""data"" might be null or undefined here.",3877,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.barRenderer.js,Refactor or remove this statement.,477,MAJOR,javascript:S905
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.cursor.js,"Remove this ""delete"" operator or pass an object property to it.",1081,MINOR,javascript:S3001
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.cursor.js,"Remove this ""delete"" operator or pass an object property to it.",1082,MINOR,javascript:S3001
+phpmyadmin/js/vendor/jqplot/jquery.jqplot.js,"Do not use ""undefined"" to declare a variable - use another name.",87,MAJOR,javascript:S2137
+phpmyadmin/js/vendor/jqplot/jquery.jqplot.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",8826,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jqplot/jquery.jqplot.js,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?",8826,MAJOR,javascript:S3403
+phpmyadmin/js/vendor/jqplot/jquery.jqplot.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",9512,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jqplot/jquery.jqplot.js,"Remove this ""==="" check; it will always be false. Did you mean to use ""==""?",9512,MAJOR,javascript:S3403
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js,"TypeError can be thrown as ""options"" might be null or undefined here.",391,MAJOR,javascript:S2259
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",683,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed.",708,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jqplot/plugins/jqplot.pieRenderer.js,"Change this condition so that it does not always evaluate to ""false""; some subsequent code is never executed.",752,MAJOR,javascript:S2583
+phpmyadmin/js/vendor/jquery/jquery.tablesorter.js,"Change this condition so that it does not always evaluate to ""true""; some subsequent code is never executed.",522,MAJOR,javascript:S2583
