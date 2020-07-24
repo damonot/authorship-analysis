@@ -32,10 +32,10 @@ def main():
                         help="biclustering analysis of authors and code flaws.",
                         action="store_true")
 
-    parser.add_argument("-c", "--clonerepo", 
+    parser.add_argument("-cr", "--clonerepo", 
                         help="download repository to local machine via Git.")
 
-    parser.add_argument("-f", "--ffiaf", 
+    parser.add_argument("-ff", "--ffiaf", 
                         help="Flaw-Frequency * Inverse Author Frequency (FFIAF) analysis of authors and code flaws.",
                         action="store_true")
 
@@ -59,11 +59,11 @@ def main():
                     help="Calculate influence of each author, output to .txt.",
                     action="store_true") 
 
-    parser.add_argument("--flaws", 
+    parser.add_argument("-fl", "--flaws", 
                         help="generate .txt of flaws linked by author or by file.",
                         action="store_true")      
 
-    parser.add_argument("--coworkers", 
+    parser.add_argument("-co", "--coworkers", 
                         help="generate .txt of coworkers; authors of flaws from the same file.",
                         action="store_true")
 
@@ -84,6 +84,7 @@ def main():
     repos = grab_repos()
     for repo in repos:
         go(args, repo)
+        # make sure trueall() and ignore() are updated with all params
 
     print("\nDone.")
 
@@ -98,8 +99,6 @@ def go(args, repo):
         args = trueall(args)
         args = ignore(args)
 
-    #print(args)
-
     if args.authvuln:
         mkgrf.authvuln(args.verbose, args.overwrite, repo)
 
@@ -113,8 +112,8 @@ def go(args, repo):
         mkgrf.flaws(args.verbose, args.overwrite, repo)
 
     #TODO implement author influence calculator
-    #if args.authinfluence:
-    #    mkgrf.authinfluence(args.verbose, args.overwrite, repo)
+    if args.authinfluence:
+        anlyzgrf.authinfluence(args.verbose, args.overwrite, repo)
 
     if args.coworkers:
         mkgrf.coworkers(args.verbose, args.overwrite, repo)
@@ -175,6 +174,7 @@ def trueall(args):
     args.authvuln = True
     args.authbug = True
     args.authflaw = True
+    args.authinfluence = True
     args.flaws = True
     args.coworkers = True
     args.lynks = True
@@ -198,6 +198,8 @@ def ignore(args):
         args.authbug = False
     if "authflaw" in args.ignore:
         args.authflaw = False
+    if "authinfluence" in args.ignore:
+        args.authinfluence = False
     if "flaws" in args.ignore:
         args.flaws = False
     if "coworkers" in args.ignore:
