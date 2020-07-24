@@ -55,6 +55,10 @@ def main():
                     help="combine output of --authbug and --authvuln.",
                     action="store_true") 
 
+    parser.add_argument("-ai", "--authinfluence", 
+                    help="Calculate influence of each author, output to .txt.",
+                    action="store_true") 
+
     parser.add_argument("--flaws", 
                         help="generate .txt of flaws linked by author or by file.",
                         action="store_true")      
@@ -107,6 +111,10 @@ def go(args, repo):
 
     if args.flaws:
         mkgrf.flaws(args.verbose, args.overwrite, repo)
+
+    #TODO implement author influence calculator
+    #if args.authinfluence:
+    #    mkgrf.authinfluence(args.verbose, args.overwrite, repo)
 
     if args.coworkers:
         mkgrf.coworkers(args.verbose, args.overwrite, repo)
