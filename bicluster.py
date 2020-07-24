@@ -45,8 +45,7 @@ def generate_dependency(verbose, repo):
 
 
 def bicon_analysis(repo):
-    if verbose:
-        print("biclustering for {}".format(repo))
+    print("biclustering for {}".format(repo))
     cwd = os.getcwd()
 
     folder = '{}\output\\xl_data\\'.format(cwd)
