@@ -10,6 +10,73 @@ import pandas as pd
 import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
 from itertools import permutations
+import oteromakegraphdata as mkgrf
+
+
+def authinfluence(verbose, overwrite, repo):
+    if verbose:
+        print('calculating author influence for {}'.format(repo))
+
+    # auth influence = [ authflaw / total flaws ] * [auth flawed files / total flawed files ]
+    
+    authflaw = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
+    if not(os.path.isfile(authflaw)):
+        mkgrf.authflaw(verbose, overwrite, repo)
+
+    authflawdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflaw)
+    print(authflawdict, totalFlaws)    
+
+    authfiledict, totalFiles = files_per_auth(verbose, overwrite, repo, authflaw)
+    print(authfiledict, totalFiles)
+
+
+
+def flaws_per_auth(verbose, overwrite, repo, fyle):
+    if verbose:
+        print("Counting flaws per author for {}".format(repo))
+
+    authflawdict = {}
+
+    with open (fyle, encoding='utf-8'):
+        for line in fyle:
+            fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
+            totalFlawsCount+=1
+            auth = fields[0]
+            
+            if auth not in authflawdict:
+                authflawdict[auth] = 1
+            else:
+                authflawdict[auth] +=1
+
+    return authflawdict, totalFlawsCount
+
+def files_per_auth(verbose, overwrite, repo, fyle):
+    if verbose:
+        print("Counting files per author for {}".format(repo))
+
+    files = [] # len(files) = total
+    authfiletups = []
+    authfiledict = {}
+
+    with open (fyle, encoding='utf-8'):
+        for line in fyle:
+            fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
+            auth = fields[0]
+            flawedFile = fields[1]
+            if flawedFile not in files:
+                files.append(flawedFile)
+
+            tup = (auth, flawedFile)
+
+            if tup not in authfiletups:
+                if auth not in authfiledict:
+                    authfiledict[auth] = 1
+                else:
+                    authfiledict[auth] +=1
+
+    return authfiledict, len(files)
+
+
 
 def runner(repo):
     cwd = os.getcwd()
