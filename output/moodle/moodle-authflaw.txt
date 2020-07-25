@@ -422,7 +422,7 @@ Jun_Pataleta  	 /moodle/lib/tcpdf/include/tcpdf_static.php  	 vuln  	 1952  	php
 Andrew_Nicols  	 /moodle/lib/tests/behat/behat_general.php  	 vuln  	 286  	php:S2964
 Eric_Merrill  	 /moodle/auth/cas/CAS/CAS/Request/CurlRequest.php  	 vuln  	 125  	php:S4830
 Damyon_Wiese  	 /moodle/lib/tests/lock_test.php  	 vuln  	 118  	php:S2964
-Iñaki_Arenaza  	 /moodle/auth/cas/CAS/CAS/Request/CurlRequest.php  	 vuln  	 131  	php:S4830
+Inaki  	 /moodle/auth/cas/CAS/CAS/Request/CurlRequest.php  	 vuln  	 131  	php:S4830
 Rajesh_Taneja  	 /moodle/user/tests/userlib_test.php  	 vuln  	 151  	php:S2068
 Petr_Skoda  	 /moodle/user/editadvanced.php  	 vuln  	 195  	php:S2068
 Frederic_Massart  	 /moodle/repository/tests/generator_test.php  	 vuln  	 160  	php:S2068

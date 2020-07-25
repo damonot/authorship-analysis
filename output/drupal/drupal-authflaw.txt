@@ -25,8 +25,8 @@ Nathaniel_Catchpole  	 /drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDe
 Nathaniel_Catchpole  	 /drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php  	 bug  	 33  	php:S1848
 Nathaniel_Catchpole  	 /drupal/core/tests/Drupal/Tests/Core/Field/MigrateFieldDeprecationTest.php  	 bug  	 42  	php:S1848
 Nathaniel_Catchpole  	 /drupal/core/lib/Drupal/Core/PathProcessor/PathProcessorFront.php  	 bug  	 52  	php:S2201
-Gábor_Hojtsy  	 /drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldInstanceOptionTranslation.php  	 bug  	 31  	php:S3923
-Gábor_Hojtsy  	 /drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldOptionTranslation.php  	 bug  	 33  	php:S3923
+Gabor_Hojtsy  	 /drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldInstanceOptionTranslation.php  	 bug  	 31  	php:S3923
+Gabor_Hojtsy  	 /drupal/core/modules/field/src/Plugin/migrate/process/d6/FieldOptionTranslation.php  	 bug  	 33  	php:S3923
 Lauri_Eskola  	 /drupal/core/modules/ckeditor/js/ckeditor.es6.js  	 bug  	 203  	javascript:S2583
 Lauri_Eskola  	 /drupal/core/modules/views_ui/js/views-admin.es6.js  	 bug  	 1098  	javascript:S2259
 Alex_Pott  	 /drupal/core/modules/system/tests/src/Functional/System/PageTitleTest.php  	 bug  	 127  	php:S1848
