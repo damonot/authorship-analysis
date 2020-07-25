@@ -10,7 +10,7 @@ import pandas as pd
 import openpyxl # 1-indexed, not 0-indexed
 from openpyxl import load_workbook
 from itertools import permutations
-import oteromakegraphdata as mkgrf
+import scripts.oteromakegraphdata as mkgrf
 
 
 def authinfluence(verbose, overwrite, repo):
@@ -36,12 +36,12 @@ def flaws_per_auth(verbose, overwrite, repo, fyle):
         print("Counting flaws per author for {}".format(repo))
 
     authflawdict = {}
-
-    with open (fyle, encoding='utf-8'):
-        for line in fyle:
+    totalFlawsCount = 0
+    with open (fyle, encoding='utf-8') as f:
+        for line in f:
             fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
             totalFlawsCount+=1
-            auth = fields[0]
+            auth = fields[0].rstrip()
             
             if auth not in authflawdict:
                 authflawdict[auth] = 1
@@ -58,21 +58,22 @@ def files_per_auth(verbose, overwrite, repo, fyle):
     authfiletups = []
     authfiledict = {}
 
-    with open (fyle, encoding='utf-8'):
-        for line in fyle:
+    with open (fyle, encoding='utf-8') as f:
+        for line in f:
             fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
-            auth = fields[0]
+            auth = fields[0].rstrip()
             flawedFile = fields[1]
             if flawedFile not in files:
                 files.append(flawedFile)
 
             tup = (auth, flawedFile)
-
             if tup not in authfiletups:
+                authfiletups.append(tup)
                 if auth not in authfiledict:
                     authfiledict[auth] = 1
                 else:
                     authfiledict[auth] +=1
+                
 
     return authfiledict, len(files)
 
