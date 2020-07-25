@@ -13,22 +13,53 @@ from itertools import permutations
 import scripts.oteromakegraphdata as mkgrf
 
 
-def authinfluence(verbose, overwrite, repo):
+def auth_influence(verbose, overwrite, repo):
+    authinftxt = os.getcwd() + '\output\{}\{}-authinfluence.txt'.format(repo,repo)
+    if not overwrite:
+        if(os.path.isfile(authinftxt)):
+                response = input("Overwrite {}? File already exists. Respond [y]/n")
+        else: response = 'y'
+    else:
+        response = 'y'
+
+    if response == 'y':
+        if verbose:
+            print('calculating author influence for {}'.format(repo))
+
+        # auth influence = [ authflaw / total flaws ] * [auth flawed files / total flawed files ]
+        
+        authflaw = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
+        if not(os.path.isfile(authflaw)):
+            mkgrf.authflaw(verbose, overwrite, repo)
+
+        authflawdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflaw)  
+        authfiledict, totalFiles = files_per_auth(verbose, overwrite, repo, authflaw)
+
+        # update values 
+        for auth in authflawdict:
+            authflaws = authflawdict[auth]
+            authflawdict[auth] = authflaws / totalFlaws
+
+        for auth in authfiledict:
+            authfiles = authfiledict[auth]
+            authfiledict[auth] = authfiles / totalFiles
+
+        # multiply values together
+        authinfluence = {}
+        for auth, count in authflawdict.items():
+            infVal = count * authfiledict[auth]
+            authinfluence[auth] = infVal
+
+        dict_to_txt(verbose, overwrite, repo, authinfluence, authinftxt)
+
+
+def dict_to_txt(verbose, overwrite, repo, dict, txt):
     if verbose:
-        print('calculating author influence for {}'.format(repo))
+        print("Writing {}".format(txt))
 
-    # auth influence = [ authflaw / total flaws ] * [auth flawed files / total flawed files ]
-    
-    authflaw = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
-    if not(os.path.isfile(authflaw)):
-        mkgrf.authflaw(verbose, overwrite, repo)
-
-    authflawdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflaw)
-    print(authflawdict, totalFlaws)    
-
-    authfiledict, totalFiles = files_per_auth(verbose, overwrite, repo, authflaw)
-    print(authfiledict, totalFiles)
-
+    with open(txt, "w", encoding='utf-8') as output:
+        for key,val in dict.items():
+                output.write('{}\t{}\n'.format(key, val))
 
 
 def flaws_per_auth(verbose, overwrite, repo, fyle):
@@ -49,6 +80,7 @@ def flaws_per_auth(verbose, overwrite, repo, fyle):
                 authflawdict[auth] +=1
 
     return authflawdict, totalFlawsCount
+
 
 def files_per_auth(verbose, overwrite, repo, fyle):
     if verbose:
