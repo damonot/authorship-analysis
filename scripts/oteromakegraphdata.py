@@ -16,7 +16,7 @@ import unicodedata
 
 
 
-def authvuln(verbose, overwrite, repo):
+def auth_vuln(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Vulnerabilities in {}...".format(repo, repo))
     check.folder(verbose, repo)
@@ -31,7 +31,7 @@ def authvuln(verbose, overwrite, repo):
     find_auth(verbose, overwrite, authvulnIN, cwd, repoBashPath, flawType, authvulnOUT)
 
 
-def authbug(verbose, overwrite, repo):
+def auth_bug(verbose, overwrite, repo):
     if(verbose):
         print("Finding Authors of Bugs in {}...".format(repo))
     check.folder(verbose, repo)
@@ -81,7 +81,7 @@ def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
             subprocess.run([script, repoBashPath, fileBashPath, badLine, flawType, flawRule, outputFile], shell=True)
 
 
-def authflaw(verbose, overwrite, repo):
+def auth_flaw(verbose, overwrite, repo):
     if(verbose):
         print("Merging --authbug and --authvuln output for {}...".format(repo))
     check.folder(verbose, repo)

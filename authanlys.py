@@ -91,7 +91,7 @@ def main():
 
 def go(args, repo):
     if args.verbose:
-        print("==={} active===".format(repo))
+        print("\n==={} active===".format(repo))
         
     if args.runall:
         if args.verbose:
@@ -103,17 +103,16 @@ def go(args, repo):
         mkgrf.authvuln(args.verbose, args.overwrite, repo)
 
     if args.authbug:
-        mkgrf.authbug(args.verbose, args.overwrite, repo)
+        mkgrf.auth_bug(args.verbose, args.overwrite, repo)
     
     if args.authflaw:
-        mkgrf.authflaw(args.verbose, args.overwrite, repo)   
+        mkgrf.auth_flaw(args.verbose, args.overwrite, repo)   
+
+    if args.authinfluence:
+        anlyzgrf.auth_influence(args.verbose, args.overwrite, repo)
 
     if args.flaws:
         mkgrf.flaws(args.verbose, args.overwrite, repo)
-
-    #TODO implement author influence calculator
-    if args.authinfluence:
-        anlyzgrf.authinfluence(args.verbose, args.overwrite, repo)
 
     if args.coworkers:
         mkgrf.coworkers(args.verbose, args.overwrite, repo)
