@@ -1,2 +1,3 @@
+https://github.com/phpmyadmin/phpmyadmin
 https://github.com/moodle/moodle
 https://github.com/drupal/drupal
