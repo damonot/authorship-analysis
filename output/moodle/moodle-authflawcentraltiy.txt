@@ -32,7 +32,7 @@ Colin_Chambers	0.00221
 Petr_Skoda	0.22737
 nobelium	0.00221
 Andrew_Davis	0.01766
-Sam_Hemelryk	0.02208
+Sam_Hemelryk	0.02428
 James_McQuillan	0.00221
 Yuliya_Bozhko	0.00442
 Sam_Chaffee	0.00442
@@ -52,4 +52,3 @@ Tony_Levi	0.00221
 moodler	0.00662
 donal72	0.00442
 fiedorow	0.00221
-samhemelryk	0.00221
