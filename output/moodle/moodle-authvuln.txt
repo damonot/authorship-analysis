@@ -89,4 +89,4 @@ Eloy_Lafuente_(stronk7)	 /moodle/lib/adodb/adodb-perf.inc.php  	 vuln  	 366  	p
 moodler  	 /moodle/lib/adodb/adodb-perf.inc.php  	 vuln  	 785  	php:S2964
 moodler  	 /moodle/lib/adodb/adodb-perf.inc.php  	 vuln  	 810  	php:S2964
 Marina_Glancy  	 /moodle/lib/adodb/adodb.inc.php  	 vuln  	 428  	php:S2068
-samhemelryk  	 /moodle/login/index.php  	 vuln  	 343  	php:S2068
+Sam_Hemelryk  	 /moodle/login/index.php  	 vuln  	 343  	php:S2068
