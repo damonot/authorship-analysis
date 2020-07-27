@@ -1,0 +1,15 @@
+catch	0.08966
+effulgentsia	0.06897
+webchick	0.06897
+Lee_Rowlands	0.06207
+Alex_Pott	0.25517
+Nathaniel_Catchpole	0.27586
+xjm	0.06207
+Gabor_Hojtsy	0.01379
+Lauri_Eskola	0.02759
+Chris_McCafferty	0.01379
+Jennifer_Hodgdon	0.01379
+tim.plunkett	0.0069
+Daniel_Wehner	0.0069
+Dries_Buytaert	0.01379
+Angie_Byron	0.02069

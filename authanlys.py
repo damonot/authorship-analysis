@@ -8,6 +8,7 @@ import scripts.setupbicluster as setupbicluster
 
 def main():
     parser = argparse.ArgumentParser()
+
     parser.add_argument("-v", "--verbose", 
                         help="increase output verbosity.",
                         action="store_true")
@@ -25,22 +26,26 @@ def main():
                         action="store_true")
 
     parser.add_argument("-o", "--overwrite", 
-                        help="overwrite pre-existing .txt and .xlsx files created by previauthanlys.py running previously",
-                        action="store_true")
-
-    parser.add_argument("-b", "--bicluster", 
-                        help="biclustering analysis of authors and code flaws.",
+                        help="overwrite pre-existing .txt and .xlsx files created in a previous previauthanlys.py launch",
                         action="store_true")
 
     parser.add_argument("-cr", "--clonerepo", 
                         help="download repository to local machine via Git.")
 
-    parser.add_argument("-ff", "--ffiaf", 
-                        help="Flaw-Frequency * Inverse Author Frequency (FFIAF) analysis of authors and code flaws.",
+    parser.add_argument("-b", "--bicluster", 
+                        help="'BiCon' biclustering analysis of authors and code flaws.",
                         action="store_true")
 
     parser.add_argument("-d", "--dca", 
                         help="degree correlation assortativity (DCA) analysis of coworkers and code flaws.",
+                        action="store_true")
+
+    parser.add_argument("-ce", "--centrality", 
+                        help="Generate centrality scores for Authors & Files",
+                        action="store_true")
+
+    parser.add_argument("-ff", "--ffiaf", 
+                        help="Flaw-Frequency * Inverse Author Frequency (FFIAF) analysis of authors and code flaws.",
                         action="store_true")
 
     parser.add_argument("-av", "--authvuln", 
@@ -123,6 +128,9 @@ def go(args, repo):
     if args.bicluster:
         setupbicluster.go(args.verbose, args.overwrite, repo)
 
+    if args.centrality:
+        anlyzgrf.centrality(args.verbose, args.overwrite, repo)
+
     if args.dca:
         anlyzgrf.dca(args.verbose, args.overwrite, repo)
 
@@ -168,6 +176,7 @@ def get_args(arguments):
 
 def trueall(args):
     args.bicluster = True
+    args.centrality = True
     args.dca = True
     args.ffiaf = True
     args.authvuln = True
@@ -187,6 +196,8 @@ def ignore(args):
     
     if "bicluster" in args.ignore:
         args.bicluster = False
+    if "centrality" in args.ignore:
+        args.centrality = False
     if "dca" in args.ignore:
         args.dca = False
     if "ffiaf" in args.ignore:

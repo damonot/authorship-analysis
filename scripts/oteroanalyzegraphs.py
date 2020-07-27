@@ -28,12 +28,12 @@ def auth_influence(verbose, overwrite, repo):
 
         # auth influence = [ authflaw / total flaws ] * [auth flawed files / total flawed files ]
         
-        authflaw = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
-        if not(os.path.isfile(authflaw)):
+        authflawtxt = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
+        if not(os.path.isfile(authflawtxt)):
             mkgrf.authflaw(verbose, overwrite, repo)
 
-        authflawdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflaw)  
-        authfiledict, totalFiles = files_per_auth(verbose, overwrite, repo, authflaw)
+        authflawdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflawtxt)  
+        authfiledict, totalFiles = files_per_auth(verbose, overwrite, repo, authflawtxt)
 
         # update values 
         for auth in authflawdict:
@@ -47,7 +47,7 @@ def auth_influence(verbose, overwrite, repo):
         # multiply values together
         authinfluence = {}
         for auth, count in authflawdict.items():
-            infVal = count * authfiledict[auth]
+            infVal = round(count * authfiledict[auth], 5)
             authinfluence[auth] = infVal
 
         dict_to_txt(verbose, overwrite, repo, authinfluence, authinftxt)
@@ -55,7 +55,7 @@ def auth_influence(verbose, overwrite, repo):
 
 def dict_to_txt(verbose, overwrite, repo, dict, txt):
     if verbose:
-        print("Writing {}".format(txt))
+        print("writing {}".format(txt))
 
     with open(txt, "w", encoding='utf-8') as output:
         for key,val in dict.items():
@@ -64,7 +64,7 @@ def dict_to_txt(verbose, overwrite, repo, dict, txt):
 
 def flaws_per_auth(verbose, overwrite, repo, fyle):
     if verbose:
-        print("Counting flaws per author for {}".format(repo))
+        print("\tcounting flaws per author for {}".format(repo))
 
     authflawdict = {}
     totalFlawsCount = 0
@@ -84,7 +84,7 @@ def flaws_per_auth(verbose, overwrite, repo, fyle):
 
 def files_per_auth(verbose, overwrite, repo, fyle):
     if verbose:
-        print("Counting files per author for {}".format(repo))
+        print("\tcounting files per author for {}".format(repo))
 
     files = [] # len(files) = total
     authfiletups = []
@@ -109,7 +109,51 @@ def files_per_auth(verbose, overwrite, repo, fyle):
 
     return authfiledict, len(files)
 
+def centrality(verbose, overwrite, repo):
 
+    authflawtxt = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
+
+    # authfile centrality
+    authfilecentxt = os.getcwd() + '\output\{}\{}-authfilecentraltiy.txt'.format(repo,repo)
+    if not overwrite:
+        if(os.path.isfile(authfilecentxt)):
+                response = input("Overwrite {}? File already exists. Respond [y]/n".format(authfilecentxt))
+        else: response = 'y'
+    else:
+        response = 'y'
+
+    if response == 'y':
+        if verbose:
+            print("calculating centrality for {} according to file count".format(repo))
+        filesdict, totalFiles = files_per_auth(verbose, overwrite, repo, authflawtxt)
+
+        # update values 
+        for auth in filesdict:
+            authfiles = filesdict[auth]
+            filesdict[auth] = round(authfiles / totalFiles, 5)
+
+        dict_to_txt(verbose, overwrite, repo, filesdict, authfilecentxt)
+
+    # authflaw centrality
+    authflawcentxt = os.getcwd() + '\output\{}\{}-authflawcentraltiy.txt'.format(repo,repo)
+    if not overwrite:
+        if(os.path.isfile(authflawcentxt)):
+                response = input("Overwrite {}? File already exists. Respond [y]/n".format(authflawcentxt))
+        else: response = 'y'
+    else:
+        response = 'y'
+
+    if response == 'y':
+        if verbose:
+            print("calculating centrality for {} according to flaw count".format(repo))
+        flawsdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflawtxt) 
+
+        # update values 
+        for auth in flawsdict:
+            authflaws = flawsdict[auth]
+            flawsdict[auth] = round(authflaws / totalFlaws, 5)
+
+        dict_to_txt(verbose, overwrite, repo, flawsdict, authflawcentxt)
 
 def runner(repo):
     cwd = os.getcwd()
