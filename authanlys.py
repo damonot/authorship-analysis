@@ -1,6 +1,7 @@
 '''Damon Otero. https://github.com/damonot''' 
 import re
 import os
+import shutil
 import argparse
 import scripts.oteromakegraphdata as mkgrf
 import scripts.oteroanalyzegraphs as anlyzgrf
@@ -14,11 +15,11 @@ def main():
                         action="store_true")
     
     parser.add_argument("-r", "--runall", 
-                        help="run all clone, generative, and analytical functions of program.",
+                        help="run all generative, and analytical functions of program for all repositories.",
                         action="store_true")
 
     parser.add_argument("-i", "--ignore", 
-                        help="exempt specific clone, generative, or analytical functions of program from --runall. e.g. to exempt biclustering, use '--ignore bicluster'",
+                        help="exempt specific repositories, generative, or analytical functions of program from --runall. e.g. to exempt biclustering, use '--ignore bicluster'",
                         nargs="+", type=str)
 
     parser.add_argument("--deleteall", 
@@ -30,7 +31,10 @@ def main():
                         action="store_true")
 
     parser.add_argument("-cr", "--clonerepo", 
-                        help="download repository to local machine via Git.")
+                        help="download repository to local machine via Git")
+
+    parser.add_argument("-co", "--combine", 
+                        help="run analyses on combination of the repositories as opposed to independently")
 
     parser.add_argument("-b", "--bicluster", 
                         help="'BiCon' biclustering analysis of authors and code flaws.",
@@ -68,7 +72,7 @@ def main():
                         help="generate .txt of flaws linked by author or by file.",
                         action="store_true")      
 
-    parser.add_argument("-co", "--coworkers", 
+    parser.add_argument("-cw", "--coworkers", 
                         help="generate .txt of coworkers; authors of flaws from the same file.",
                         action="store_true")
 
@@ -91,12 +95,19 @@ def main():
         go(args, repo)
         # make sure trueall() and ignore() are updated with all params
 
+    if args.combined:
+        handle_prev_combined(verbose, overwrite)
+        combine_mkgrf_data(args, repos)
+        go(args, "combinedrepos")
+
+
+
     print("\nDone.")
 
 
 def go(args, repo):
     if args.verbose:
-        print("\n==={} active===".format(repo))
+        print("\n====={} active=====".format(repo))
         
     if args.runall:
         if args.verbose:
@@ -104,26 +115,30 @@ def go(args, repo):
         args = trueall(args)
         args = ignore(args)
 
-    if args.authvuln:
-        mkgrf.authvuln(args.verbose, args.overwrite, repo)
+    if repo != 'combinedrepos':
+        if args.authvuln:
+            mkgrf.authvuln(args.verbose, args.overwrite, repo)
 
-    if args.authbug:
-        mkgrf.auth_bug(args.verbose, args.overwrite, repo)
-    
-    if args.authflaw:
-        mkgrf.auth_flaw(args.verbose, args.overwrite, repo)   
+        if args.authbug:
+            mkgrf.auth_bug(args.verbose, args.overwrite, repo)
+        
+        if args.authflaw:
+            mkgrf.auth_flaw(args.verbose, args.overwrite, repo)   
 
-    if args.authinfluence:
-        anlyzgrf.auth_influence(args.verbose, args.overwrite, repo)
+
+    '''
+    if args.coworkers:
+        mkgrf.coworkers(args.verbose, args.overwrite, repo)
 
     if args.flaws:
         mkgrf.flaws(args.verbose, args.overwrite, repo)
 
-    if args.coworkers:
-        mkgrf.coworkers(args.verbose, args.overwrite, repo)
-
     if args.lynks:
         mkgrf.lynks(args.verbose, args.overwrite, repo)
+    '''
+
+    if args.authinfluence:
+        anlyzgrf.auth_influence(args.verbose, args.overwrite, repo)
 
     if args.bicluster:
         setupbicluster.go(args.verbose, args.overwrite, repo)
@@ -175,6 +190,7 @@ def get_args(arguments):
 
 
 def trueall(args):
+    args.combine = True
     args.bicluster = True
     args.centrality = True
     args.dca = True
@@ -193,7 +209,8 @@ def trueall(args):
 def ignore(args):
     if args.ignore is None:
         return args
-    
+    if "combine" in args.ignore:
+        args.combine = False
     if "bicluster" in args.ignore:
         args.bicluster = False
     if "centrality" in args.ignore:
@@ -218,6 +235,50 @@ def ignore(args):
         args.lynks = False
 
     return args
+
+
+def combine_mkgrf_data(args, repos):
+    if args.verbose:
+        print("Merging {} data into 'combinedrepos'".format(repo))
+
+    # combine authbug
+    if args.authbug:
+        combine_txt("bug", repos)
+    
+    # combine authvuln
+    if args.authvuln:
+        combine_txt("vuln", repos)
+
+    # combine authflaw
+    if args.authflaw:
+        combine_txt("flaw", repos)
+
+
+def combine_txt(type, repos):
+    fileList = []
+    for repo in repos:
+        fileLoc = os.getcwd() + '\output\{}\{}-auth{}.txt'.format(repo, repo, type) 
+        fileList.append(fileLoc)
+    out = os.getcwd() + '\output\combinedrepos\combined-auth{}.txt'.format(type)
+    mkgrf.merge_files(verbose, overwrite, fileList, out)
+
+
+def handle_prev_combined(verbose, overwrite):
+    if verbose:
+        print("Checking if combinedrepos data exists")
+
+    combined = os.getcwd() + '\output\combinedrepos'
+    if not overwrite:
+        if(os.path.exists(combined)):
+                response = input("Overwrite combinational data? Respond [y]/n")
+        else: response = 'y'
+    else:
+        response = 'y'
+
+    if response == 'y':
+        shutil.rmtree(os.getcwd() + '\output\combinedrepos')
+        if verbose:
+            print("combinational folder deleted")
 
 
 if __name__ == '__main__':
