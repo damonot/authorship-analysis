@@ -5,6 +5,7 @@ import shutil
 import argparse
 import scripts.oteromakegraphdata as mkgrf
 import scripts.oteroanalyzegraphs as anlyzgrf
+import scripts.check as check
 import scripts.setupbicluster as setupbicluster
 
 def main():
@@ -34,7 +35,8 @@ def main():
                         help="download repository to local machine via Git")
 
     parser.add_argument("-co", "--combine", 
-                        help="run analyses on combination of the repositories as opposed to independently")
+                        help="run analyses on combination of the repositories as opposed to independently",
+                        action="store_true")
 
     parser.add_argument("-b", "--bicluster", 
                         help="'BiCon' biclustering analysis of authors and code flaws.",
@@ -95,14 +97,59 @@ def main():
         go(args, repo)
         # make sure trueall() and ignore() are updated with all params
 
-    if args.combined:
-        handle_prev_combined(verbose, overwrite)
-        combine_mkgrf_data(args, repos)
+    if args.combine:
+        #handle_prev_combined(args.verbose, args.overwrite)
+        combine_mkgrf_data(args, repos) 
         go(args, "combinedrepos")
 
 
 
     print("\nDone.")
+
+
+def combine_mkgrf_data(args, repos):
+    if args.verbose:
+        print("combining repo data from ")
+
+    if args.authflaw:
+        authbug = True
+        authvuln = True
+
+    # combine authbug
+    if args.authbug:
+        combine_txt(args.verbose, args.overwrite, "bug", repos)
+    
+    # combine authvuln
+    if args.authvuln:
+        combine_txt(args.verbose, args.overwrite, "vuln", repos)
+
+    # combine authflaw
+    if args.authflaw:
+        combine_txt(args.verbose, args.overwrite, "flaw", repos)
+
+
+def combine_txt(verbose, overwrite, type, repos):
+    if repos is None:
+        repos = grab_repos()
+    
+    print("combining data from: " + ', '.join(repos))
+
+    fileList = []
+    for repo in repos:
+        fileLoc = os.getcwd() + '\output\{}\{}-auth{}.txt'.format(repo, repo, type) 
+        fileList.append(fileLoc)
+
+        if(not check.fyle(verbose, repo, fileLoc)):
+            if verbose:
+                print("\t{} DNE".format(fileLoc))
+            func = getattr(mkgrf, 'auth_'+type)
+            func(verbose, overwrite, repo)
+
+    out = os.getcwd() + '\output\combinedrepos\combinedrepos-auth{}.txt'.format(type)
+    check.folder(verbose, "combinedrepos")
+
+    mkgrf.merge_files(verbose, overwrite, fileList, out)
+
 
 
 def go(args, repo):
@@ -235,50 +282,6 @@ def ignore(args):
         args.lynks = False
 
     return args
-
-
-def combine_mkgrf_data(args, repos):
-    if args.verbose:
-        print("Merging {} data into 'combinedrepos'".format(repo))
-
-    # combine authbug
-    if args.authbug:
-        combine_txt("bug", repos)
-    
-    # combine authvuln
-    if args.authvuln:
-        combine_txt("vuln", repos)
-
-    # combine authflaw
-    if args.authflaw:
-        combine_txt("flaw", repos)
-
-
-def combine_txt(type, repos):
-    fileList = []
-    for repo in repos:
-        fileLoc = os.getcwd() + '\output\{}\{}-auth{}.txt'.format(repo, repo, type) 
-        fileList.append(fileLoc)
-    out = os.getcwd() + '\output\combinedrepos\combined-auth{}.txt'.format(type)
-    mkgrf.merge_files(verbose, overwrite, fileList, out)
-
-
-def handle_prev_combined(verbose, overwrite):
-    if verbose:
-        print("Checking if combinedrepos data exists")
-
-    combined = os.getcwd() + '\output\combinedrepos'
-    if not overwrite:
-        if(os.path.exists(combined)):
-                response = input("Overwrite combinational data? Respond [y]/n")
-        else: response = 'y'
-    else:
-        response = 'y'
-
-    if response == 'y':
-        shutil.rmtree(os.getcwd() + '\output\combinedrepos')
-        if verbose:
-            print("combinational folder deleted")
 
 
 if __name__ == '__main__':

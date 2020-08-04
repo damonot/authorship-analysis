@@ -32,7 +32,7 @@ Colin_Chambers	1e-05
 Petr_Skoda	0.06355
 nobelium	1e-05
 Andrew_Davis	0.00023
-Sam_Hemelryk	0.00077
+Sam_Hemelryk	0.00095
 James_McQuillan	1e-05
 Yuliya_Bozhko	4e-05
 Sam_Chaffee	2e-05
@@ -52,4 +52,3 @@ Tony_Levi	1e-05
 moodler	6e-05
 donal72	2e-05
 fiedorow	1e-05
-samhemelryk	1e-05

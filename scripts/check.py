@@ -9,10 +9,10 @@ def folder(verbose, folder):
   if not os.path.exists(path):
     os.makedirs(path)
     if verbose:
-      print("\t{} created in 'output' folder.".format(folder))
+      print("\t'{}' created in folder 'output' ".format(folder))
   else:
     if verbose:
-      print("\t{} folder already exists in 'output'".format(folder))
+      print("\t'{}' folder already exists in folder 'output'".format(folder))
 
 def fyle(verbose, repo, fyle):
   if os.path.isfile(fyle):

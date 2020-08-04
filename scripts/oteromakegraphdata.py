@@ -8,6 +8,7 @@ import scripts.oterogetrepo as getrep # download git repos
 import scripts.oteromakelynksoft as makelynks
 import scripts.oteroanalyzegraphs as anlyzgrf
 import scripts.check as check
+import authanlys
 from itertools import islice # csv iteration
 import csv, subprocess, os # bash
 import pandas as pd
@@ -82,25 +83,35 @@ def csv_to_gitbash(authflawIN, cwd, repoBashPath, flawType, outputFile):
 
 
 def auth_flaw(verbose, overwrite, repo):
-    if(verbose):
-        print("Merging --authbug and --authvuln output for {}...".format(repo))
-    check.folder(verbose, repo)
-
+    
     cwd = os.getcwd()
-    authbugOUT = cwd + '\output\{}\{}-authbug.txt'.format(repo, repo)
-    authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
-    if(not(check.fyle(verbose, repo, authbugOUT))):
-        if(verbose):
-            print("{}-authbug .txt not found for {}".format(repo, repo))
-        authbug(verbose, overwrite, repo)
-    if(not(check.fyle(verbose, repo, authvulnOUT))):
-        if(verbose):
-            print("{}-authvuln .txt not found for {}".format(repo, repo))
-        authvuln(verbose, overwrite, repo)
-
-
     authflawOUT = cwd + '\output\{}\{}-authflaw.txt'.format(repo, repo)
-    merge_files(verbose, overwrite, [authbugOUT, authvulnOUT], authflawOUT)
+    response = 'y'
+    if(not(overwrite)):
+        if(os.path.isfile(authflawOUT)):
+            response = input("Overwrite {}? [y]/n\n".format(authflawOUT))
+    
+    if response == 'y':
+        if repo == 'combinedrepos':
+            print("combine {}-authflaw.txt".format(repo))
+            authanlys.combine_txt(verbose, overwrite, "flaw", None)
+        else:
+            if(verbose):
+                print("merging --authbug and --authvuln output for '{}'...".format(repo))
+            check.folder(verbose, repo)
+
+            authbugOUT = cwd + '\output\{}\{}-authbug.txt'.format(repo, repo)
+            authvulnOUT = cwd + '\output\{}\{}-authvuln.txt'.format(repo, repo)
+            if(not(check.fyle(verbose, repo, authbugOUT))):
+                if(verbose):
+                    print("{}-authbug.txt not found for {}".format(repo, repo))
+                auth_bug(verbose, overwrite, repo)
+            if(not(check.fyle(verbose, repo, authvulnOUT))):
+                if(verbose):
+                    print("{}-authvuln.txt not found for {}".format(repo, repo))
+                auth_vuln(verbose, overwrite, repo)
+
+            merge_files(verbose, True, [authbugOUT, authvulnOUT], authflawOUT)
 
 
 def merge_files(verbose, overwrite, fileList, outputFile):
@@ -116,11 +127,6 @@ def merge_files(verbose, overwrite, fileList, outputFile):
                     with open(fname, encoding='utf-8') as infile:
                         for line in infile:
                             outfile.write(line)
-                #if(os.path.isfile(fname)): # delete files after merged
-                #    response = input("Delete un-merged file {}? [y]/n\n".format(fname))
-                #    if(response == 'y'):
-                #        os.remove(fname)
-
 
 
 def runner(repoAddress):

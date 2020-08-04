@@ -17,7 +17,7 @@ def auth_influence(verbose, overwrite, repo):
     authinftxt = os.getcwd() + '\output\{}\{}-authinfluence.txt'.format(repo,repo)
     if not overwrite:
         if(os.path.isfile(authinftxt)):
-                response = input("Overwrite {}? File already exists. Respond [y]/n")
+                response = input("Overwrite {}? File already exists. Respond [y]/n".format(authinftxt))
         else: response = 'y'
     else:
         response = 'y'
@@ -29,8 +29,9 @@ def auth_influence(verbose, overwrite, repo):
         # auth influence = [ authflaw / total flaws ] * [auth flawed files / total flawed files ]
         
         authflawtxt = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
+
         if not(os.path.isfile(authflawtxt)):
-            mkgrf.authflaw(verbose, overwrite, repo)
+            mkgrf.auth_flaw(verbose, overwrite, repo)
 
         authflawdict, totalFlaws = flaws_per_auth(verbose, overwrite, repo, authflawtxt)  
         authfiledict, totalFiles = files_per_auth(verbose, overwrite, repo, authflawtxt)
