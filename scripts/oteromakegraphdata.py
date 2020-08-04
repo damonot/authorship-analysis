@@ -260,8 +260,6 @@ def fix_path(path):
     return finalPath
 
 
-
-
 # connects authors that have contributed to the same file
 def connect_coworkers(inputFiles, outputFile):
     lineList = []
@@ -338,11 +336,13 @@ def connect_flaws(flawsList, outputFile, repo, holder):
     #TODO adapt ffiaf2excel function OR adapt data structure
     anlyzgrf.ffiaf2excel(vuln2bugs, repo, holder)
 
+
 def mult_bugs(vulnCount, bugDict):
     print(vulnCount)
     for key in bugDict.keys():
         bugDict[key] *= vulnCount
     return bugDict
+
 
 def count_bugs(vulnfiletup, bugsFile, holderIndex):
     print(vulnfiletup[1]) # file
@@ -390,6 +390,7 @@ def dca(flawsFile, repo, holder):
     #print(degrees)
     for key in degrees:
         print(key+": "+str(degrees[key]))
+
 
 def dict2xl(dict, xlOut):
     df = pd.DataFrame(data=dict, index=[0])

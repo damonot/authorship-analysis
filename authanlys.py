@@ -108,9 +108,6 @@ def main():
 
 
 def combine_mkgrf_data(args, repos):
-    if args.verbose:
-        print("combining repo data from ")
-
     if args.authflaw:
         authbug = True
         authvuln = True
@@ -151,7 +148,6 @@ def combine_txt(verbose, overwrite, type, repos):
     mkgrf.merge_files(verbose, overwrite, fileList, out)
 
 
-
 def go(args, repo):
     if args.verbose:
         print("\n====={} active=====".format(repo))
@@ -164,7 +160,7 @@ def go(args, repo):
 
     if repo != 'combinedrepos':
         if args.authvuln:
-            mkgrf.authvuln(args.verbose, args.overwrite, repo)
+            mkgrf.auth_vuln(args.verbose, args.overwrite, repo)
 
         if args.authbug:
             mkgrf.auth_bug(args.verbose, args.overwrite, repo)

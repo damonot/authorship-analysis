@@ -110,6 +110,7 @@ def files_per_auth(verbose, overwrite, repo, fyle):
 
     return authfiledict, len(files)
 
+
 def centrality(verbose, overwrite, repo):
 
     authflawtxt = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
@@ -155,6 +156,31 @@ def centrality(verbose, overwrite, repo):
             flawsdict[auth] = round(authflaws / totalFlaws, 5)
 
         dict_to_txt(verbose, overwrite, repo, flawsdict, authflawcentxt)
+
+
+def ffiaf(verbose, overwrite, repo):
+    types = ["flaw", "bug", "vuln"] 
+    for type in types:
+        ffiaf_permutations(verbose, overwrite, repo, type)
+
+def ffiaf_permutations(verbose, overwrite, repo, type):
+    ffiafXL = os.getcwd() + '\output\{}\{}-{}-fiaf.xlsx'.format(repo,repo, type)
+    
+    if not overwrite:
+        if(os.path.isfile(ffiafXL)):
+                response = input("Overwrite {}? File already exists. Respond [y]/n".format(ffiafXL))
+        else: response = 'y'
+    else:
+        response = 'y'
+
+    if response == 'y':
+        if verbose:
+            print("{}-fiaf for {}".format(type, repo))
+
+        authflaw = os.getcwd() + '\output\{}\{}-authflaw.txt'.format(repo, repo)
+        ffiaf = ff_iaf(authflaw, repo, type)
+        ffiaf2excel(ffiaf, repo, type)
+
 
 def runner(repo):
     cwd = os.getcwd()
@@ -268,21 +294,23 @@ def get_numerical_data(txt, repo):
 
 def ffiaf2excel(ffiaf, repo, type):
     
-    #print(bfiaf)
-    folder = "xl_data\\"
-    if(type == "Bug"):
-        xlname = folder + "otero-bfiaf.xlsx"
-    if(type == "Vulnerability"):
-        xlname = folder + "otero-vfiaf.xlsx"
+
+    folder = 'xl_data\\'
+    if(type == "bug"):
+        xlname = os.getcwd() + '\output\{}\{}-{}-fiaf.xlsx'.format(repo,repo, type)
+    if(type == "vuln"):
+        xlname = os.getcwd() + '\output\{}\{}-{}-fiaf.xlsx'.format(repo,repo, type)
+    if(type == "flaw"):
+        xlname = os.getcwd() + '\output\{}\{}-{}-fiaf.xlsx'.format(repo,repo, type)
     if(type == "AUTHOR"):
         xlname = folder + "otero-"+repo+"-authorProxmeasure.xlsx"
-        type = "Bug"
+        type = "bug"
     if(type == "FILE"):
         xlname = folder + "otero-"+repo+"-fileProxmeasure.xlsx"
-        type = "Bug"
+        type = "bug"
     if(type == "BiCluster"):
         xlname = folder + "otero-"+repo+"-biconData.xlsx"
-        type = "Flaw"
+        type = "flaw"
     try:
         book = load_workbook(xlname)
     except:
@@ -294,7 +322,7 @@ def ffiaf2excel(ffiaf, repo, type):
 
     # generate column headers
     cl = sheet.cell(row=1, column=1)
-    cl.value = type+"_Rule"
+    cl.value = type+"_rule"
     col = 2; row = 1
     for tups in ffiaf:
         cl = sheet.cell(row=row, column=col)
@@ -353,7 +381,7 @@ def ff_iaf(txt, repo, type):
     with open(txt, encoding='utf-8') as t:
         for line in t:
             fields = line.split('\t') # 0auth | 1file | 2flawtype | 3line | 4rule |
-            if(fields[2].strip() == type): # is a bug/vuln? weird formatting, work with it
+            if(fields[2].strip() == type) or (type == 'flaw'): # is a bug/vuln? weird formatting, work with it
                 flawLines.append(fields) # copy necessary lines into list
                 flaw = fields[4]
                 auth = fields[0]
