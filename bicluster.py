@@ -20,22 +20,29 @@ def gather_data(verbose, overwrite, repo):
         print("gathering files for {}".format(repo))
     cwd = os.getcwd()
     
-    '''
     txt = '{}\output\{}\{}-authflaw.txt'.format(cwd, repo, repo)
     print(txt)
-    data = get_numerical_data(txt, repo)
+    expdata = get_numerical_data(txt, repo)
 
     exists = check.fyle(verbose, repo, txt)
     if not exists:
         generate_dependency(verbose, repo)
 
 
-    network = get_network(data)
-    ffiaf2excel(data, repo, "BiCluster")
-    network2excel(network, repo, "BiCluster")
-    '''
+    #func = getattr(mkgrf, 'ffiaf')
+    #func(verbose, overwrite, repo)
 
-    bicon_analysis(repo)
+    fol = "{}\\bicluster\\".format(repo)
+    print(fol)
+
+    check.folder(verbose, fol)
+
+    network = get_network(expdata)
+    expdata2excel(expdata, repo, "BiCluster")
+    network2excel(network, repo, "BiCluster")
+
+    #bicon_analysis(repo)
+
 
 def generate_dependency(verbose, repo):
     if verbose:
@@ -127,7 +134,7 @@ def get_network(data):
     return allperms
 
 
-def ffiaf2excel(ffiaf, repo, type):
+def expdata2excel(ffiaf, repo, type):
     
     #print(bfiaf)
     folder = '{}\output\\xl_data\\'.format(os.getcwd())
@@ -142,7 +149,7 @@ def ffiaf2excel(ffiaf, repo, type):
         xlname = folder + "otero-"+repo+"-fileProxmeasure.xlsx"
         type = "Bug"
     if(type == "BiCluster"):
-        xlname = folder + "otero-"+repo+"-biconData.xlsx"
+        xlname = os.getcwd() + "\output\{}\\bicluster\{}-biconExprs.xlsx".format(repo, repo)
         type = "Flaw"
     try:
         book = load_workbook(xlname)
@@ -209,7 +216,8 @@ def ffiaf2excel(ffiaf, repo, type):
 def network2excel(network, repo, type):
     folder = '{}\output\\xl_data\\'.format(os.getcwd())
 
-    xlname = folder + "otero-"+repo+"-biconExprs.xlsx"
+    #xlname = folder + "otero-"+repo+"-biconExprs.xlsx"
+    xlname = os.getcwd() + "\output\{}\\bicluster\{}-biconNetwork.xlsx".format(repo, repo)
     try:
         book = load_workbook(xlname)
     except:
