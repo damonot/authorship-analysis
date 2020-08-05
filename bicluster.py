@@ -41,7 +41,7 @@ def gather_data(verbose, overwrite, repo):
     expdata2excel(expdata, repo, "BiCluster")
     network2excel(network, repo, "BiCluster")
 
-    #bicon_analysis(repo)
+    bicon_analysis(repo)
 
 
 def generate_dependency(verbose, repo):
@@ -53,17 +53,16 @@ def generate_dependency(verbose, repo):
 
 def bicon_analysis(repo):
     print("biclustering for {}".format(repo))
-    cwd = os.getcwd()
 
-    folder = '{}\output\\xl_data\\'.format(cwd)
+    folder = os.getcwd() + '\output\{}\\bicluster\\'.format(repo)
 
-    path_expr = "{}\\{}-biconExprs.csv".format(folder, repo)
-    path_net = "{}\\{}-biconNetwork.tsv".format(folder, repo)
+    path_expr = folder + '{}-biconExprs.csv'.format(repo)
+    path_net = folder + '{}-biconNetwork.tsv'.format(repo)
 
 
     GE,G,labels, _= data_preprocessing(path_expr, path_net)
     L_g_min = 3
-    L_g_max = 5
+    L_g_max = 15
     model = BiCoN(GE,G,L_g_min,L_g_max)
     solution,scores= model.run_search()
 
@@ -137,7 +136,7 @@ def get_network(data):
 def expdata2excel(ffiaf, repo, type):
     
     #print(bfiaf)
-    folder = '{}\output\\xl_data\\'.format(os.getcwd())
+    folder = '{}\output\{}\\bicluster\\'.format(os.getcwd(), repo)
     if(type == "Bug"):
         xlname = folder + "otero-bfiaf.xlsx"
     if(type == "Vulnerability"):
@@ -214,7 +213,7 @@ def expdata2excel(ffiaf, repo, type):
 
 
 def network2excel(network, repo, type):
-    folder = '{}\output\\xl_data\\'.format(os.getcwd())
+    folder = '{}\output\{}\\bicluster\\'.format(os.getcwd(), repo)
 
     #xlname = folder + "otero-"+repo+"-biconExprs.xlsx"
     xlname = os.getcwd() + "\output\{}\\bicluster\{}-biconNetwork.xlsx".format(repo, repo)
