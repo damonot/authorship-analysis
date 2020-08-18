@@ -50,13 +50,14 @@ def generate_dependency(verbose, repo):
     
     #TODO call (venv) python authanalys.py -af -o through cmd
 
-
+# degree Based
 def bicon_analysis(repo):
     print("biclustering for {}".format(repo))
 
     folder = os.getcwd() + '\output\{}\\bicluster\\'.format(repo)
 
-    path_expr = folder + '{}-biconExprs.csv'.format(repo)
+    #path_expr = folder + '{}-biconExprs.csv'.format(repo)
+    path_expr = folder + '{}-flaw-fiaf.csv'.format(repo)
     path_net = folder + '{}-biconNetwork.tsv'.format(repo)
 
 
