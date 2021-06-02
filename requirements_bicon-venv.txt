@@ -45,7 +45,7 @@ soupsieve==2.0.1
 suds-jurko==0.6
 threadpoolctl==2.1.0
 tqdm==4.45.0
-urllib3==1.25.9
+urllib3==1.26.5
 webencodings==0.5.1
 wrapt==1.12.1
 xmltodict==0.12.0
