@@ -3,7 +3,7 @@ beautifulsoup4==4.9.1
 bicon==1.2.2
 bioservices==1.7.6
 biothings-client==0.2.1
-certifi==2020.6.20
+certifi==2022.12.7
 cffi==1.14.0
 chardet==3.0.4
 colorama==0.4.3
